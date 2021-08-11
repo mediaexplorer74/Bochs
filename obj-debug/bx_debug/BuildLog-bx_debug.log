@@ -1,0 +1,9 @@
+﻿  dbg_breakpoints.cc
+  dbg_main.cc
+  linux.cc
+  parser.cc
+  symbols.cc
+  Generating Code...
+  lexer.c
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1546,5): warning MSB8012: TargetPath(c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\bx_debug\bx_debug.lib) does not match the Library's OutputFile property value (c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\bx_debug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  bx_debug.vcxproj -> c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\bx_debug\bx_debug.lib

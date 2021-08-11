@@ -1,0 +1,29 @@
+﻿  amd_k6_2_chomper.cc
+  athlon64_clawhammer.cc
+  athlon64_venice.cc
+  phenomx3_8650_toliman.cc
+  ryzen.cc
+  trinity_apu.cc
+  turion64_tyler.cc
+  zambezi.cc
+  atom_n270.cc
+  broadwell_ult.cc
+  core2_penryn_t9600.cc
+  core_duo_t2400_yonah.cc
+  corei5_arrandale_m520.cc
+  corei5_lynnfield_750.cc
+  corei7_haswell_4770.cc
+  corei7_ivy_bridge_3770K.cc
+  corei7_sandy_bridge_2600K.cc
+  corei7_skylake-x.cc
+  p2_klamath.cc
+  p3_katmai.cc
+  Generating Code...
+  Compiling...
+  p4_prescott_celeron_336.cc
+  p4_willamette.cc
+  pentium.cc
+  pentium_mmx.cc
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1546,5): warning MSB8012: TargetPath(c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpudb\cpudb.lib) does not match the Library's OutputFile property value (c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpudb.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  cpudb.vcxproj -> c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpudb\cpudb.lib

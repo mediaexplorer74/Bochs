@@ -1,0 +1,98 @@
+﻿  crregs.cc
+  ctrl_xfer16.cc
+  ctrl_xfer32.cc
+  ctrl_xfer64.cc
+  ctrl_xfer_pro.cc
+  data_xfer16.cc
+  data_xfer32.cc
+  data_xfer64.cc
+  data_xfer8.cc
+  debugstuff.cc
+  disasm.cc
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\decoder\disasm.cc(58,3): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\decoder\disasm.cc(894,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  fetchdecode32.cc
+  fetchdecode64.cc
+  event.cc
+  exception.cc
+  faststring.cc
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\faststring.cc(106,10): warning C4244: 'return': conversion from 'Bit64u' to 'Bit32u', possible loss of data
+  flag_ctrl.cc
+  flag_ctrl_pro.cc
+  fpu_emu.cc
+  generic_cpuid.cc
+  Generating Code...
+  Compiling...
+  gf2.cc
+  icache.cc
+  init.cc
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\init.cc(66,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\init.cc(46,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\init.cc(47,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\init.cc(196,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\init.cc(201,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\init.cc(435,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\init.cc(458,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\init.cc(472,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  io.cc
+  iret.cc
+  jmp_far.cc
+  load.cc
+  logical16.cc
+  logical32.cc
+  logical64.cc
+  logical8.cc
+  mmx.cc
+  msr.cc
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\msr.cc(1216,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\msr.cc(1229,16): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  mult16.cc
+  mult32.cc
+  mult64.cc
+  mult8.cc
+  mwait.cc
+  paging.cc
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\paging.cc(1290,36): warning C4390: ';': empty controlled statement found; is this the intent?
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\paging.cc(1292,34): warning C4390: ';': empty controlled statement found; is this the intent?
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\paging.cc(1325,35): warning C4390: ';': empty controlled statement found; is this the intent?
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\paging.cc(1327,33): warning C4390: ';': empty controlled statement found; is this the intent?
+  proc_ctrl.cc
+  Generating Code...
+  Compiling...
+  protect_ctrl.cc
+  rdrand.cc
+  ret_far.cc
+  segment_ctrl.cc
+  segment_ctrl_pro.cc
+  sha.cc
+  shift16.cc
+  shift32.cc
+  shift64.cc
+  shift8.cc
+  smm.cc
+  soft_int.cc
+  sse.cc
+  sse_move.cc
+  sse_pfp.cc
+  sse_rcp.cc
+  sse_string.cc
+  stack.cc
+  stack16.cc
+  stack32.cc
+  Generating Code...
+  Compiling...
+  stack64.cc
+  string.cc
+  svm.cc
+  tasking.cc
+  vapic.cc
+  vm8086.cc
+  vmcs.cc
+  vmexit.cc
+  vmfunc.cc
+  vmx.cc
+  wide_int.cc
+  xsave.cc
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1546,5): warning MSB8012: TargetPath(c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpu\cpu.lib) does not match the Library's OutputFile property value (c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpu.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  cpu.vcxproj -> c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpu\cpu.lib

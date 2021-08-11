@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="Bochs.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bochs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="483,0,0,0" TextWrapping="Wrap" Text="Bochs UWP Edition - the burning" VerticalAlignment="Center" FontSize="36"/>
+
+    </Grid>
+</Page>

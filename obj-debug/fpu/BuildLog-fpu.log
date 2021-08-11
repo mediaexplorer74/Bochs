@@ -1,0 +1,28 @@
+﻿  f2xm1.cc
+  ferr.cc
+  fpatan.cc
+  fprem.cc
+  fpu.cc
+  fpu_arith.cc
+  fpu_cmov.cc
+  fpu_compare.cc
+  fpu_const.cc
+  fpu_load_store.cc
+  fpu_misc.cc
+  fpu_trans.cc
+  fsincos.cc
+  fyl2x.cc
+  poly.cc
+  softfloat-muladd.cc
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\fpu\softfloat-muladd.cc(302,49): warning C4244: 'argument': conversion from 'Bit64u' to 'Bit32u', possible loss of data
+c:\Users\mediaexplorer\source\repos\Bochs\cpu\fpu\softfloat-muladd.cc(334,49): warning C4244: 'argument': conversion from 'Bit64u' to 'Bit32u', possible loss of data
+  softfloat-round-pack.cc
+  softfloat-specialize.cc
+  softfloat.cc
+  softfloat16.cc
+  Generating Code...
+  Compiling...
+  softfloatx80.cc
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1546,5): warning MSB8012: TargetPath(c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\fpu\fpu.lib) does not match the Library's OutputFile property value (c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\fpu.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  fpu.vcxproj -> c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\fpu\fpu.lib

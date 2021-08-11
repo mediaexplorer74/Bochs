@@ -1,0 +1,11 @@
+﻿  memory.cc
+  misc_mem.cc
+c:\Users\mediaexplorer\source\repos\Bochs\memory\misc_mem.cc(219,35): warning C4996: 'tmpfile': This function or variable may be unsafe. Consider using tmpfile_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\memory\misc_mem.cc(329,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\memory\misc_mem.cc(336,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\memory\misc_mem.cc(338,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\memory\misc_mem.cc(400,8): warning C4996: '_open': This function or variable may be unsafe. Consider using _sopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\memory\misc_mem.cc(543,8): warning C4996: '_open': This function or variable may be unsafe. Consider using _sopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1546,5): warning MSB8012: TargetPath(c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\memory\memory.lib) does not match the Library's OutputFile property value (c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\memory.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  memory.vcxproj -> c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\memory\memory.lib

@@ -1,0 +1,25 @@
+﻿  banshee.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\banshee.cc(149,7): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\banshee.cc(151,7): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\banshee.cc(157,7): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\banshee.cc(159,7): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ddc.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\ddc.cc(176,10): warning C4996: '_open': This function or variable may be unsafe. Consider using _sopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  svga_cirrus.cc
+  vga.cc
+  vgacore.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\vgacore.cc(320,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  voodoo.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(349,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(406,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(425,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(441,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(446,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(452,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(473,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(482,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(492,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\display\voodoo.cc(502,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1546,5): warning MSB8012: TargetPath(c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\iodev_display\iodev_display.lib) does not match the Library's OutputFile property value (c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\iodev_display.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  iodev_display.vcxproj -> c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\iodev_display\iodev_display.lib

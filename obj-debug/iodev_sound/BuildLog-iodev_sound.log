@@ -1,0 +1,25 @@
+﻿  es1370.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\es1370.cc(398,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  opl.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\opl.cc(1535,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  sb16.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\sb16.cc(473,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\sb16.cc(512,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\sb16.cc(528,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\sb16.cc(2894,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\sb16.cc(2996,3): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  sounddummy.cc
+  soundfile.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\soundfile.cc(90,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\soundfile.cc(98,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\soundfile.cc(281,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\soundfile.cc(287,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  soundlow.cc
+  soundmod.cc
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\soundmod.cc(95,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\Users\mediaexplorer\source\repos\Bochs\iodev\sound\soundmod.cc(96,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  soundsdl.cc
+  soundwin.cc
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1546,5): warning MSB8012: TargetPath(c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\iodev_sound\iodev_sound.lib) does not match the Library's OutputFile property value (c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\iodev_sound.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  iodev_sound.vcxproj -> c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\iodev_sound\iodev_sound.lib
