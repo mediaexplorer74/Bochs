@@ -229,6 +229,12 @@
     <ProjectReference Include="..\avx\avx.vcxproj">
       <Project>{0eb6ef77-767c-4030-bbf0-80c5fbdffe19}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\bxhub\bxhub.vcxproj">
+      <Project>{d3903b33-f79c-4fef-9f81-1280a986ce77}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\bx_debug\bx_debug.vcxproj">
+      <Project>{b7cdf430-b2dd-4129-8a90-793112848bd9}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\stubs\stubs.vcxproj">
       <Project>{090f4999-3810-498f-80e7-1e293af4ed5a}</Project>
     </ProjectReference>

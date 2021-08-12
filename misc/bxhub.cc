@@ -1,29 +1,8 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: bxhub.cc 14091 2021-01-30 17:37:42Z sshwarts $
 /////////////////////////////////////////////////////////////////////////
-/*
- * Copyright (C) 2003       by Mariusz Matuszek
- *                             [NOmrmmSPAM @ users.sourceforge.net]
- * Copyright (C) 2017-2020  The Bochs Project
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
- */
-
 // bxhub.c: a simple, two-port software 'ethernet hub' for use with
 // eth_socket Bochs ethernet pktmover.
-
 // Extensions by Volker Ruppert (2017-2020):
 // - Windows support added.
 // - Integrated 'vnet' server features (ARP, ICMP-echo, DHCP, DNS, FTP and TFTP).
@@ -36,7 +15,8 @@
 #define __USE_W32_SOCKETS
 #endif
 
-#include "bochs_old/config.h"
+#include "pch.h"
+#include "../bochs_old/config.h"
 
 extern "C" {
 #ifdef WIN32
@@ -65,10 +45,11 @@ typedef int SOCKET;
 #define MSG_DONTWAIT 0
 #endif
 
-#include "misc/bxcompat.h"
-#include "bochs_old/osdep.h"
-#include "iodev/network/netmod.h"
-#include "iodev/network/netutil.h"
+#include "pch.h"
+#include "../misc/bxcompat.h"
+#include "../bochs_old/osdep.h"
+#include "../iodev/network/netmod.h"
+#include "../iodev/network/netutil.h"
 
 #define BXHUB_MAX_CLIENTS 6
 
@@ -212,13 +193,16 @@ int parse_cmdline(int argc, char *argv[])
       }
     }
     else if (!strncmp("-tftp=", argv[arg], 6)) {
-      strcpy(tftp_root, &argv[arg][6]);
+      //  strcpy
+      strcpy_s(tftp_root, &argv[arg][6]);
     }
     else if (!strncmp("-bootfile=", argv[arg], 10)) {
-      strcpy(dhcp_bootfile, &argv[arg][10]);
+        // strcpy
+      strcpy_s(dhcp_bootfile, &argv[arg][10]);
     }
     else if (!strncmp("-mac=", argv[arg], 5)) {
-      n = sscanf(&argv[arg][5], "%x:%x:%x:%x:%x:%x",
+        // n = sscanf
+      n = sscanf_s(&argv[arg][5], "%x:%x:%x:%x:%x:%x",
                  &tmp[0],&tmp[1],&tmp[2],&tmp[3],&tmp[4],&tmp[5]);
       if (n != 6) {
         printf("Host MAC address malformed.\n\n");
@@ -237,7 +221,8 @@ int parse_cmdline(int argc, char *argv[])
       }
     }
     else if (!strncmp("-logfile=", argv[arg], 9)) {
-      strcpy(bx_logfname, &argv[arg][9]);
+        // strcpy
+      strcpy_s(bx_logfname, &argv[arg][9]);
     }
     else if (argv[arg][0] == '-') {
       printf("Unknown option: %s\n\n", argv[arg]);
@@ -326,9 +311,11 @@ int CDECL main(int argc, char **argv)
   memcpy(dhcp.srv_ipv4addr[VNET_MISC], default_ftp_ipv4addr, 4);
   memcpy(dhcp.client_base_ipv4addr, dhcp_base_ipv4addr, 4);
   if (strlen(dhcp_bootfile) > 0) {
-    strcpy(dhcp.bootfile, dhcp_bootfile);
+      //strcpy
+    strcpy_s(dhcp.bootfile, dhcp_bootfile);
   } else {
-    strcpy(dhcp.bootfile, default_bootfile);
+      //strcpy
+    strcpy_s(dhcp.bootfile, default_bootfile);
   }
   vnet_server.init(NULL, &dhcp, tftp_root);
   printf("Host MAC address: %02x:%02x:%02x:%02x:%02x:%02x\n",
