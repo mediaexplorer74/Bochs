@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="avx.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\cpu\avx\avx512_rsqrt14.cc" />
+    <ClCompile Include="..\cpu\avx\avx.cc" />
+    <ClCompile Include="..\cpu\avx\avx_cvt.cc" />
+    <ClCompile Include="..\cpu\avx\avx_fma.cc" />
+    <ClCompile Include="..\cpu\avx\avx_pfp.cc" />
+    <ClCompile Include="..\cpu\avx\avx2.cc" />
+    <ClCompile Include="..\cpu\avx\avx512.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_bitalg.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_cvt.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_fma.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_mask8.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_mask16.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_mask32.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_mask64.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_move.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_pfp.cc" />
+    <ClCompile Include="..\cpu\avx\avx512_rcp14.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="avx.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\cpu\apic.h" />
+  </ItemGroup>
+</Project>

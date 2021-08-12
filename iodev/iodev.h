@@ -25,14 +25,14 @@
 #ifndef IODEV_H
 #define IODEV_H
 
-#include "bochs_old/bochs.h"
-#include "bochs_old/plugin.h"
-#include "bochs_old/param_names.h"
-#include "bochs_old/pc_system.h"
-#include "bx_debug/debug.h"
-#include "memory/memory-bochs.h"
-#include "gui/siminterface.h"
-#include "gui/gui.h"
+#include "../bochs_old/bochs.h"
+#include "../bochs_old/plugin.h"
+#include "../bochs_old/param_names.h"
+#include "../bochs_old/pc_system.h"
+#include "../bx_debug/debug.h"
+#include "../memory/memory-bochs.h"
+#include "../gui/siminterface.h"
+#include "../gui/gui.h"
 
 /* number of IRQ lines supported.  In an ISA PC there are two
    PIC chips cascaded together.  each has 8 IRQ lines, so there

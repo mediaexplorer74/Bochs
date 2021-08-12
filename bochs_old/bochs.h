@@ -361,7 +361,7 @@ extern bool bx_gui_sighandler;
 
 void bx_center_print(FILE *file, const char *line, unsigned maxwidth);
 
-#include "instrument.h"
+#include "../instrument/stubs/instrument.h"
 #include "../misc/bswap.h"
 
 #endif  /* BX_BOCHS_H */

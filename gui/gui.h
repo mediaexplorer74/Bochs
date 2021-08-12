@@ -21,7 +21,7 @@
 #ifndef BX_GUI_H
 #define BX_GUI_H
 
-#include "gui/siminterface.h"
+#include "../gui/siminterface.h"
 
 // header bar and status bar stuff
 #define BX_HEADER_BAR_Y 32

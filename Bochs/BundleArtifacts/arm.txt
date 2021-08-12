@@ -1,0 +1,2 @@
+MainPackage=C:\Users\mediaexplorer\source\repos\Bochs\ARM\Debug\Bochs\Bochs_1.0.0.0_ARM_Debug.appx
+SymbolPackage=c:\Users\mediaexplorer\source\repos\Bochs\Bochs\ARM\Debug\Symbols\Bochs_1.0.0.0_ARM_Debug.appxsym

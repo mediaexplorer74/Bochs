@@ -4,8 +4,9 @@
 //
 #include <stdio.h>
 
-#include "bochs_old/bochs.h"
-#include "cpu/cpu.h"
+#include "pch.h"
+#include "../bochs_old/bochs.h"
+#include "../cpu/cpu.h"
 
 #if BX_DEBUGGER
 

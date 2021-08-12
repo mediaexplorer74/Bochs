@@ -24,7 +24,7 @@
 
 #include <setjmp.h>
 
-#include "bx_debug/debug.h"
+#include "../bx_debug/debug.h"
 
 #include "decoder/decoder.h"
 
