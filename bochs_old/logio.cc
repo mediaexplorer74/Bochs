@@ -1,35 +1,21 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: logio.cc 14100 2021-01-30 19:40:18Z sshwarts $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2001-2020  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-//
-/////////////////////////////////////////////////////////////////////////
 
-#include "bochs.h"
+#include "pch.h"
+
+#include "../bochs_old/bochs.h"
 #include "../gui/siminterface.h"
 #include "../bochs_old/pc_system.h"
 #include "../bochs_old/bxthread.h"
+
 #include "../cpu/cpu.h"
 #include <assert.h>
 
 #if BX_WITH_CARBON
 #include <Carbon/Carbon.h>
 #endif
+#include "bochs.h"
 
 const int MAGIC_LOGNUM = 0x12345678;
 
@@ -205,92 +191,6 @@ void iofunctions::set_log_prefix(const char* prefix)
 //  iofunctions::out(level, prefix, fmt, ap)
 //  DO NOT nest out() from ::info() and the like.
 //    fmt and ap retained for direct printinf from iofunctions only!
-
-void iofunctions::out(int level, const char *prefix, const char *fmt, va_list ap)
-{
-  char c = ' ', *s;
-  char tmpstr[80], msgpfx[80], msg[1024];
-
-  assert(magic==MAGIC_LOGNUM);
-  assert(this != NULL);
-  assert(logfd != NULL);
-
-  BX_LOCK(logio_mutex);
-
-  switch (level) {
-    case LOGLEV_INFO: c='i'; break;
-    case LOGLEV_PANIC: c='p'; break;
-    case LOGLEV_ERROR: c='e'; break;
-    case LOGLEV_DEBUG: c='d'; break;
-    default: break;
-  }
-
-  s = logprefix;
-  msgpfx[0] = 0;
-  while (*s) {
-    switch (*s) {
-      case '%':
-        if(*(s+1)) s++;
-        else break;
-        switch(*s) {
-          case 'd':
-#pragma warning(suppress : 4996)
-            sprintf(tmpstr, "%s", prefix==NULL?"":prefix);
-            break;
-          case 't':
-#pragma warning(suppress : 4996)
-            sprintf(tmpstr, FMT_TICK, bx_pc_system.time_ticks());
-            break;
-          case 'i':
-#if BX_SUPPORT_SMP == 0
-#pragma warning(suppress : 4996)
-            sprintf(tmpstr, "%08x", BX_CPU(0)->get_eip());
-#endif
-            break;
-          case 'e':
-#pragma warning(suppress : 4996)
-            sprintf(tmpstr, "%c", c);
-            break;
-          case '%':
-#pragma warning(suppress : 4996)
-            sprintf(tmpstr,"%%");
-            break;
-          default:
-#pragma warning(suppress : 4996)
-            sprintf(tmpstr,"%%%c",*s);
-        }
-        break;
-      default:
-#pragma warning(suppress : 4996)
-        sprintf(tmpstr,"%c",*s);
-    }
-
-#pragma warning(suppress : 4996)
-    strcat(msgpfx, tmpstr);
-
-    s++;
-  }
-
-  fprintf(logfd,"%s ", msgpfx);
-
-  if (level == LOGLEV_PANIC)
-  {
-      fprintf(logfd, ">>PANIC<< ");
-  }
-
-#pragma warning(suppress : 4996)
-  vsnprintf(msg, sizeof(msg), fmt, ap);
-
-  fprintf(logfd, "%s\n", msg);
-
-  fflush(logfd);
-  if (SIM->has_log_viewer()) 
-  {
-    SIM->log_msg(msgpfx, level, msg);
-  }
-
-  BX_UNLOCK(logio_mutex);
-}
 
 iofunctions::iofunctions(FILE *fs)
 {

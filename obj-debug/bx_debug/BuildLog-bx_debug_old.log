@@ -1,0 +1,8 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (.\..\obj-debug\bx_debug\) содержит файлы, которые используются совместно с другим проектом (bx_debug.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  dbg_breakpoints.cc
+  dbg_main.cc
+C:\Users\media\source\repos\Bochs\bx_debug\dbg_main.cc(14,10): fatal error C1083: Не удается открыть файл включение: ../cpu/decoder/ia_opcodes.h: No such file or directory,
+  linux.cc
+  parser.cc
+  symbols.cc
+  Создание кода...

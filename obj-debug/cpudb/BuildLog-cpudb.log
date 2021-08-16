@@ -1,29 +1,500 @@
 ﻿  amd_k6_2_chomper.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\amd\amd_k6_2_chomper.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   athlon64_clawhammer.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\amd\athlon64_clawhammer.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   athlon64_venice.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\amd\athlon64_venice.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   phenomx3_8650_toliman.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\amd\phenomx3_8650_toliman.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   ryzen.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
   trinity_apu.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
   turion64_tyler.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\amd\turion64_tyler.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   zambezi.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
   atom_n270.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\atom_n270.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   broadwell_ult.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
   core2_penryn_t9600.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\core2_penryn_t9600.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   core_duo_t2400_yonah.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\core_duo_t2400_yonah.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   corei5_arrandale_m520.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\corei5_arrandale_m520.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   corei5_lynnfield_750.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\corei5_lynnfield_750.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   corei7_haswell_4770.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
   corei7_ivy_bridge_3770K.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
   corei7_sandy_bridge_2600K.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\corei7_sandy_bridge_2600K.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   corei7_skylake-x.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
   p2_klamath.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\p2_klamath.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   p3_katmai.cc
-  Generating Code...
-  Compiling...
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\p3_katmai.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
+  Создание кода...
+  Компиляция...
   p4_prescott_celeron_336.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\p4_prescott_celeron_336.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   p4_willamette.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\p4_willamette.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   pentium.cc
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\pentium.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
   pentium_mmx.cc
-  Generating Code...
-C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1546,5): warning MSB8012: TargetPath(c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpudb\cpudb.lib) does not match the Library's OutputFile property value (c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpudb.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
-  cpudb.vcxproj -> c:\Users\mediaexplorer\source\repos\Bochs\obj-debug\cpudb\cpudb.lib
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,14): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(102,6): error C3861: BX_LOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,40): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,62): error C2065: prefix: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(122,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%s"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,44): error C2065: bx_pc_system: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(126,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%011I64u"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,42): error C2065: bx_cpu: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): warning C4473: "sprintf": передано недостаточно аргументов для строки формата
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 0
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(131,34): message : отсутствующий вариативный аргумент "1" требуется для строки форматирования "%08x"
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(171,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(173,10): error C2065: SIM: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,16): error C2065: logio_mutex: необъявленный идентификатор
+C:\Users\media\source\repos\Bochs\bochs_old\logio.h(176,6): error C3861: BX_UNLOCK: идентификатор не найден
+C:\Users\media\source\repos\Bochs\cpu\cpudb\intel\pentium_mmx.h(29,10): fatal error C1083: Не удается открыть файл включение: cpu/cpuid.h: No such file or directory,
+  Создание кода...

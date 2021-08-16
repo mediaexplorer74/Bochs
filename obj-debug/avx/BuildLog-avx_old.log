@@ -1,0 +1,48 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (.\..\obj-debug\avx\) содержит файлы, которые используются совместно с другим проектом (avx.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  avx.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx.cc: No such file or directory,
+  avx2.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx2.cc: No such file or directory,
+  avx512.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512.cc: No such file or directory,
+  avx512_bitalg.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_bitalg.cc: No such file or directory,
+  avx512_cvt.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_cvt.cc: No such file or directory,
+  avx512_fma.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_fma.cc: No such file or directory,
+  avx512_mask16.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_mask16.cc: No such file or directory,
+  avx512_mask32.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_mask32.cc: No such file or directory,
+  avx512_mask64.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_mask64.cc: No such file or directory,
+  avx512_mask8.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_mask8.cc: No such file or directory,
+  avx512_move.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_move.cc: No such file or directory,
+  avx512_pfp.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_pfp.cc: No such file or directory,
+  avx512_rcp14.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_rcp14.cc: No such file or directory,
+  avx512_rsqrt14.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx512_rsqrt14.cc: No such file or directory,
+  vnni.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\vnni.cc: No such file or directory,
+  avx_cvt.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx_cvt.cc: No such file or directory,
+  avx_fma.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx_fma.cc: No such file or directory,
+  avx_pfp.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\avx_pfp.cc: No such file or directory,
+  gather.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\gather.cc: No such file or directory,
+  tbm32.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\tbm32.cc: No such file or directory,
+  Создание кода...
+  Компиляция...
+  tbm64.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\tbm64.cc: No such file or directory,
+  xop.cc
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\avx\xop.cc: No such file or directory,
+  Создание кода...

@@ -10,8 +10,8 @@ extern "C" {
 #include "pch.h"
 #include "../bochs_old/bochs.h"
 #include "../bochs_old/param_names.h"
-#include "../cpu/cpu.h"
-#include "../cpu/decoder/ia_opcodes.h"
+#include "../cpu_old/cpu.h"
+#include "../cpu_old/decoder/ia_opcodes.h"
 #include "../iodev/iodev.h"
 
 #if BX_DEBUGGER

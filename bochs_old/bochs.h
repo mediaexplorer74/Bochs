@@ -171,11 +171,11 @@ void print_statistics_tree(bx_param_c *node, int level = 0);
 #define BX_INP(addr, len)           bx_devices.inp(addr, len)
 #define BX_OUTP(addr, val, len)     bx_devices.outp(addr, val, len)
 
-#if BX_SUPPORT_SMP
-#define BX_CPU(x)                   (bx_cpu_array[x])
-#else
+//#if BX_SUPPORT_SMP
+//#define BX_CPU(x)                   (bx_cpu_array[x])
+//#else
 #define BX_CPU(x)                   (&bx_cpu)
-#endif
+//#endif
 
 #define BX_MEM(x)                   (&bx_mem)
 

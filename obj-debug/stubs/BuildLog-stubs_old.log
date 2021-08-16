@@ -1,3 +1,3 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (.\..\obj-debug\stubs\) contains files shared from another project (stubs.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (.\..\obj-debug\stubs\) содержит файлы, которые используются совместно с другим проектом (stubs.vcxproj).  Это может привести к ошибкам очистки и перестроения.
   instrument.cc
-c:\Users\mediaexplorer\source\repos\Bochs\instrument\stubs\instrument.cc(5,10): fatal error C1083: Cannot open include file: 'pch.h': No such file or directory
+C:\Users\media\source\repos\Bochs\instrument\stubs\instrument.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,

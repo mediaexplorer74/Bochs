@@ -1,0 +1,6 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (.\..\obj-debug\bxhub\) содержит файлы, которые используются совместно с другим проектом (bxhub.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  bxhub.cc
+C:\Users\media\source\repos\Bochs\misc\bxhub.cc(18,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+  netutil.cc
+C:\Users\media\source\repos\Bochs\iodev\network\netutil.cc(12,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+  Создание кода...

@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 
-#include "bochs.h"
+#include "../bochs_old/bochs.h"
 #include "bxversion.h"
 #include "param_names.h"
 #include "../cpu/cpu.h"
@@ -75,13 +75,13 @@ bx_debug_t bx_dbg;
 
 typedef BX_CPU_C *BX_CPU_C_PTR;
 
-#if BX_SUPPORT_SMP
+//#if BX_SUPPORT_SMP
 // multiprocessor simulation, we need an array of cpus
-BOCHSAPI BX_CPU_C_PTR *bx_cpu_array = NULL;
-#else
+//BOCHSAPI BX_CPU_C_PTR *bx_cpu_array = NULL;
+//#else
 // single processor simulation, so there's one of everything
 BOCHSAPI BX_CPU_C bx_cpu;
-#endif
+//#endif
 
 BOCHSAPI BX_MEM_C bx_mem;
 

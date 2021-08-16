@@ -231,6 +231,9 @@
     <ProjectReference Include="..\bx_debug\bx_debug.vcxproj">
       <Project>{b7cdf430-b2dd-4129-8a90-793112848bd9}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\cpu\cpu.vcxproj">
+      <Project>{ba945aa3-9c37-4020-a869-c84a89d36a95}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\stubs\stubs.vcxproj">
       <Project>{090f4999-3810-498f-80e7-1e293af4ed5a}</Project>
     </ProjectReference>

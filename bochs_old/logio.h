@@ -90,7 +90,91 @@ public:
   iofunctions(const char *);
  ~iofunctions(void);
 
-  void out(int level, const char *pre, const char *fmt, va_list ap);
+ void out(int level, const char* pre, const char* fmt, va_list ap)
+ {
+     char c = ' ', * s;
+     char tmpstr[80], msgpfx[80], msg[1024];
+
+     assert(magic == MAGIC_LOGNUM);
+     assert(this != NULL);
+     assert(logfd != NULL);
+
+     BX_LOCK(logio_mutex);
+
+     switch (level) {
+     case LOGLEV_INFO: c = 'i'; break;
+     case LOGLEV_PANIC: c = 'p'; break;
+     case LOGLEV_ERROR: c = 'e'; break;
+     case LOGLEV_DEBUG: c = 'd'; break;
+     default: break;
+     }
+
+     s = logprefix;
+     msgpfx[0] = 0;
+     while (*s) {
+         switch (*s) {
+         case '%':
+             if (*(s + 1)) s++;
+             else break;
+             switch (*s) {
+             case 'd':
+#pragma warning(suppress : 4996)
+                 sprintf(tmpstr, "%s", prefix == NULL ? "" : prefix);
+                 break;
+             case 't':
+#pragma warning(suppress : 4996)
+                 sprintf(tmpstr, FMT_TICK, bx_pc_system.time_ticks());
+                 break;
+             case 'i':
+#if BX_SUPPORT_SMP == 0
+#pragma warning(suppress : 4996)
+                 sprintf(tmpstr, "%08x", BX_CPU(0)->get_eip());
+#endif
+                 break;
+             case 'e':
+#pragma warning(suppress : 4996)
+                 sprintf(tmpstr, "%c", c);
+                 break;
+             case '%':
+#pragma warning(suppress : 4996)
+                 sprintf(tmpstr, "%%");
+                 break;
+             default:
+#pragma warning(suppress : 4996)
+                 sprintf(tmpstr, "%%%c", *s);
+             }
+             break;
+         default:
+#pragma warning(suppress : 4996)
+             sprintf(tmpstr, "%c", *s);
+         }
+
+#pragma warning(suppress : 4996)
+         strcat(msgpfx, tmpstr);
+
+         s++;
+     }
+
+     fprintf(logfd, "%s ", msgpfx);
+
+     if (level == LOGLEV_PANIC)
+     {
+         fprintf(logfd, ">>PANIC<< ");
+     }
+
+#pragma warning(suppress : 4996)
+     vsnprintf(msg, sizeof(msg), fmt, ap);
+
+     fprintf(logfd, "%s\n", msg);
+
+     fflush(logfd);
+     if (SIM->has_log_viewer())
+     {
+         SIM->log_msg(msgpfx, level, msg);
+     }
+
+     BX_UNLOCK(logio_mutex);
+ }
 
   void init_log(const char *fn);
   void init_log(int fd);
