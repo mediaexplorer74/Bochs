@@ -1,41 +1,26 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: main.cc 14204 2021-03-27 17:23:31Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2001-2021  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
 
 #include "bochs.h"
 #include "bxversion.h"
 #include "param_names.h"
-#include "cpu/cpu.h"
-#include "iodev/iodev.h"
-#include "iodev/hdimage/hdimage.h"
+#include "../cpu/cpu.h"
+#include "../iodev/iodev.h"
+#include "../iodev/hdimage/hdimage.h"
 #if BX_NETWORKING
-#include "iodev/network/netmod.h"
+#include "../iodev/network/netmod.h"
 #endif
 #if BX_SUPPORT_SOUNDLOW
-#include "iodev/sound/soundmod.h"
+#include "../iodev/sound/soundmod.h"
 #endif
 #if BX_SUPPORT_PCIUSB
-#include "iodev/usb/usb_common.h"
+#include "../iodev/usb/usb_common.h"
 #endif
 
 #ifdef HAVE_LOCALE_H
-#include <locale.h>
+//#include <locale.h>
 #endif
 
 #if BX_WITH_SDL || BX_WITH_SDL2
@@ -307,7 +292,7 @@ int bxmain(void)
 {
 #ifdef HAVE_LOCALE_H
   // Initialize locale (for isprint() and other functions)
-  setlocale (LC_ALL, "");
+  //setlocale (LC_ALL, "");
 #endif
   bx_init_siminterface();   // create the SIM object
   static jmp_buf context;
@@ -1409,7 +1394,8 @@ void bx_init_hardware()
 #if !defined(WIN32)
   if (!SIM->is_wx_selected()) {
     signal(SIGALRM, bx_signal_handler);
-    alarm(1);
+
+    //alarm(1);
   }
 #endif
 #endif
@@ -1517,7 +1503,8 @@ void CDECL bx_signal_handler(int signum)
 #if !defined(WIN32)
     if (!SIM->is_wx_selected()) {
       signal(SIGALRM, bx_signal_handler);
-      alarm(1);
+      
+      //alarm(1);
     }
 #endif
     return;

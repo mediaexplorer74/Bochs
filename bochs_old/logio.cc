@@ -20,11 +20,11 @@
 //
 /////////////////////////////////////////////////////////////////////////
 
-#include "bochs_old/bochs.h"
-#include "gui/siminterface.h"
-#include "bochs_old/pc_system.h"
-#include "bochs_old/bxthread.h"
-#include "cpu/cpu.h"
+#include "bochs.h"
+#include "../gui/siminterface.h"
+#include "../bochs_old/pc_system.h"
+#include "../bochs_old/bxthread.h"
+#include "../cpu/cpu.h"
 #include <assert.h>
 
 #if BX_WITH_CARBON
@@ -88,7 +88,9 @@ void iofunctions::init(void)
   BX_INIT_MUTEX(logio_mutex);
 
   // sets the default logprefix
+#pragma warning(suppress : 4996)
   strcpy(logprefix,"%t%e%d");
+
   n_logfn = 0;
   init_log(stderr);
   log = new logfunc_t(this);
@@ -130,12 +132,19 @@ void iofunctions::init_log(const char *fn)
   // file descriptor.
   FILE *newfd = stderr;
   const char *newfn = "/dev/stderr";
-  if(strcmp(fn, "-") != 0) {
+
+  if(strcmp(fn, "-") != 0) 
+  {
+#pragma warning(suppress : 4996)
     newfd = fopen(fn, "w");
-    if(newfd != NULL) {
+
+    if(newfd != NULL) 
+    {
       newfn = strdup(fn);
       log->ldebug("Opened log file '%s'.", fn);
-    } else {
+    } 
+    else 
+    {
       // in constructor, genlog might not exist yet, so do it the safe way.
       log->error("Couldn't open log file: %s, using stderr instead", fn);
       newfd = stderr;
@@ -189,6 +198,7 @@ void iofunctions::exit_log()
 // 1. timer, 2. event, 3. cpu0 eip, 4. device
 void iofunctions::set_log_prefix(const char* prefix)
 {
+#pragma warning(suppress : 4996)
   strcpy(logprefix, prefix);
 }
 
@@ -224,44 +234,61 @@ void iofunctions::out(int level, const char *prefix, const char *fmt, va_list ap
         else break;
         switch(*s) {
           case 'd':
+#pragma warning(suppress : 4996)
             sprintf(tmpstr, "%s", prefix==NULL?"":prefix);
             break;
           case 't':
+#pragma warning(suppress : 4996)
             sprintf(tmpstr, FMT_TICK, bx_pc_system.time_ticks());
             break;
           case 'i':
 #if BX_SUPPORT_SMP == 0
+#pragma warning(suppress : 4996)
             sprintf(tmpstr, "%08x", BX_CPU(0)->get_eip());
 #endif
             break;
           case 'e':
+#pragma warning(suppress : 4996)
             sprintf(tmpstr, "%c", c);
             break;
           case '%':
+#pragma warning(suppress : 4996)
             sprintf(tmpstr,"%%");
             break;
           default:
+#pragma warning(suppress : 4996)
             sprintf(tmpstr,"%%%c",*s);
         }
         break;
       default:
+#pragma warning(suppress : 4996)
         sprintf(tmpstr,"%c",*s);
     }
+
+#pragma warning(suppress : 4996)
     strcat(msgpfx, tmpstr);
+
     s++;
   }
 
   fprintf(logfd,"%s ", msgpfx);
 
-  if(level==LOGLEV_PANIC)
-    fprintf(logfd, ">>PANIC<< ");
+  if (level == LOGLEV_PANIC)
+  {
+      fprintf(logfd, ">>PANIC<< ");
+  }
 
+#pragma warning(suppress : 4996)
   vsnprintf(msg, sizeof(msg), fmt, ap);
+
   fprintf(logfd, "%s\n", msg);
+
   fflush(logfd);
-  if (SIM->has_log_viewer()) {
+  if (SIM->has_log_viewer()) 
+  {
     SIM->log_msg(msgpfx, level, msg);
   }
+
   BX_UNLOCK(logio_mutex);
 }
 
@@ -492,7 +519,10 @@ void logfunctions::warn(int level, const char *prefix, const char *fmt, va_list 
     return;
   }
   in_warn_already = 1;
+
+#pragma warning(suppress : 4996)
   vsnprintf(buf1, sizeof(buf1), fmt, ap);
+
   // FIXME: facility set to 0 because it's unknown.
 
   // update vga screen.  This is useful because sometimes useful messages
@@ -526,6 +556,8 @@ void logfunctions::ask(int level, const char *prefix, const char *fmt, va_list a
     return;
   }
   in_ask_already = 1;
+
+#pragma warning(suppress : 4996)
   vsnprintf(buf1, sizeof(buf1), fmt, ap);
   // FIXME: facility set to 0 because it's unknown.
 
@@ -648,26 +680,34 @@ void logfunctions::fatal(int level, const char *prefix, const char *fmt, va_list
   char tmpbuf[1024];
   char exit_msg[1024+1];
 
+#pragma warning(suppress : 4996)
   vsnprintf(tmpbuf, sizeof(tmpbuf), fmt, ap);
+
   va_end(ap);
-  if (!bx_user_quit) {
+  if (!bx_user_quit) 
+  {
     SIM->log_dlg(prefix, level, tmpbuf, BX_LOG_DLG_QUIT);
   }
-  if (!SIM->is_wx_selected()) {
+
+  if (!SIM->is_wx_selected()) 
+  {
     // store prefix and message in 'exit_msg' before unloading device plugins
+#pragma warning(suppress : 4996)
     sprintf(exit_msg, "%s %s", prefix, tmpbuf);
   }
 #if !BX_DEBUGGER
   bx_atexit();
 #endif
 #if BX_WITH_CARBON
-  if (!isatty(STDIN_FILENO) && !SIM->get_init_done()) {
+  if (!isatty(STDIN_FILENO) && !SIM->get_init_done()) 
+  {
     snprintf(exit_msg, sizeof(exit_msg), "Bochs startup error\n%s", tmpbuf);
     carbonFatalDialog(exit_msg,
       "For more information, try running Bochs within Terminal by clicking on \"bochs.scpt\".");
   }
 #endif
-  if (!SIM->is_wx_selected()) {
+  if (!SIM->is_wx_selected()) 
+  {
     static const char *divider = "========================================================================";
     fprintf(stderr, "%s\n", divider);
     fprintf(stderr, "Bochs is exiting with the following message:\n");

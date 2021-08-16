@@ -5,41 +5,32 @@
 /*
  * This file provides support for VMWare's virtual disk image
  * format version 3.
- *
- * Author: Sharvil Nanavati, for Net Integration Technologies, Inc.
- * Contact: snrrrub@yahoo.com
- *
- * Copyright (C) 2003       Net Integration Technologies, Inc.
- * Copyright (C) 2003-2021  The Bochs Project
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
- */
+*/
 
 // Define BX_PLUGGABLE in files that can be compiled into plugins.  For
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
-#define BX_PLUGGABLE
+
+//my
+//#ifndef BXIMAGE
+//#define BXIMAGE
+//#endif
+
+//my
+//#ifndef BX_PLUGGABLE
+//#define BX_PLUGGABLE
+//#endif
+
+#include "pch.h"
 
 #ifdef BXIMAGE
-#include "bochs_old/config.h"
-#include "misc/bxcompat.h"
-#include "bochs_old/osdep.h"
-#include "misc/bswap.h"
+#include "../bochs_old/config.h"
+#include "../misc/bxcompat.h"
+#include "../bochs_old/osdep.h"
+#include "../misc/bswap.h"
 #else
-#include "bochs_old/bochs.h"
-#include "bochs_old/plugin.h"
+#include "../bochs_old/bochs.h"
+#include "../bochs_old/plugin.h"
 #endif
 #include "hdimage.h"
 #include "vmware3.h"
@@ -69,16 +60,21 @@ PLUGIN_ENTRY_FOR_IMG_MODULE(vmware3)
 // Define the static class that registers the derived device image class,
 // and allocates one on request.
 //
-class bx_vmware3_locator_c : public hdimage_locator_c {
+class bx_vmware3_locator_c : public hdimage_locator_c 
+{
 public:
   bx_vmware3_locator_c(void) : hdimage_locator_c("vmware3") {}
 protected:
-  device_image_t *allocate(Bit64u disk_size, const char *journal) {
+  device_image_t *allocate(Bit64u disk_size, const char *journal) 
+  {
     return (new vmware3_image_t());
   }
-  int check_format(int fd, Bit64u disk_size) {
+
+  int check_format(int fd, Bit64u disk_size) 
+  {
     return (vmware3_image_t::check_format(fd, disk_size));
   }
+
 } bx_vmware3_match;
 
 int vmware3_image_t::check_format(int fd, Bit64u imgsize)
@@ -89,15 +85,19 @@ int vmware3_image_t::check_format(int fd, Bit64u imgsize)
   if ((ret = bx_read_image(fd, 0, &header, sizeof(COW_Header))) < 0) {
     return HDIMAGE_READ_ERROR;
   }
+
   if (header.id[0] != 'C' || header.id[1] != 'O' || header.id[2] != 'W' || header.id[3] != 'D') {
     return HDIMAGE_NO_SIGNATURE;
   }
+
   DTOH32_HEADER(header_version);
   DTOH32_HEADER(vmware_version);
-  if (header.header_version != 3) {
+  if (header.header_version != 3) 
+  {
     return HDIMAGE_VERSION_ERROR;
   }
-  if (header.vmware_version != 2) {
+  if (header.vmware_version != 2) 
+  {
     return HDIMAGE_VERSION_ERROR;
   }
   return HDIMAGE_FORMAT_OK;
@@ -107,7 +107,8 @@ bool vmware3_image_t::read_header(int fd, COW_Header & header)
 {
   int ret;
 
-  if ((ret = check_format(fd, 0)) != HDIMAGE_FORMAT_OK) {
+  if ((ret = check_format(fd, 0)) != HDIMAGE_FORMAT_OK) 
+  {
     switch (ret) {
       case HDIMAGE_READ_ERROR:
         BX_ERROR(("vmware3 image read error"));
@@ -212,19 +213,37 @@ char* vmware3_image_t::generate_cow_name(const char * filename, unsigned chain)
 {
   char * name = new char[strlen(filename) + 4];
   if (name == NULL)
-    BX_PANIC(("unable to allocate %u bytes for vmware3 COW file name (base: %s, chain: %u)", (unsigned)strlen(filename) + 4, filename, chain));
+  {
+      BX_PANIC(("unable to allocate %u bytes for vmware3 COW file name (base: %s, chain: %u)", (unsigned)strlen(filename) + 4, filename, chain));
+  }
+
+#pragma warning(suppress : 4996)
   strcpy(name, filename);
-  if (chain != 0) {
+
+  if (chain != 0) 
+  {
     char chainstr[12];
+
+#pragma warning(suppress : 4996)
     sprintf(chainstr, "-%02u", chain + 1);
     char * period = strrchr(name, '.');
-    if (period != 0) {
+
+    if (period != 0) 
+    {
       char temp[1024];
+#pragma warning(suppress : 4996)
       strcpy(temp, period);
+
       *period = 0;
+#pragma warning(suppress : 4996)
       strcat(name, chainstr);
+
+#pragma warning(suppress : 4996)
       strcat(name, temp);
-    } else {
+
+    } else 
+    {
+#pragma warning(suppress : 4996)
       strcat(name, chainstr);
     }
   }
@@ -274,7 +293,9 @@ int vmware3_image_t::open(const char* _pathname, int flags)
     char* filename = generate_cow_name(pathname, i);
     current = &images[i];
 
+#pragma warning(suppress : 4996)
     current->fd = ::open(filename, flags);
+
     if (current->fd < 0)
       BX_PANIC(("unable to open vmware3 COW Disk file '%s'", filename));
 
@@ -569,8 +590,11 @@ bool vmware3_image_t::save_state(const char *backup_fname)
 
   unsigned count = current->header.number_of_chains;
   if (count < 1) count = 1;
-  for (unsigned i = 0; i < count; ++i) {
+  for (unsigned i = 0; i < count; ++i) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(tempfn, "%s%d", backup_fname, i);
+
     ret &= hdimage_backup_file(images[i].fd, tempfn);
     if (ret == 0) break;
   }
@@ -598,13 +622,19 @@ void vmware3_image_t::restore_state(const char *backup_fname)
   unsigned count = current->header.number_of_chains;
   close();
   if (count < 1) count = 1;
-  for (unsigned i = 0; i < count; ++i) {
+  for (unsigned i = 0; i < count; ++i) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(tempfn, "%s%d", backup_fname, i);
+
     char *filename = generate_cow_name(pathname, i);
     ret &= hdimage_copy_file(tempfn, filename);
+
+#pragma warning(suppress : 4996)
     strcpy(tempfn, filename);
     delete [] filename;
-    if (ret == 0) {
+    if (ret == 0) 
+    {
       BX_PANIC(("Failed to restore vmware3 image '%s'", tempfn));
       break;
     }

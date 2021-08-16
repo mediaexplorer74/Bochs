@@ -70,6 +70,7 @@ const Bit8u default_host_ipv4addr[4] = {10, 0, 2, 2};
 const Bit8u default_dns_ipv4addr[4] = {10, 0, 2, 3};
 const Bit8u default_ftp_ipv4addr[4] = {10, 0, 2, 4};
 const Bit8u dhcp_base_ipv4addr[4] = {10, 0, 2, 15};
+
 const char  default_bootfile[] = "pxelinux.0";
 
 static Bit16u port_base = 40000;
@@ -90,10 +91,13 @@ bool handle_packet(hub_client_t *client, Bit8u *buf, unsigned len)
   ethernet_header_t *ethhdr = (ethernet_header_t *)buf;
 
   if (!client->init) {
-    if (memcmp(ethhdr->src_mac_addr, host_macaddr, 6) == 0) {
+    if (memcmp(ethhdr->src_mac_addr, host_macaddr, 6) == 0) 
+    {
       client->init = -1;
       return 0;
-    } else {
+    } 
+    else 
+    {
       client->sout.sin_addr.s_addr = client->sin.sin_addr.s_addr;
       client->id = n_clients++;
       memcpy(client->macaddr, ethhdr->src_mac_addr, 6);
@@ -118,7 +122,8 @@ void broadcast_packet(int clientid, Bit8u *buf, unsigned len)
 {
   if (handle_packet(&hclient[clientid], buf, len))
     return;
-  for (int i = 0; i < client_max; i++) {
+  for (int i = 0; i < client_max; i++) 
+  {
     if (i != clientid) {
       send_packet(&hclient[i], buf, len);
     }
@@ -128,9 +133,11 @@ void broadcast_packet(int clientid, Bit8u *buf, unsigned len)
 bool find_client(Bit8u *dst_mac_addr, int *clientid)
 {
   *clientid = -1;
-  for (int i = 0; i < client_max; i++) {
+  for (int i = 0; i < client_max; i++) 
+  {
     if (hclient[i].init) {
-      if (memcmp(dst_mac_addr, hclient[i].macaddr, ETHERNET_MAC_ADDR_LEN) == 0) {
+      if (memcmp(dst_mac_addr, hclient[i].macaddr, ETHERNET_MAC_ADDR_LEN) == 0) 
+      {
         *clientid = i;
         break;
       }
@@ -168,39 +175,52 @@ int parse_cmdline(int argc, char *argv[])
   dhcp_bootfile[0] = 0;
   bx_logfname[0] = 0;
   memcpy(host_macaddr, default_host_macaddr, ETHERNET_MAC_ADDR_LEN);
-  while ((arg < argc) && (ret == 1)) {
+
+  while ((arg < argc) && (ret == 1)) 
+  {
     // parse next arg
-    if (!strcmp("--help", argv[arg]) || !strncmp("/?", argv[arg], 2)) {
+    if (!strcmp("--help", argv[arg]) || !strncmp("/?", argv[arg], 2)) 
+    {
       print_usage();
       ret = 0;
     }
-    else if (!strncmp("-ports=", argv[arg], 7)) {
+    else if (!strncmp("-ports=", argv[arg], 7)) 
+    {
       n = atoi(&argv[arg][7]);
-      if ((n > 1) && (n < BXHUB_MAX_CLIENTS)) {
+      if ((n > 1) && (n < BXHUB_MAX_CLIENTS)) 
+      {
         client_max = n;
       } else {
         printf("Number of virtual ethernet ports out of range\n\n");
         ret = 0;
       }
     }
-    else if (!strncmp("-base=", argv[arg], 6)) {
+    else if (!strncmp("-base=", argv[arg], 6)) 
+    {
       n = atoi(&argv[arg][6]);
-      if ((n >= 1000) && (n <= 65530)) {
+
+      if ((n >= 1000) && (n <= 65530)) 
+      {
         port_base = n;
-      } else {
+      } 
+      else 
+      {
         printf("UDP base port number out of range\n\n");
         ret = 0;
       }
     }
-    else if (!strncmp("-tftp=", argv[arg], 6)) {
+    else if (!strncmp("-tftp=", argv[arg], 6)) 
+    {
       //  strcpy
       strcpy_s(tftp_root, &argv[arg][6]);
     }
-    else if (!strncmp("-bootfile=", argv[arg], 10)) {
+    else if (!strncmp("-bootfile=", argv[arg], 10)) 
+    {
         // strcpy
       strcpy_s(dhcp_bootfile, &argv[arg][10]);
     }
-    else if (!strncmp("-mac=", argv[arg], 5)) {
+    else if (!strncmp("-mac=", argv[arg], 5)) 
+    {
         // n = sscanf
       n = sscanf_s(&argv[arg][5], "%x:%x:%x:%x:%x:%x",
                  &tmp[0],&tmp[1],&tmp[2],&tmp[3],&tmp[4],&tmp[5]);
@@ -211,16 +231,19 @@ int parse_cmdline(int argc, char *argv[])
         for (n=0; n<6; n++) host_macaddr[n] = (Bit8u)tmp[n];
       }
     }
-    else if (!strncmp("-loglev=", argv[arg], 8)) {
+    else if (!strncmp("-loglev=", argv[arg], 8)) 
+    {
       n = atoi(&argv[arg][8]);
-      if ((n >= 0) && (n <= 3)) {
+      if ((n >= 0) && (n <= 3)) 
+      {
         bx_loglev = n;
       } else {
         printf("Unsupported log level %d (must be 0 - 3)\n\n", n);
         ret = 0;
       }
     }
-    else if (!strncmp("-logfile=", argv[arg], 9)) {
+    else if (!strncmp("-logfile=", argv[arg], 9)) 
+    {
         // strcpy
       strcpy_s(bx_logfname, &argv[arg][9]);
     }
@@ -237,8 +260,10 @@ int parse_cmdline(int argc, char *argv[])
 
 void CDECL intHandler(int sig)
 {
-  if (sig == SIGINT) {
-    for (int i = 0; i < client_max; i++) {
+  if (sig == SIGINT) 
+  {
+    for (int i = 0; i < client_max; i++) 
+    {
       if (hclient[i].init) {
         delete [] hclient[i].reply_buffer;
       }
@@ -277,11 +302,13 @@ int CDECL main(int argc, char **argv)
   signal(SIGINT, intHandler);
 
   n_clients = 0;
-  for (i = 0; i < client_max; i++) {
+  for (i = 0; i < client_max; i++) 
+  {
     memset(&hclient[i], 0, sizeof(hub_client_t));
 
     /* create sockets */
-    if ((hclient[i].so = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP)) < 0) {
+    if ((hclient[i].so = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP)) < 0) 
+    {
       perror("bxhub - cannot create socket");
       exit(1);
     }
@@ -296,7 +323,8 @@ int CDECL main(int argc, char **argv)
     hclient[i].sout.sin_addr.s_addr = htonl(INADDR_ANY);
 
     /* configure (bind) sockets */
-    if (bind(hclient[i].so, (struct sockaddr *) &hclient[i].sin, sizeof(hclient[i].sin)) < 0) {
+    if (bind(hclient[i].so, (struct sockaddr *) &hclient[i].sin, sizeof(hclient[i].sin)) < 0) 
+    {
       perror("bxhub - cannot bind socket");
       exit(2);
     }
@@ -310,10 +338,14 @@ int CDECL main(int argc, char **argv)
   memcpy(dhcp.srv_ipv4addr[VNET_DNS], default_dns_ipv4addr, 4);
   memcpy(dhcp.srv_ipv4addr[VNET_MISC], default_ftp_ipv4addr, 4);
   memcpy(dhcp.client_base_ipv4addr, dhcp_base_ipv4addr, 4);
-  if (strlen(dhcp_bootfile) > 0) {
+
+  if (strlen(dhcp_bootfile) > 0) 
+  {
       //strcpy
     strcpy_s(dhcp.bootfile, dhcp_bootfile);
-  } else {
+  } 
+  else 
+  {
       //strcpy
     strcpy_s(dhcp.bootfile, default_bootfile);
   }
@@ -335,12 +367,14 @@ int CDECL main(int argc, char **argv)
   }
   printf("Press CTRL+C to quit bxhub\n");
 
-  while (1) {
+  while (1) 
+  {
 
     /* wait for input */
 
     FD_ZERO(&rfds);
-    for (i = 0; i < client_max; i++) {
+    for (i = 0; i < client_max; i++) 
+    {
       FD_SET(hclient[i].so, &rfds);
     }
 
@@ -354,25 +388,35 @@ int CDECL main(int argc, char **argv)
         slen = sizeof(hclient[i].sin);
         n = recvfrom(hclient[i].so, (char*)buf, sizeof(buf), 0,
                      (struct sockaddr*) &hclient[i].sin, &slen);
-        if (n > 0) {
-          if (memcmp(ethhdr->dst_mac_addr, broadcast_macaddr, ETHERNET_MAC_ADDR_LEN) == 0) {
+
+        if (n > 0) 
+        {
+          if (memcmp(ethhdr->dst_mac_addr, broadcast_macaddr, ETHERNET_MAC_ADDR_LEN) == 0) 
+          {
             broadcast_packet(i, buf, n);
-          } else if (memcmp(ethhdr->dst_mac_addr, host_macaddr, ETHERNET_MAC_ADDR_LEN) == 0) {
+          } else if (memcmp(ethhdr->dst_mac_addr, host_macaddr, ETHERNET_MAC_ADDR_LEN) == 0) 
+          {
             handle_packet(&hclient[i], buf, n);
-          } else if (find_client(ethhdr->dst_mac_addr, &c)) {
+          } 
+          else if (find_client(ethhdr->dst_mac_addr, &c)) 
+          {
             send_packet(&hclient[c], buf, n);
           }
         }
       }
       // send reply from builtin service
-      while (hclient[i].pending_reply_size > 0) {
+      while (hclient[i].pending_reply_size > 0) 
+      {
         send_packet(&hclient[i], hclient[i].reply_buffer, hclient[i].pending_reply_size);
         // check for another pending packet
         hclient[i].pending_reply_size = vnet_server.get_packet(hclient[i].reply_buffer);
       }
+
       // check MAC address of new client
-      if (hclient[i].init != 0) {
-        if (hclient[i].init < 0) {
+      if (hclient[i].init != 0) 
+      {
+        if (hclient[i].init < 0) 
+        {
           fprintf(stderr, "bxhub - wrong MAC address configuration\n");
           break;
         }

@@ -1,40 +1,28 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: bxcompat.h 14074 2021-01-09 16:51:52Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2013       Volker Ruppert
-//  Copyright (C) 2001-2021  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-/////////////////////////////////////////////////////////////////////////
+
+
 
 #ifndef BX_COMPAT_H
 #define BX_COMPAT_H
 
 // copied from bochs.h
+
 #ifdef WIN32
-#  include <windows.h>
+#include <windows.h>
 #endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
+
 #ifndef _MSC_VER
-#  include <unistd.h>
+#include <unistd.h>
 #else
 #  include <io.h>
 #endif
+
 #include <time.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -45,6 +33,10 @@
 #ifndef UNUSED
 #  define UNUSED(x) ((void)x)
 #endif
+
+#include <winioctl.h>
+#include <fileapi.h>
+
 
 #ifdef BXIMAGE
 #define BX_DEBUG(x)
@@ -66,6 +58,96 @@ class device_image_t;
 
 void myexit(int code);
 device_image_t* init_image(const char *image_mode);
+
+void create_flat_image_win32(const char* filename, Bit64u size)
+{
+    HANDLE hFile;
+    LARGE_INTEGER pos;
+    DWORD dwCount, errCode;
+    USHORT mode;
+    char buffer[1024];
+
+    //TODO
+    hFile = NULL;/*CreateFile
+    (filename, 
+        GENERIC_WRITE | GENERIC_READ, 0, 
+        NULL, 
+        CREATE_ALWAYS, 
+        FILE_ATTRIBUTE_NORMAL, 
+        NULL);*/
+    
+    if (hFile == INVALID_HANDLE_VALUE) 
+    {
+        // attempt to print an error
+#ifdef HAVE_PERROR
+        sprintf(buffer, "while opening '%s' for writing", filename);
+        perror(buffer);
+#endif
+        //fatal("ERROR: Could not write disk image");
+    }
+
+    SetLastError(NO_ERROR);
+    mode = COMPRESSION_FORMAT_DEFAULT;
+    dwCount = 0;
+    memset(buffer, 0, 512);
+    WriteFile(hFile, buffer, 512, &dwCount, NULL); // set the first sector to 0, Win98 doesn't zero out the file
+                                                   // if there is a write at/over the end
+
+    //TODO
+    /*
+    bool b_res = DeviceIoControl
+    (hFile,
+        FSCTL_SET_COMPRESSION,
+        &mode,
+        sizeof(mode),
+        NULL,
+        0,
+        &dwCount,
+        NULL
+    );
+    */
+
+    /*
+    WINBASEAPI
+    BOOL
+    WINAPI
+    DeviceIoControl(
+    _In_ HANDLE hDevice,
+    _In_ DWORD dwIoControlCode,
+    _In_reads_bytes_opt_(nInBufferSize) LPVOID lpInBuffer,
+    _In_ DWORD nInBufferSize,
+    _Out_writes_bytes_to_opt_(nOutBufferSize, *lpBytesReturned) LPVOID lpOutBuffer,
+    _In_ DWORD nOutBufferSize,
+    _Out_opt_ LPDWORD lpBytesReturned,
+    _Inout_opt_ LPOVERLAPPED lpOverlapped
+    );
+    */
+
+    pos.u.LowPart = (unsigned long)((size - 512));
+    pos.u.HighPart = (unsigned long)((size - 512) >> 32);
+    pos.u.LowPart = SetFilePointer(hFile, pos.u.LowPart, &pos.u.HighPart, FILE_BEGIN);
+    memset(buffer, 0, 512);
+
+    if ((pos.u.LowPart == 0xffffffff && GetLastError() != NO_ERROR) ||
+        !WriteFile(hFile, buffer, 512, &dwCount, NULL) || (dwCount != 512))
+    {
+        errCode = GetLastError();
+        CloseHandle(hFile);
+
+        if (errCode == ERROR_DISK_FULL)
+        {
+            //fatal("\nERROR: Not enough space on disk for image!");
+        }
+        else
+        {
+#pragma warning(suppress : 4996)
+            sprintf(buffer, "\nERROR: Disk image creation failed with error code %i!", errCode);
+            //fatal(buffer);
+        }
+    }
+
+    CloseHandle(hFile);
+}
 
 #define DEV_hdimage_init_image(a,b,c) init_image(a)
 

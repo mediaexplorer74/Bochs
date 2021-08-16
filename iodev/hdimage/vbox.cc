@@ -6,26 +6,6 @@
  * This file provides support for the following VBox virtual
  * disk image formats: VDI.
  *
- * Author: Benjamin D Lunt
- * Contact: fys [at] fysnet [dot] net
- *
- * Copyright (C) 2015       Benjamin D Lunt.
- * Copyright (C) 2006-2021  The Bochs Project
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
- *
  * Information found at:
  *   https://forums.virtualbox.org/viewtopic.php?t=8046
  *
@@ -37,17 +17,24 @@
 // Define BX_PLUGGABLE in files that can be compiled into plugins.  For
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
-#define BX_PLUGGABLE
+//#define BX_PLUGGABLE
+
+#include "pch.h"
+
+#ifndef BXIMAGE
+#define BXIMAGE
+#endif
 
 #ifdef BXIMAGE
-#include "bochs_old/config.h"
-#include "misc/bxcompat.h"
-#include "misc/bswap.h"
-#include "bochs_old/osdep.h"
+#include "../bochs_old/config.h"
+#include "../misc/bxcompat.h"
+#include "../misc/bswap.h"
+#include "../bochs_old/osdep.h"
 #else
-#include "bochs_old/bochs.h"
-#include "bochs_old/plugin.h"
+#include "../bochs_old/bochs.h"
+#include "../bochs_old/plugin.h"
 #endif
+
 #include "hdimage.h"
 #include "vbox.h"
 
@@ -96,7 +83,8 @@ vbox_image_t::vbox_image_t()
   mtlb_dirty(0),
   header_dirty(0)
 {
-  if (sizeof(_VBOX_VDI_Header) != 512) {
+  if (sizeof(_VBOX_VDI_Header) != 512) 
+  {
     BX_FATAL(("system error: invalid header structure size"));
   }
 }
@@ -118,7 +106,8 @@ int vbox_image_t::open(const char* _pathname, int flags)
   if (!is_open())
     return -1;
 
-  if (!read_header()) {
+  if (!read_header()) 
+  {
     BX_PANIC(("unable to read vbox virtual disk header from file '%s'", pathname));
     return -1;
   }
@@ -399,8 +388,10 @@ void vbox_image_t::write_block(const Bit32u index)
 
   // if the mtlb[index] returns -1, then we haven't written this sector
   //  to disk yet, so allocate another and write it to file
-  if (dtoh32(mtlb[index]) == -1) {
-    if (header.image_type == 2) {
+  if (dtoh32(mtlb[index]) == -1) 
+{
+    if (header.image_type == 2) 
+    {
       BX_PANIC(("Found non-existing block in Static type image"));
     }
     mtlb[index] = htod32(header.blocks_allocated++);

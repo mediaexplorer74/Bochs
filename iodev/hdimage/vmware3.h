@@ -2,29 +2,9 @@
 // $Id: vmware3.h 14116 2021-01-31 15:44:39Z vruppert $
 /////////////////////////////////////////////////////////////////////////
 
-/*
- * This file provides the interface for using VMWare's virtual
- * disk image format under Bochs.
- *
- * Author: Sharvil Nanavati, for Net Integration Technologies, Inc.
- * Contact: snrrrub@yahoo.com
- *
- * Copyright (C) 2003 Net Integration Technologies, Inc.
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
- */
+// This file provides the interface for using VMWare's virtual
+// disk image format under Bochs.
+
 
 #ifndef _COWDISK_H
 #define _COWDISK_H 1

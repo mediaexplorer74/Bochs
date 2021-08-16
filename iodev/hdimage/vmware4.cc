@@ -4,49 +4,31 @@
 
 /*
  * This file provides support for VMWare's virtual disk image
- * format version 4 and above.
- *
- * Author: Sharvil Nanavati
- * Contact: snrrrub@gmail.com
- *
- * Copyright (C) 2006       Sharvil Nanavati.
- *
- * VMDK version 4 image creation code
- *
- * Copyright (C) 2004 Fabrice Bellard
- * Copyright (C) 2005 Filip Navara
- *
- * Copyright (C) 2006-2021  The Bochs Project
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+ * format version 4 and above. 
  */
 
 // Define BX_PLUGGABLE in files that can be compiled into plugins.  For
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
+
+#ifndef BXIMAGE
+#define BXIMAGE
+#endif
+
 #define BX_PLUGGABLE
 
+#include "pch.h"
+
 #ifdef BXIMAGE
-#include "bochs_old/config.h"
-#include "misc/bxcompat.h"
-#include "bochs_old/osdep.h"
-#include "misc/bswap.h"
+#include "../bochs_old/config.h"
+#include "../misc/bxcompat.h"
+#include "../bochs_old/osdep.h"
+#include "../misc/bswap.h"
 #else
-#include "bochs_old/bochs.h"
-#include "bochs_old/plugin.h"
+#include "../bochs_old/bochs.h"
+#include "../bochs_old/plugin.h"
 #endif
+
 #include "hdimage.h"
 #include "vmware4.h"
 

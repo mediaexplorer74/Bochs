@@ -2,49 +2,34 @@
 // $Id: bximage.cc 14091 2021-01-30 17:37:42Z sshwarts $
 /////////////////////////////////////////////////////////////////////////
 //
-//  Copyright (C) 2001-2021  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-/////////////////////////////////////////////////////////////////////////
-
 // Create empty hard disk or floppy disk images for bochs.
 // Convert a hard disk image from one format (mode) to another.
 // Resize a hard disk image.
 // Commit a redolog file to a supported base image.
 
+#include "pch.h"
+
 #ifndef BXIMAGE
 #define BXIMAGE
 #endif
 
-#include "bochs_old/config.h"
-#include "bxcompat.h"
+#include "../bochs_old/config.h"
+#include "../misc/bxcompat.h"
 
 #if defined(WIN32) && !defined(__CYGWIN__)
-#  include <conio.h>
-#  include <winioctl.h>
+#include <conio.h>
+#include <winioctl.h>
 #endif
 #include <ctype.h>
 
-#include "bochs_old/osdep.h"
+#include "../bochs_old/osdep.h"
 #include "bswap.h"
 
-#include "iodev/hdimage/hdimage.h"
-#include "iodev/hdimage/vmware3.h"
-#include "iodev/hdimage/vmware4.h"
-#include "iodev/hdimage/vpc.h"
-#include "iodev/hdimage/vbox.h"
+#include "../iodev/hdimage/hdimage.h"
+#include "../iodev/hdimage/vmware3.h"
+#include "../iodev/hdimage/vmware4.h"
+#include "../iodev/hdimage/vpc.h"
+#include "../iodev/hdimage/vbox.h"
 
 #define BXIMAGE_FUNC_NULL            0
 #define BXIMAGE_FUNC_CREATE_IMAGE    1
@@ -126,7 +111,9 @@ int snprintf(char *s, size_t maxlen, const char *format, ...)
 #if !BX_HAVE_MKSTEMP
 int bx_mkstemp(char *tpl)
 {
+#pragma warning(suppress : 4996)
   mktemp(tpl);
+#pragma warning(suppress : 4996)
   return ::open(tpl, O_RDWR | O_CREAT | O_TRUNC
 #ifdef O_BINARY
                 | O_BINARY
@@ -138,8 +125,10 @@ int bx_mkstemp(char *tpl)
 void myexit(int code)
 {
 #if defined(WIN32) && !defined(__CYGWIN__)
+
   printf("\nPress any key to continue\n");
-  getch();
+
+  //getch();
 #endif
   exit(code);
 }
@@ -214,13 +203,18 @@ int ask_int(const char *prompt, int min, int max, int the_default, int *out)
     if (!fgets(buffer, sizeof(buffer), stdin))
       return -1;
     clean = clean_string(buffer);
-    if (strlen(clean) < 1) {
+    if (strlen(clean) < 1) 
+    {
       // empty line, use the default
       *out = the_default;
       return 0;
     }
+
+#pragma warning(suppress : 4996)
     illegal = (1 != sscanf(buffer, "%d", &n));
-    if (illegal || n<min || n>max) {
+
+    if (illegal || n<min || n>max) 
+    {
       fprintf(stderr, "Your choice (%s) was not an integer between %d and %d.\n\n",
              clean, min, max);
     } else {
@@ -294,14 +288,20 @@ int ask_string(const char *prompt, char *the_default, char *out)
   char *clean;
   printf("%s", prompt);
   printf("[%s] ", the_default);
+
   if (!fgets(buffer, sizeof(buffer), stdin))
     return -1;
+
   clean = clean_string(buffer);
-  if (strlen(clean) < 1) {
+  if (strlen(clean) < 1) 
+  {
     // empty line, use the default
+#pragma warning(suppress : 4996)
     strcpy(out, the_default);
     return 0;
   }
+
+#pragma warning(suppress : 4996)
   strcpy(out, clean);
   return 0;
 }
@@ -311,27 +311,46 @@ device_image_t* init_image(const char *imgmode)
   device_image_t *hdimage = NULL;
 
   // instantiate the right class
-  if (!strcmp(imgmode, "flat")) {
+  if (!strcmp(imgmode, "flat")) 
+  {
     hdimage = new flat_image_t();
-  } else if (!strcmp(imgmode, "concat")) {
+  } 
+  else if (!strcmp(imgmode, "concat")) 
+  {
     hdimage = new concat_image_t();
 #ifdef WIN32
-  } else if (!strcmp(imgmode, "dll")) {
+  } 
+  else if (!strcmp(imgmode, "dll")) 
+  {
     hdimage = new dll_image_t();
 #endif
-  } else if (!strcmp(imgmode, "sparse")) {
+  } 
+  else if (!strcmp(imgmode, "sparse")) 
+  {
     hdimage = new sparse_image_t();
-  } else if (!strcmp(imgmode, "vmware3")) {
+  } 
+  else if (!strcmp(imgmode, "vmware3")) 
+  {
     hdimage = new vmware3_image_t();
-  } else if (!strcmp(imgmode, "vmware4")) {
+  } 
+  else if (!strcmp(imgmode, "vmware4")) 
+  {
     hdimage = new vmware4_image_t();
-  } else if (!strcmp(imgmode, "growing")) {
+  } 
+  else if (!strcmp(imgmode, "growing")) 
+  {
     hdimage = new growing_image_t();
-  } else if (!strcmp(imgmode, "vpc")) {
+  } 
+  else if (!strcmp(imgmode, "vpc")) 
+  {
     hdimage = new vpc_image_t();
-  } else if (!strcmp(imgmode, "vbox")) {
+  } 
+  else if (!strcmp(imgmode, "vbox")) 
+  {
     hdimage = new vbox_image_t();
-  } else {
+  } 
+  else 
+  {
     fatal("unsupported disk image mode");
   }
   return hdimage;
@@ -342,78 +361,51 @@ void create_flat_image(const char *filename, Bit64u size)
   char buffer[512];
 
   int fd = bx_create_image_file(filename);
+
   if (fd < 0)
     fatal("ERROR: failed to create flat image file");
+
   memset(buffer, 0, 512);
+
   if (bx_write_image(fd, size - 512, buffer, 512) != 512)
     fatal("ERROR: while writing block in flat file !");
+
   close(fd);
 }
 
 #ifdef WIN32
-void create_flat_image_win32(const char *filename, Bit64u size)
-{
-  HANDLE hFile;
-  LARGE_INTEGER pos;
-  DWORD dwCount, errCode;
-  USHORT mode;
-  char buffer[1024];
-
-  hFile = CreateFile(filename, GENERIC_WRITE|GENERIC_READ, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
-  if (hFile == INVALID_HANDLE_VALUE) {
-    // attempt to print an error
-#ifdef HAVE_PERROR
-    sprintf(buffer, "while opening '%s' for writing", filename);
-    perror(buffer);
-#endif
-    fatal("ERROR: Could not write disk image");
-  }
-
-  SetLastError(NO_ERROR);
-  mode = COMPRESSION_FORMAT_DEFAULT;
-  dwCount = 0;
-  memset(buffer, 0, 512);
-  WriteFile(hFile, buffer, 512, &dwCount, NULL); // set the first sector to 0, Win98 doesn't zero out the file
-                                                 // if there is a write at/over the end
-  DeviceIoControl(hFile, FSCTL_SET_COMPRESSION, &mode, sizeof(mode), NULL, 0, &dwCount, NULL);
-  pos.u.LowPart = (unsigned long)((size - 512));
-  pos.u.HighPart = (unsigned long)((size - 512) >> 32);
-  pos.u.LowPart = SetFilePointer(hFile, pos.u.LowPart, &pos.u.HighPart, FILE_BEGIN);
-  memset(buffer, 0, 512);
-  if ((pos.u.LowPart == 0xffffffff && GetLastError() != NO_ERROR) ||
-      !WriteFile(hFile, buffer, 512, &dwCount, NULL) || (dwCount != 512)) {
-    errCode = GetLastError();
-    CloseHandle(hFile);
-    if (errCode == ERROR_DISK_FULL) {
-      fatal("\nERROR: Not enough space on disk for image!");
-    } else {
-      sprintf(buffer, "\nERROR: Disk image creation failed with error code %i!", errCode);
-      fatal(buffer);
-    }
-  }
-
-  CloseHandle(hFile);
-}
 #endif
 
 device_image_t* create_hard_disk_image(const char *filename, const char *imgmode, Bit64u size)
 {
   device_image_t *hdimage = init_image(imgmode);
-  if(!strcmp(imgmode, "flat")) {
+
+  if(!strcmp(imgmode, "flat")) 
+  {
 #ifndef WIN32
     create_flat_image(filename, size);
 #else
     create_flat_image_win32(filename, size);
 #endif
-  } else if(!strcmp(imgmode, "growing")) {
+  } 
+  else if(!strcmp(imgmode, "growing")) 
+  {
     hdimage->create_image(filename, size);
-  } else if(!strcmp(imgmode, "sparse")) {
+  } 
+  else if(!strcmp(imgmode, "sparse")) 
+  {
     hdimage->create_image(filename, size);
-  } else if(!strcmp(imgmode, "vpc")) {
+  } 
+  else if(!strcmp(imgmode, "vpc")) 
+  {
     hdimage->create_image(filename, size);
-  } else if(!strcmp(imgmode, "vmware4")) {
+  } 
+  else if(!strcmp(imgmode, "vmware4")) 
+  {
     hdimage->create_image(filename, size);
-  } else {
+  } 
+  else 
+  {
     fatal("image mode not implemented yet");
   }
   return hdimage;
@@ -429,26 +421,39 @@ void convert_image(const char *newimgmode, Bit64u newsize)
 
   printf("\n");
   memset(null_sector, 0, 512);
-  if (newsize == 0) {
-    if (!strncmp(bx_filename_1, "concat:", 7)) {
+
+  if (newsize == 0) 
+  {
+    if (!strncmp(bx_filename_1, "concat:", 7)) 
+    {
       imgmode = "concat";
+
+#pragma warning(suppress : 4996)
       strcpy(bx_filename_1, &bx_filename_1[7]);
+
 #ifdef WIN32
-    } else if (!strncmp(bx_filename_1, "dll:", 4)) {
+    } 
+    else if (!strncmp(bx_filename_1, "dll:", 4))
+    {
       imgmode = "dll";
+#pragma warning(suppress : 4996)
       strcpy(bx_filename_1, &bx_filename_1[4]);
 #endif
     }
   }
-  if (access(bx_filename_1, F_OK) < 0) {
+  if (access(bx_filename_1, F_OK) < 0) 
+  {
     fatal("source disk image doesn't exist");
   }
-  if (imgmode == NULL) {
+  if (imgmode == NULL) 
+  {
     hdimage_detect_image_mode(bx_filename_1, &imgmode);
   }
-  if (imgmode == NULL) {
+  if (imgmode == NULL) 
+  {
     fatal("source disk image mode not detected");
-  } else {
+  } else 
+  {
     printf("source image mode = '%s'\n", imgmode);
   }
 
@@ -692,25 +697,41 @@ int parse_cmdline(int argc, char *argv[])
       printf("Unknown option: %s\n\n", argv[arg]);
       ret = 0;
     } else {
-      if (fnargs == 0) {
+      if (fnargs == 0) 
+      {
+#pragma warning(suppress : 4996)
         strcpy(bx_filename_1, argv[arg]);
-      } else if (fnargs == 1) {
+      } 
+      else if (fnargs == 1) 
+      {
+#pragma warning(suppress : 4996)
         strcpy(bx_filename_2, argv[arg]);
-      } else {
+      } 
+      else 
+      {
         printf("Ignoring extra parameter: %s\n\n", argv[arg]);
       }
       fnargs++;
     }
     arg++;
   }
-  if (bximage_func == BXIMAGE_FUNC_NULL) {
+
+  if (bximage_func == BXIMAGE_FUNC_NULL) 
+  {
     bx_interactive = 1;
-  } else {
+  } 
+  else 
+  {
     set_default_values();
-    if (fnargs < 1) {
+
+    if (fnargs < 1) 
+    {
       bx_interactive = 1;
     }
-    if ((bximage_func == BXIMAGE_FUNC_COMMIT_UNDOABLE) && (fnargs == 1)) {
+
+    if ((bximage_func == BXIMAGE_FUNC_COMMIT_UNDOABLE) && (fnargs == 1)) 
+    {
+#pragma warning(suppress : 4996)
       snprintf(bx_filename_2, 520, "%s%s", bx_filename_1, UNDOABLE_REDOLOG_EXTENSION);
     }
   }
@@ -722,10 +743,16 @@ void image_overwrite_check(const char *filename)
   char buffer[512];
 
   int fd = hdimage_open_file(filename, O_RDONLY, NULL, NULL);
-  if (fd >= 0) {
+
+  if (fd >= 0) 
+  {
     close(fd);
+
     int confirm;
+
+#pragma warning(suppress : 4996)
     sprintf(buffer, "\nThe disk image '%s' already exists.  Are you sure you want to replace it?\nPlease type yes or no. ", filename);
+    
     if (ask_yn(buffer, 0, &confirm) < 0)
       fatal(EOF_ERR);
     if (!confirm)
@@ -737,14 +764,25 @@ void check_image_names()
 {
   char backup_fname[520];
 
-  if (!strlen(bx_filename_2)) {
+  if (!strlen(bx_filename_2)) 
+  {
+#pragma warning(suppress : 4996)
     strcpy(bx_filename_2, bx_filename_1);
   }
-  if ((!strcmp(bx_filename_1, bx_filename_2)) && bx_backup) {
+  
+  if ((!strcmp(bx_filename_1, bx_filename_2)) && bx_backup) 
+  {
+#pragma warning(suppress : 4996)
     snprintf(backup_fname, 517, "%s%s", bx_filename_1, ".orig");
+
     if (hdimage_copy_file(bx_filename_1, backup_fname) != 1)
-      fatal("backup of source image file failed");
-  } else if (strcmp(bx_filename_1, bx_filename_2)) {
+    {
+        fatal("backup of source image file failed");
+    }
+
+  } 
+  else if (strcmp(bx_filename_1, bx_filename_2))
+  {
     image_overwrite_check(bx_filename_2);
   }
 }
@@ -790,58 +828,106 @@ int CDECL main(int argc, char *argv[])
 
       case BXIMAGE_FUNC_CREATE_IMAGE:
         printf("\nCreate image\n");
+
         if (ask_menu(fdhd_menu, fdhd_n_choices, fdhd_choices, bx_hdimage, &bx_hdimage) < 0)
-          fatal(EOF_ERR);
-        if (bx_hdimage == 0) { // floppy
-          if (ask_menu(fdsize_menu, fdsize_n_choices, fdsize_choices, bx_fdsize_idx, &bx_fdsize_idx) < 0)
+        {
             fatal(EOF_ERR);
-          if (!strlen(bx_filename_1)) {
-            strcpy(bx_filename_1, "a.img");
-          }
-          if (ask_string("\nWhat should be the name of the image?\n", bx_filename_1, bx_filename_1) < 0)
-            fatal(EOF_ERR);
-        } else { // hard disk
+        }
+
+        if (bx_hdimage == 0) 
+        { // floppy
+            if (ask_menu(fdsize_menu, fdsize_n_choices, fdsize_choices, bx_fdsize_idx, &bx_fdsize_idx) < 0)
+            {
+                fatal(EOF_ERR);
+            }
+
+            if (!strlen(bx_filename_1)) 
+            {
+#pragma warning(suppress : 4996)
+                strcpy(bx_filename_1, "a.img");
+            }
+            if (ask_string("\nWhat should be the name of the image?\n", bx_filename_1, bx_filename_1) < 0)
+            {
+                fatal(EOF_ERR);
+            }
+        } 
+        else 
+        { // hard disk
           if (ask_menu(hdmode_menu, hdmode_n_choices, hdmode_choices, bx_imagemode, &bx_imagemode) < 0)
             fatal(EOF_ERR);
+
           image_mode = hdmode_choices[bx_imagemode];
+
           if (!strcmp(image_mode, "flat") ||
               !strcmp(image_mode, "sparse") ||
-              !strcmp(image_mode, "growing")) {
+              !strcmp(image_mode, "growing")) 
+          {
             if (ask_menu(sectsize_menu, sectsize_n_choices, sectsize_choices, bx_sectsize_idx, &bx_sectsize_idx) < 0)
               fatal(EOF_ERR);
+
             bx_sectsize_val = atoi(sectsize_choices[bx_sectsize_idx]);
-          } else if (bx_sectsize_val != 512) {
+          } 
+          else if (bx_sectsize_val != 512) 
+          {
             fatal(EOF_ERR);
           }
+
+#pragma warning(suppress : 4996)
           sprintf(prompt, "\nEnter the hard disk size in megabytes, between %d and %d\n",
                   bx_min_hd_megs, bx_max_hd_megs);
+
           if (ask_int(prompt, bx_min_hd_megs, bx_max_hd_megs, bx_hdsize, &bx_hdsize) < 0)
-            fatal(EOF_ERR);
-          if (!strlen(bx_filename_1)) {
+          {
+              fatal(EOF_ERR);
+          }
+
+          if (!strlen(bx_filename_1)) 
+          {
+#pragma warning(suppress : 4996)
             strcpy(bx_filename_1, "c.img");
           }
+
           if (ask_string("\nWhat should be the name of the image?\n", bx_filename_1, bx_filename_1) < 0)
-            fatal(EOF_ERR);
+          {
+              fatal(EOF_ERR);
+          }
         }
         break;
 
       case BXIMAGE_FUNC_CONVERT_IMAGE:
         printf("\nConvert image\n");
-        if (!strlen(bx_filename_1)) {
+
+        if (!strlen(bx_filename_1)) 
+        {
+#pragma warning(suppress : 4996)
           strcpy(bx_filename_1, "c.img");
         }
+
         if (ask_string("\nWhat is the name of the source image?\n", bx_filename_1, bx_filename_1) < 0)
-          fatal(EOF_ERR);
-        if (!strlen(bx_filename_2)) {
+        {
+            fatal(EOF_ERR);
+        }
+
+        if (!strlen(bx_filename_2)) 
+        {
+#pragma warning(suppress : 4996)
           strcpy(tmpfname, bx_filename_1);
-        } else {
+        } 
+        else 
+        {
+#pragma warning(suppress : 4996)
           strcpy(tmpfname, bx_filename_2);
         }
+
         if (ask_string("\nWhat should be the name of the new image?\n", tmpfname, bx_filename_2) < 0)
           fatal(EOF_ERR);
+
         if (ask_menu(hdmode_menu, hdmode_n_choices, hdmode_choices, bx_imagemode, &bx_imagemode) < 0)
-          fatal(EOF_ERR);
-        if (!strcmp(bx_filename_1, bx_filename_2)) {
+        {
+            fatal(EOF_ERR);
+        }
+        if (!strcmp(bx_filename_1, bx_filename_2)) 
+        {
           if (ask_yn("\nShould I create a backup of the source image\n", 0, &bx_backup) < 0)
             fatal(EOF_ERR);
         }
@@ -849,25 +935,49 @@ int CDECL main(int argc, char *argv[])
 
       case BXIMAGE_FUNC_RESIZE_IMAGE:
         printf("\nResize image\n");
-        if (!strlen(bx_filename_1)) {
+
+        if (!strlen(bx_filename_1)) 
+        {
+#pragma warning(suppress : 4996)
           strcpy(bx_filename_1, "c.img");
         }
+
         if (ask_string("\nWhat is the name of the source image?\n", bx_filename_1, bx_filename_1) < 0)
-          fatal(EOF_ERR);
-        if (!strlen(bx_filename_2)) {
+        {
+            fatal(EOF_ERR);
+        }
+
+        if (!strlen(bx_filename_2)) 
+        {
+#pragma warning(suppress : 4996)
           strcpy(tmpfname, bx_filename_1);
-        } else {
+        } 
+        else 
+        {
+#pragma warning(suppress : 4996)
           strcpy(tmpfname, bx_filename_2);
         }
+
         if (ask_string("\nWhat should be the name of the new image?\n", tmpfname, bx_filename_2) < 0)
-          fatal(EOF_ERR);
+        {
+            fatal(EOF_ERR);
+        }
+
         bx_min_hd_megs = get_image_mode_and_hdsize(bx_filename_1, &image_mode);
+
+#pragma warning(suppress : 4996)
         sprintf(prompt, "\nEnter the new hard disk size in megabytes, between %d and %d\n",
                 bx_min_hd_megs, bx_max_hd_megs);
+
         if (bx_hdsize < bx_min_hd_megs) bx_hdsize = bx_min_hd_megs;
+
         if (ask_int(prompt, bx_min_hd_megs, bx_max_hd_megs, bx_hdsize, &bx_hdsize) < 0)
-          fatal(EOF_ERR);
-        if (!strcmp(bx_filename_1, bx_filename_2)) {
+        {
+            fatal(EOF_ERR);
+        }
+
+        if (!strcmp(bx_filename_1, bx_filename_2)) 
+        {
           if (ask_yn("\nShould I create a backup of the source image\n", 0, &bx_backup) < 0)
             fatal(EOF_ERR);
         }
@@ -875,14 +985,26 @@ int CDECL main(int argc, char *argv[])
 
       case BXIMAGE_FUNC_COMMIT_UNDOABLE:
         printf("\nCommit redolog\n");
-        if (!strlen(bx_filename_1)) {
+
+        if (!strlen(bx_filename_1)) 
+        {
+#pragma warning(suppress : 4996)
           strcpy(bx_filename_1, "c.img");
         }
+
         if (ask_string("\nWhat is the name of the base image?\n", bx_filename_1, bx_filename_1) < 0)
-          fatal(EOF_ERR);
-        if (!strlen(bx_filename_2)) {
+        {
+            fatal(EOF_ERR);
+        }
+
+        if (!strlen(bx_filename_2)) 
+        {
+#pragma warning(suppress : 4996)
           snprintf(tmpfname, 520, "%s%s", bx_filename_1, UNDOABLE_REDOLOG_EXTENSION);
-        } else {
+        } 
+        else 
+        {
+#pragma warning(suppress : 4996)
           strcpy(tmpfname, bx_filename_2);
         }
         if (ask_string("\nWhat is the redolog name?\n", tmpfname, bx_filename_2) < 0)
@@ -893,11 +1015,16 @@ int CDECL main(int argc, char *argv[])
 
       case BXIMAGE_FUNC_IMAGE_INFO:
         printf("\nDisk image info\n");
-        if (!strlen(bx_filename_1)) {
+        if (!strlen(bx_filename_1)) 
+        {
+#pragma warning(suppress : 4996)
           strcpy(bx_filename_1, "c.img");
         }
+        
         if (ask_string("\nWhat is the name of the image?\n", bx_filename_1, bx_filename_1) < 0)
-          fatal(EOF_ERR);
+        {
+            fatal(EOF_ERR);
+        }
         break;
 
       default:
@@ -907,45 +1034,78 @@ int CDECL main(int argc, char *argv[])
   switch (bximage_func) {
       case BXIMAGE_FUNC_CREATE_IMAGE:
         image_overwrite_check(bx_filename_1);
-        if (bx_hdimage == 0) {
+        if (bx_hdimage == 0) 
+        {
+#pragma warning(suppress : 4996)
           sprintf(bochsrc_line, "floppya: image=\"%s\", status=inserted", bx_filename_1);
+
+#pragma warning(suppress : 4996)
           printf("\nCreating floppy image '%s' with %u sectors\n", bx_filename_1, fdsize_sectors[bx_fdsize_idx]);
           create_flat_image(bx_filename_1, fdsize_sectors[bx_fdsize_idx] * 512);
-        } else {
+        } 
+        else 
+        {
           int heads = 16, spt = 63;
 
-          if (bx_sectsize_val == 512) {
+          if (bx_sectsize_val == 512) 
+          {
+#pragma warning(suppress : 4996)
             sprintf(bochsrc_line, "ata0-master: type=disk, path=\"%s\", mode=%s",
                     bx_filename_1, hdmode_choices[bx_imagemode]);
-          } else {
+
+          } 
+          else 
+          {
+#pragma warning(suppress : 4996)
             sprintf(bochsrc_line, "ata0-master: type=disk, path=\"%s\", mode=%s, sect_size=%d",
                     bx_filename_1, hdmode_choices[bx_imagemode], bx_sectsize_val);
           }
+          
           image_mode = hdmode_choices[bx_imagemode];
+          
           hdsize = ((Bit64u)bx_hdsize) << 20;
+          
           Bit64u cyl = (Bit64u)(hdsize/16.0/63.0/bx_sectsize_val);
+          
           if (cyl >= (1 << BX_MAX_CYL_BITS))
             fatal("ERROR: number of cylinders out of range !\n");
+          
           printf("\nCreating hard disk image '%s' with CHS=" FMT_LL "d/%d/%d (sector size = %d)\n",
                  bx_filename_1, cyl, heads, spt, bx_sectsize_val);
+
           hdsize = cyl * heads * spt * bx_sectsize_val;
+
           hdimage = create_hard_disk_image(bx_filename_1, image_mode, hdsize);
+
           delete hdimage;
         }
+
         printf("\nThe following line should appear in your bochsrc:\n");
         printf("  %s\n", bochsrc_line);
+
 #ifdef WIN32
-        if (OpenClipboard(NULL)) {
+/*
+        if (OpenClipboard(NULL)) 
+        {
           HGLOBAL hgClip;
+
           EmptyClipboard();
+
           hgClip = GlobalAlloc(GMEM_DDESHARE, (strlen(bochsrc_line) + 1));
+#pragma warning(suppress : 4996)
           strcpy((char *)GlobalLock(hgClip), bochsrc_line);
           GlobalUnlock(hgClip);
+
           SetClipboardData(CF_TEXT, hgClip);
+
           CloseClipboard();
-          printf("(The line is stored in your windows clipboard, use CTRL-V to paste)\n");
+
+          
         }
+*/
+        printf("([Redev it!]The line is stored in your windows clipboard, use CTRL-V to paste)\n");
 #endif
+        
         break;
 
       case BXIMAGE_FUNC_CONVERT_IMAGE:
@@ -964,17 +1124,30 @@ int CDECL main(int argc, char *argv[])
         break;
 
       case BXIMAGE_FUNC_COMMIT_UNDOABLE:
-        if (bx_backup) {
+        if (bx_backup) 
+        {
+#pragma warning(suppress : 4996)
           snprintf(tmpfname, 517, "%s%s", bx_filename_1, ".orig");
+
           if (hdimage_copy_file(bx_filename_1, tmpfname) != 1)
-            fatal("backup of base image file failed");
+          {
+              fatal("backup of base image file failed");
+          }
         }
         commit_redolog();
-        if (bx_backup) {
+
+        if (bx_backup) 
+        {
+#pragma warning(suppress : 4996)
           snprintf(tmpfname, 527, "%s%s", bx_filename_2, ".orig");
+
           if (rename(bx_filename_2, tmpfname) != 0)
-            fatal("rename of redolog file failed");
-        } else {
+          {
+              fatal("rename of redolog file failed");
+          }
+        } 
+        else 
+        {
           if (unlink(bx_filename_2) != 0)
             fatal("ERROR: while removing the redolog !\n");
         }
