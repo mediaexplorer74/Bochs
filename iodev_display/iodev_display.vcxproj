@@ -188,27 +188,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\iodev_old\display\bitblt.h" />
-    <ClInclude Include="..\iodev_old\display\ddc.h" />
-    <ClInclude Include="..\iodev_old\display\svga_cirrus.h" />
-    <ClInclude Include="..\iodev_old\display\vga.h" />
-    <ClInclude Include="..\iodev_old\display\vgacore.h" />
-    <ClInclude Include="..\iodev_old\display\voodoo.h" />
-    <ClInclude Include="..\iodev_old\display\voodoo_data.h" />
-    <ClInclude Include="..\iodev_old\display\voodoo_func.h" />
-    <ClInclude Include="..\iodev_old\display\voodoo_main.h" />
-    <ClInclude Include="..\iodev_old\display\voodoo_types.h" />
+    <ClInclude Include="..\iodev\display\bitblt.h" />
+    <ClInclude Include="..\iodev\display\ddc.h" />
+    <ClInclude Include="..\iodev\display\svga_cirrus.h" />
+    <ClInclude Include="..\iodev\display\vga.h" />
+    <ClInclude Include="..\iodev\display\vgacore.h" />
+    <ClInclude Include="..\iodev\display\voodoo.h" />
+    <ClInclude Include="..\iodev\display\voodoo_data.h" />
+    <ClInclude Include="..\iodev\display\voodoo_func.h" />
+    <ClInclude Include="..\iodev\display\voodoo_main.h" />
+    <ClInclude Include="..\iodev\display\voodoo_types.h" />
     <ClInclude Include="iodev_display.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\iodev_old\display\banshee.cc" />
-    <ClCompile Include="..\iodev_old\display\ddc.cc" />
-    <ClCompile Include="..\iodev_old\display\svga_cirrus.cc" />
-    <ClCompile Include="..\iodev_old\display\vga.cc" />
-    <ClCompile Include="..\iodev_old\display\vgacore.cc" />
-    <ClCompile Include="..\iodev_old\display\voodoo.cc" />
+    <ClCompile Include="..\iodev\display\banshee.cc" />
+    <ClCompile Include="..\iodev\display\ddc.cc" />
+    <ClCompile Include="..\iodev\display\svga_cirrus.cc" />
+    <ClCompile Include="..\iodev\display\vga.cc" />
+    <ClCompile Include="..\iodev\display\vgacore.cc" />
+    <ClCompile Include="..\iodev\display\voodoo.cc" />
     <ClCompile Include="iodev_display.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

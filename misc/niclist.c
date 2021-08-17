@@ -12,8 +12,10 @@
 //
 /////////////////////////////////////////////////////////////////////////
 
+#include <pch.h>
+
 #ifndef WIN32
-#error Niclist will only work on WIN32 platforms.
+//#error Niclist will only work on WIN32 platforms.
 #endif
 
 #ifndef CDECL
@@ -65,7 +67,7 @@ void myexit(int code)
 {
 #ifndef __CYGWIN__
   printf ("\nPress any key to continue\n");
-  getch();
+  //getch();
 #endif
   exit(code);
 }

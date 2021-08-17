@@ -3,8 +3,10 @@
 /////////////////////////////////////////////////////////////////////////
 
 
-
+#ifndef NEED_CPU_REG_SHORTCUTS 1
 #define NEED_CPU_REG_SHORTCUTS 1
+#endif
+
 #include "pch.h"
 #include "../bochs/bochs.h"
 #include "../cpu.h"

@@ -1,12 +1,9 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: socket.cc 13207 2017-04-23 08:38:16Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-/*
- * Copyright (c) 1995 Danny Gasparovski.
- *
- * Please read the file COPYRIGHT for the
- * terms and conditions of the copyright.
- */
+
+
+#include "pch.h"
 
 #include "slirp.h"
 #include "ip_icmp.h"

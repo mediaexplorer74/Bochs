@@ -170,6 +170,27 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\App.xaml.h">
+      <DependentUpon>..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bochs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxthread.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxversion.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\cpudb.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\extplugin.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\logio.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltdl-bochs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltdlconf.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\MainPage.xaml.h">
+      <DependentUpon>..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\MainPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\osdep.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\param_names.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\pch.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\pc_system.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\plugin.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\qemu-queue.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -182,14 +203,49 @@
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\App.xaml" />
+    <Page Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\MainPage.xaml" />
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <AppxManifest Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Package.appxmanifest" />
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.bochsrc" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.amigaos" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.everything" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.linux" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.macos" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.macosx" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.nothing" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.sparc" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.win32-cygwin" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.win32-vcpp" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.win64-cross-mingw32" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.win64-vcpp" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\aclocal.m4" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Bochs.vcxproj" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Bochs.vcxproj.filters" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Bochs.vcxproj.user" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bochs_TemporaryKey.pfx" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxversion.h.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxversion.rc.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.guess" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.h.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.status" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.sub" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\configure" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\configure.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\install-sh" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltdlconf.h.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltmain.sh" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Makefile" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Makefile.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\msrs.def" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\_Bochs.vcxproj_" />
     <None Include="bochs_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -202,6 +258,25 @@
     <Image Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\App.xaml.cpp">
+      <DependentUpon>..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxdisasm.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxthread.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\crc.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\gdbstub.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\logio.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\logio.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltdl.c" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\main.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\MainPage.xaml.cpp">
+      <DependentUpon>..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\MainPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\osdep.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\pch.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\pc_system.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\plugin.cc" />
     <ClCompile Include="App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>
@@ -238,6 +313,9 @@
     <ProjectReference Include="..\stubs\stubs.vcxproj">
       <Project>{090f4999-3810-498f-80e7-1e293af4ed5a}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.log" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

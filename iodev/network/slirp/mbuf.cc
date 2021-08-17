@@ -1,12 +1,6 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: mbuf.cc 13932 2020-09-02 08:35:44Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-/*
- * Copyright (c) 1995 Danny Gasparovski
- *
- * Please read the file COPYRIGHT for the
- * terms and conditions of the copyright.
- */
 
 /*
  * mbuf's in SLiRP are much simpler than the real mbufs in
@@ -17,6 +11,8 @@
  * by m_ext (and the data pointers) and M_EXT is set in
  * the flags
  */
+
+#include "pch.h"
 
 #include "slirp.h"
 

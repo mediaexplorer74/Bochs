@@ -1,194 +1,194 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (.\..\obj-debug\cpu\) содержит файлы, которые используются совместно с другим проектом (cpu.vcxproj).  Это может привести к ошибкам очистки и перестроения.
   3dnow.cc
-C:\Users\media\source\repos\Bochs\cpu_old\3dnow.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\3dnow.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   access.cc
-C:\Users\media\source\repos\Bochs\cpu_old\access.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\access.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   access2.cc
-C:\Users\media\source\repos\Bochs\cpu_old\access2.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\access2.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   aes.cc
-C:\Users\media\source\repos\Bochs\cpu_old\aes.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\aes.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   apic.cc
-C:\Users\media\source\repos\Bochs\cpu_old\apic.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\apic.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   arith16.cc
-C:\Users\media\source\repos\Bochs\cpu_old\arith16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\arith16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   arith32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\arith32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\arith32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   arith64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\arith64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\arith64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   arith8.cc
-C:\Users\media\source\repos\Bochs\cpu_old\arith8.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\arith8.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   bcd.cc
-C:\Users\media\source\repos\Bochs\cpu_old\bcd.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\bcd.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   bit.cc
-C:\Users\media\source\repos\Bochs\cpu_old\bit.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\bit.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   bit16.cc
-C:\Users\media\source\repos\Bochs\cpu_old\bit16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\bit16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   bit32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\bit32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\bit32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   bit64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\bit64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\bit64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   bmi32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\bmi32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\bmi32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   bmi64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\bmi64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\bmi64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   call_far.cc
-C:\Users\media\source\repos\Bochs\cpu_old\call_far.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\call_far.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   cpu.cc
-C:\Users\media\source\repos\Bochs\cpu_old\cpu.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\cpu.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   cpuid.cc
-C:\Users\media\source\repos\Bochs\cpu_old\cpuid.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\cpuid.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   crc32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\crc32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\crc32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   Создание кода...
   Компиляция...
   crregs.cc
-C:\Users\media\source\repos\Bochs\cpu_old\crregs.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\crregs.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   ctrl_xfer16.cc
-C:\Users\media\source\repos\Bochs\cpu_old\ctrl_xfer16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\ctrl_xfer16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   ctrl_xfer32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\ctrl_xfer32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\ctrl_xfer32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   ctrl_xfer64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\ctrl_xfer64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\ctrl_xfer64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   ctrl_xfer_pro.cc
-C:\Users\media\source\repos\Bochs\cpu_old\ctrl_xfer_pro.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\ctrl_xfer_pro.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   data_xfer16.cc
-C:\Users\media\source\repos\Bochs\cpu_old\data_xfer16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\data_xfer16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   data_xfer32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\data_xfer32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\data_xfer32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   data_xfer64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\data_xfer64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\data_xfer64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   data_xfer8.cc
-C:\Users\media\source\repos\Bochs\cpu_old\data_xfer8.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\data_xfer8.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   debugstuff.cc
-C:\Users\media\source\repos\Bochs\cpu_old\debugstuff.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\debugstuff.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   disasm.cc
-C:\Users\media\source\repos\Bochs\cpu_old\decoder\disasm.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\decoder\disasm.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   fetchdecode32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\decoder\fetchdecode32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\decoder\fetchdecode32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   fetchdecode64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\decoder\fetchdecode64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\decoder\fetchdecode64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   event.cc
-C:\Users\media\source\repos\Bochs\cpu_old\event.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\event.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   exception.cc
-C:\Users\media\source\repos\Bochs\cpu_old\exception.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\exception.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   faststring.cc
-C:\Users\media\source\repos\Bochs\cpu_old\faststring.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\faststring.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   flag_ctrl.cc
-C:\Users\media\source\repos\Bochs\cpu_old\flag_ctrl.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\flag_ctrl.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   flag_ctrl_pro.cc
-C:\Users\media\source\repos\Bochs\cpu_old\flag_ctrl_pro.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\flag_ctrl_pro.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   fpu_emu.cc
-C:\Users\media\source\repos\Bochs\cpu_old\fpu_emu.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\fpu_emu.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   generic_cpuid.cc
-C:\Users\media\source\repos\Bochs\cpu_old\generic_cpuid.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\generic_cpuid.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   Создание кода...
   Компиляция...
   gf2.cc
-C:\Users\media\source\repos\Bochs\cpu_old\gf2.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\gf2.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   icache.cc
-C:\Users\media\source\repos\Bochs\cpu_old\icache.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\icache.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   init.cc
-C:\Users\media\source\repos\Bochs\cpu_old\init.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\init.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   io.cc
-C:\Users\media\source\repos\Bochs\cpu_old\io.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\io.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   iret.cc
-C:\Users\media\source\repos\Bochs\cpu_old\iret.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\iret.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   jmp_far.cc
-C:\Users\media\source\repos\Bochs\cpu_old\jmp_far.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\jmp_far.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   load.cc
-C:\Users\media\source\repos\Bochs\cpu_old\load.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\load.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   logical16.cc
-C:\Users\media\source\repos\Bochs\cpu_old\logical16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\logical16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   logical32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\logical32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\logical32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   logical64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\logical64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\logical64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   logical8.cc
 c1xx : fatal error C1083: Не удается открыть файл источник: ..\cpu\logical8.cc: No such file or directory,
   mmx.cc
-C:\Users\media\source\repos\Bochs\cpu_old\mmx.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\mmx.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   msr.cc
-C:\Users\media\source\repos\Bochs\cpu_old\msr.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\msr.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   mult16.cc
-C:\Users\media\source\repos\Bochs\cpu_old\mult16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\mult16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   mult32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\mult32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\mult32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   mult64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\mult64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\mult64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   mult8.cc
-C:\Users\media\source\repos\Bochs\cpu_old\mult8.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\mult8.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   mwait.cc
-C:\Users\media\source\repos\Bochs\cpu_old\mwait.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\mwait.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   paging.cc
-C:\Users\media\source\repos\Bochs\cpu_old\paging.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\paging.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   proc_ctrl.cc
-C:\Users\media\source\repos\Bochs\cpu_old\proc_ctrl.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\proc_ctrl.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   Создание кода...
   Компиляция...
   protect_ctrl.cc
-C:\Users\media\source\repos\Bochs\cpu_old\protect_ctrl.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\protect_ctrl.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   rdrand.cc
-C:\Users\media\source\repos\Bochs\cpu_old\rdrand.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\rdrand.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   ret_far.cc
-C:\Users\media\source\repos\Bochs\cpu_old\ret_far.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\ret_far.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   segment_ctrl.cc
-C:\Users\media\source\repos\Bochs\cpu_old\segment_ctrl.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\segment_ctrl.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   segment_ctrl_pro.cc
-C:\Users\media\source\repos\Bochs\cpu_old\segment_ctrl_pro.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\segment_ctrl_pro.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   sha.cc
-C:\Users\media\source\repos\Bochs\cpu_old\sha.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\sha.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   shift16.cc
-C:\Users\media\source\repos\Bochs\cpu_old\shift16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\shift16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   shift32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\shift32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\shift32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   shift64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\shift64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\shift64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   shift8.cc
-C:\Users\media\source\repos\Bochs\cpu_old\shift8.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\shift8.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   smm.cc
-C:\Users\media\source\repos\Bochs\cpu_old\smm.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\smm.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   soft_int.cc
-C:\Users\media\source\repos\Bochs\cpu_old\soft_int.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\soft_int.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   sse.cc
-C:\Users\media\source\repos\Bochs\cpu_old\sse.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\sse.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   sse_move.cc
-C:\Users\media\source\repos\Bochs\cpu_old\sse_move.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\sse_move.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   sse_pfp.cc
-C:\Users\media\source\repos\Bochs\cpu_old\sse_pfp.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\sse_pfp.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   sse_rcp.cc
-C:\Users\media\source\repos\Bochs\cpu_old\sse_rcp.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\sse_rcp.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   sse_string.cc
-C:\Users\media\source\repos\Bochs\cpu_old\sse_string.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\sse_string.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   stack.cc
-C:\Users\media\source\repos\Bochs\cpu_old\stack.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\stack.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   stack16.cc
-C:\Users\media\source\repos\Bochs\cpu_old\stack16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\stack16.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   stack32.cc
-C:\Users\media\source\repos\Bochs\cpu_old\stack32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\stack32.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   Создание кода...
   Компиляция...
   stack64.cc
-C:\Users\media\source\repos\Bochs\cpu_old\stack64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\stack64.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   string.cc
-C:\Users\media\source\repos\Bochs\cpu_old\string.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\string.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   svm.cc
-C:\Users\media\source\repos\Bochs\cpu_old\svm.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\svm.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   tasking.cc
-C:\Users\media\source\repos\Bochs\cpu_old\tasking.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\tasking.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   vapic.cc
-C:\Users\media\source\repos\Bochs\cpu_old\vapic.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\vapic.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   vm8086.cc
-C:\Users\media\source\repos\Bochs\cpu_old\vm8086.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\vm8086.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   vmcs.cc
-C:\Users\media\source\repos\Bochs\cpu_old\vmcs.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\vmcs.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   vmexit.cc
-C:\Users\media\source\repos\Bochs\cpu_old\vmexit.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\vmexit.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   vmfunc.cc
-C:\Users\media\source\repos\Bochs\cpu_old\vmfunc.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\vmfunc.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   vmx.cc
-C:\Users\media\source\repos\Bochs\cpu_old\vmx.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\vmx.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   wide_int.cc
-C:\Users\media\source\repos\Bochs\cpu_old\wide_int.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\wide_int.cc(5,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   xsave.cc
-C:\Users\media\source\repos\Bochs\cpu_old\xsave.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
+C:\Users\media\source\repos\Bochs\cpu\xsave.cc(6,10): fatal error C1083: Не удается открыть файл включение: pch.h: No such file or directory,
   Создание кода...

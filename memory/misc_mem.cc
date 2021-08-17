@@ -1,31 +1,16 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: misc_mem.cc 14290 2021-06-24 17:03:09Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2001-2020  The Bochs Project
-//
-//  I/O memory handlers API Copyright (C) 2003 by Frank Cornelis
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-//
+//  I/O memory handlers API 
 /////////////////////////////////////////////////////////////////////////
 
-#include "bochs/bochs.h"
-#include "bochs/param_names.h"
-#include "cpu/cpu.h"
-#include "iodev/iodev.h"
+#include "pch.h"
+
+#include "../bochs/bochs.h"
+#include "../bochs/param_names.h"
+#include "../cpu/cpu.h"
+#include "../iodev/iodev.h"
+
 #define LOG_THIS BX_MEM(0)->
 
 // alignment of memory vector, must be a power of 2
@@ -539,7 +524,10 @@ void BX_MEM_C::load_RAM(const char *path, bx_phy_address ramaddress)
     BX_PANIC(("RAM: Optional RAM image undefined"));
     return;
   }
+
   // read in RAM BIOS image file
+  
+#pragma warning(suppress : 4996)
   fd = open(path, O_RDONLY
 #ifdef O_BINARY
             | O_BINARY

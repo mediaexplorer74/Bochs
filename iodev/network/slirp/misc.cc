@@ -1,12 +1,8 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: misc.cc 13932 2020-09-02 08:35:44Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-/*
- * Copyright (c) 1995 Danny Gasparovski.
- *
- * Please read the file COPYRIGHT for the
- * terms and conditions of the copyright.
- */
+
+#include "pch.h"
 
 #include "slirp.h"
 #include "libslirp.h"

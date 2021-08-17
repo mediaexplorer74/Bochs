@@ -14,9 +14,37 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxdisasm.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxthread.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\crc.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\gdbstub.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\logio.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\logio.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltdl.c" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\main.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\osdep.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\pc_system.cc" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\pch.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\plugin.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bochs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxthread.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxversion.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\cpudb.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\extplugin.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\logio.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltdl-bochs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltdlconf.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\osdep.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\param_names.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\pc_system.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\pch.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\plugin.h" />
+    <ClInclude Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\qemu-queue.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
@@ -43,11 +71,49 @@
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />
+    <AppxManifest Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Package.appxmanifest" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bochs_TemporaryKey.pfx" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.bochsrc" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.amigaos" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.everything" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.linux" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.macos" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.macosx" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.nothing" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.sparc" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.win32-cygwin" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.win32-vcpp" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.win64-cross-mingw32" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\.conf.win64-vcpp" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\_Bochs.vcxproj_" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\aclocal.m4" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Bochs.vcxproj" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Bochs.vcxproj.filters" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Bochs.vcxproj.user" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bochs_TemporaryKey.pfx" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxversion.h.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\bxversion.rc.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.guess" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.status" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.sub" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.h.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\configure" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\configure.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\install-sh" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltdlconf.h.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\ltmain.sh" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Makefile" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\Makefile.in" />
+    <None Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\msrs.def" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml" />
+    <Page Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\App.xaml" />
+    <Page Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\..\Temp\Bochs for UWP Project\20210817\Bochs-0.0.1.1\bochs\config.log" />
   </ItemGroup>
 </Project>

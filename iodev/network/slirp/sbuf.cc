@@ -1,12 +1,8 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: sbuf.cc 12269 2014-04-02 17:38:09Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-/*
- * Copyright (c) 1995 Danny Gasparovski.
- *
- * Please read the file COPYRIGHT for the
- * terms and conditions of the copyright.
- */
+
+#include "pch.h"
 
 #include "slirp.h"
 

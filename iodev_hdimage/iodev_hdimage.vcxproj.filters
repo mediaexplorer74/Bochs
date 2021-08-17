@@ -9,27 +9,27 @@
   <ItemGroup>
     <ClCompile Include="iodev_hdimage.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="..\iodev_old\hdimage\cdrom.cc" />
-    <ClCompile Include="..\iodev_old\hdimage\cdrom_win32.cc" />
-    <ClCompile Include="..\iodev_old\hdimage\hdimage.cc" />
-    <ClCompile Include="..\iodev_old\hdimage\vbox.cc" />
-    <ClCompile Include="..\iodev_old\hdimage\vmware3.cc" />
-    <ClCompile Include="..\iodev_old\hdimage\vmware4.cc" />
-    <ClCompile Include="..\iodev_old\hdimage\vpc.cc" />
-    <ClCompile Include="..\iodev_old\hdimage\vvfat.cc" />
+    <ClCompile Include="..\iodev\hdimage\cdrom.cc" />
+    <ClCompile Include="..\iodev\hdimage\cdrom_win32.cc" />
+    <ClCompile Include="..\iodev\hdimage\hdimage.cc" />
+    <ClCompile Include="..\iodev\hdimage\vbox.cc" />
+    <ClCompile Include="..\iodev\hdimage\vmware3.cc" />
+    <ClCompile Include="..\iodev\hdimage\vmware4.cc" />
+    <ClCompile Include="..\iodev\hdimage\vpc.cc" />
+    <ClCompile Include="..\iodev\hdimage\vvfat.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="iodev_hdimage.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="..\iodev_old\hdimage\cdrom.h" />
-    <ClInclude Include="..\iodev_old\hdimage\cdrom_win32.h" />
-    <ClInclude Include="..\iodev_old\hdimage\hdimage.h" />
-    <ClInclude Include="..\iodev_old\hdimage\scsi_commands.h" />
-    <ClInclude Include="..\iodev_old\hdimage\vbox.h" />
-    <ClInclude Include="..\iodev_old\hdimage\vmware3.h" />
-    <ClInclude Include="..\iodev_old\hdimage\vmware4.h" />
-    <ClInclude Include="..\iodev_old\hdimage\vpc.h" />
-    <ClInclude Include="..\iodev_old\hdimage\vvfat.h" />
+    <ClInclude Include="..\iodev\hdimage\cdrom.h" />
+    <ClInclude Include="..\iodev\hdimage\cdrom_win32.h" />
+    <ClInclude Include="..\iodev\hdimage\hdimage.h" />
+    <ClInclude Include="..\iodev\hdimage\scsi_commands.h" />
+    <ClInclude Include="..\iodev\hdimage\vbox.h" />
+    <ClInclude Include="..\iodev\hdimage\vmware3.h" />
+    <ClInclude Include="..\iodev\hdimage\vmware4.h" />
+    <ClInclude Include="..\iodev\hdimage\vpc.h" />
+    <ClInclude Include="..\iodev\hdimage\vvfat.h" />
   </ItemGroup>
 </Project>

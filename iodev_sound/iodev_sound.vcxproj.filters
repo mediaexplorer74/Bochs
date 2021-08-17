@@ -10,26 +10,26 @@
     <ClCompile Include="iodev_sound.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="..\iodev\sound\es1370.cc" />
-    <ClCompile Include="..\iodev_old\sound\opl.cc" />
-    <ClCompile Include="..\iodev_old\sound\sb16.cc" />
-    <ClCompile Include="..\iodev_old\sound\sounddummy.cc" />
-    <ClCompile Include="..\iodev_old\sound\soundfile.cc" />
-    <ClCompile Include="..\iodev_old\sound\soundlow.cc" />
-    <ClCompile Include="..\iodev_old\sound\soundmod.cc" />
-    <ClCompile Include="..\iodev_old\sound\soundsdl.cc" />
-    <ClCompile Include="..\iodev_old\sound\soundwin.cc" />
+    <ClCompile Include="..\iodev\sound\opl.cc" />
+    <ClCompile Include="..\iodev\sound\sb16.cc" />
+    <ClCompile Include="..\iodev\sound\sounddummy.cc" />
+    <ClCompile Include="..\iodev\sound\soundfile.cc" />
+    <ClCompile Include="..\iodev\sound\soundlow.cc" />
+    <ClCompile Include="..\iodev\sound\soundmod.cc" />
+    <ClCompile Include="..\iodev\sound\soundsdl.cc" />
+    <ClCompile Include="..\iodev\sound\soundwin.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="iodev_sound.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="..\iodev_old\sound\es1370.h" />
-    <ClInclude Include="..\iodev_old\sound\opl.h" />
-    <ClInclude Include="..\iodev_old\sound\sb16.h" />
-    <ClInclude Include="..\iodev_old\sound\soundfile.h" />
-    <ClInclude Include="..\iodev_old\sound\soundlow.h" />
-    <ClInclude Include="..\iodev_old\sound\soundmod.h" />
-    <ClInclude Include="..\iodev_old\sound\soundsdl.h" />
-    <ClInclude Include="..\iodev_old\sound\soundwin.h" />
+    <ClInclude Include="..\iodev\sound\es1370.h" />
+    <ClInclude Include="..\iodev\sound\opl.h" />
+    <ClInclude Include="..\iodev\sound\sb16.h" />
+    <ClInclude Include="..\iodev\sound\soundfile.h" />
+    <ClInclude Include="..\iodev\sound\soundlow.h" />
+    <ClInclude Include="..\iodev\sound\soundmod.h" />
+    <ClInclude Include="..\iodev\sound\soundsdl.h" />
+    <ClInclude Include="..\iodev\sound\soundwin.h" />
   </ItemGroup>
 </Project>

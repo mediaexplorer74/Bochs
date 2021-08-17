@@ -1,43 +1,20 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: e1000.cc 14312 2021-07-12 19:05:25Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Intel(R) 82540EM Gigabit Ethernet support (ported from QEMU)
-//  Software developer's manual:
-//  http://download.intel.com/design/network/manuals/8254x_GBe_SDM.pdf
-//
-//  Nir Peleg, Tutis Systems Ltd. for Qumranet Inc.
-//  Copyright (c) 2008 Qumranet
-//  Based on work done by:
-//  Copyright (c) 2007 Dan Aloni
-//  Copyright (c) 2004 Antony T Curtis
-//
-//  Copyright (C) 2011-2021  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-/////////////////////////////////////////////////////////////////////////
 
 // Define BX_PLUGGABLE in files that can be compiled into plugins.  For
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
 #define BX_PLUGGABLE
 
-#include "iodev.h"
+#include "pch.h"
+
+#include "../iodev.h"
+
 #if BX_SUPPORT_PCI && BX_SUPPORT_E1000
 
-#include "pci.h"
+#include "../pci.h"
+
 #include "netmod.h"
 #include "e1000.h"
 

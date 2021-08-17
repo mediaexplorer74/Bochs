@@ -190,14 +190,14 @@
   <ItemGroup>
     <ClInclude Include="..\bochs.h" />
     <ClInclude Include="..\config.h" />
-    <ClInclude Include="..\memory_old\memory-bochs.h" />
+    <ClInclude Include="..\memory\memory-bochs.h" />
     <ClInclude Include="memory.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\memory_old\memory.cc" />
-    <ClCompile Include="..\memory_old\misc_mem.cc" />
+    <ClCompile Include="..\memory\memory.cc" />
+    <ClCompile Include="..\memory\misc_mem.cc" />
     <ClCompile Include="memory.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
