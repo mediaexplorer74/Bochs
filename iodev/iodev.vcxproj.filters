@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="iodev.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\iodev_old\acpi.cc" />
+    <ClCompile Include="..\iodev_old\biosdev.cc" />
+    <ClCompile Include="..\iodev_old\busmouse.cc" />
+    <ClCompile Include="..\iodev_old\cmos.cc" />
+    <ClCompile Include="..\iodev_old\devices.cc" />
+    <ClCompile Include="..\iodev_old\dma.cc" />
+    <ClCompile Include="..\iodev_old\extfpuirq.cc" />
+    <ClCompile Include="..\iodev_old\floppy.cc" />
+    <ClCompile Include="..\iodev_old\gameport.cc" />
+    <ClCompile Include="..\iodev_old\harddrv.cc" />
+    <ClCompile Include="..\iodev_old\hpet.cc" />
+    <ClCompile Include="..\iodev_old\ioapic.cc" />
+    <ClCompile Include="..\iodev_old\iodebug.cc" />
+    <ClCompile Include="..\iodev_old\keyboard.cc" />
+    <ClCompile Include="..\iodev_old\parallel.cc" />
+    <ClCompile Include="..\iodev_old\pci.cc" />
+    <ClCompile Include="..\iodev_old\pci_ide.cc" />
+    <ClCompile Include="..\iodev_old\pci2isa.cc" />
+    <ClCompile Include="..\iodev_old\pic.cc" />
+    <ClCompile Include="..\iodev_old\pit.cc" />
+    <ClCompile Include="..\iodev_old\pit82c54.cc" />
+    <ClCompile Include="..\iodev_old\scancodes.cc" />
+    <ClCompile Include="..\iodev_old\serial.cc" />
+    <ClCompile Include="..\iodev_old\serial_raw.cc" />
+    <ClCompile Include="..\iodev_old\slowdown_timer.cc" />
+    <ClCompile Include="..\iodev_old\speaker.cc" />
+    <ClCompile Include="..\iodev_old\unmapped.cc" />
+    <ClCompile Include="..\iodev_old\virt_timer.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="iodev.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\iodev_old\acpi.h" />
+    <ClInclude Include="..\iodev_old\biosdev.h" />
+    <ClInclude Include="..\iodev_old\busmouse.h" />
+    <ClInclude Include="..\iodev_old\cmos.h" />
+    <ClInclude Include="..\iodev_old\dma.h" />
+    <ClInclude Include="..\iodev_old\extfpuirq.h" />
+    <ClInclude Include="..\iodev_old\floppy.h" />
+    <ClInclude Include="..\iodev_old\gameport.h" />
+    <ClInclude Include="..\iodev_old\harddrv.h" />
+    <ClInclude Include="..\iodev_old\hpet.h" />
+    <ClInclude Include="..\iodev_old\ioapic.h" />
+    <ClInclude Include="..\iodev_old\iodebug.h" />
+    <ClInclude Include="..\iodev_old\iodev.h" />
+    <ClInclude Include="..\iodev_old\keyboard.h" />
+    <ClInclude Include="..\iodev_old\parallel.h" />
+    <ClInclude Include="..\iodev_old\pci.h" />
+    <ClInclude Include="..\iodev_old\pci_ide.h" />
+    <ClInclude Include="..\iodev_old\pci2isa.h" />
+    <ClInclude Include="..\iodev_old\pic.h" />
+    <ClInclude Include="..\iodev_old\pit.h" />
+    <ClInclude Include="..\iodev_old\pit82c54.h" />
+    <ClInclude Include="..\iodev_old\scancodes.h" />
+    <ClInclude Include="..\iodev_old\serial.h" />
+    <ClInclude Include="..\iodev_old\serial_raw.h" />
+    <ClInclude Include="..\iodev_old\slowdown_timer.h" />
+    <ClInclude Include="..\iodev_old\speaker.h" />
+    <ClInclude Include="..\iodev_old\unmapped.h" />
+    <ClInclude Include="..\iodev_old\virt_timer.h" />
+  </ItemGroup>
+</Project>

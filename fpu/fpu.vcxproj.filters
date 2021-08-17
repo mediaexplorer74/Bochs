@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fpu.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\cpu\fpu\f2xm1.cc" />
+    <ClCompile Include="..\cpu\fpu\ferr.cc" />
+    <ClCompile Include="..\cpu\fpu\fpatan.cc" />
+    <ClCompile Include="..\cpu\fpu\fprem.cc" />
+    <ClCompile Include="..\cpu\fpu\fpu.cc" />
+    <ClCompile Include="..\cpu\fpu\fpu_arith.cc" />
+    <ClCompile Include="..\cpu\fpu\fpu_cmov.cc" />
+    <ClCompile Include="..\cpu\fpu\fpu_compare.cc" />
+    <ClCompile Include="..\cpu\fpu\fpu_const.cc" />
+    <ClCompile Include="..\cpu\fpu\fpu_load_store.cc" />
+    <ClCompile Include="..\cpu\fpu\fpu_misc.cc" />
+    <ClCompile Include="..\cpu\fpu\fpu_trans.cc" />
+    <ClCompile Include="..\cpu\fpu\fsincos.cc" />
+    <ClCompile Include="..\cpu\fpu\fyl2x.cc" />
+    <ClCompile Include="..\cpu\fpu\poly.cc" />
+    <ClCompile Include="..\cpu\fpu\softfloat.cc" />
+    <ClCompile Include="..\cpu\fpu\softfloat16.cc" />
+    <ClCompile Include="..\cpu\fpu\softfloat-muladd.cc" />
+    <ClCompile Include="..\cpu\fpu\softfloat-round-pack.cc" />
+    <ClCompile Include="..\cpu\fpu\softfloat-specialize.cc" />
+    <ClCompile Include="..\cpu\fpu\softfloatx80.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fpu.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\cpu\fpu\control_w.h" />
+    <ClInclude Include="..\cpu\fpu\fpu_constant.h" />
+    <ClInclude Include="..\cpu\fpu\softfloat.h" />
+    <ClInclude Include="..\cpu\fpu\softfloat-compare.h" />
+    <ClInclude Include="..\cpu\fpu\softfloat-macros.h" />
+    <ClInclude Include="..\cpu\fpu\softfloat-round-pack.h" />
+    <ClInclude Include="..\cpu\fpu\softfloat-specialize.h" />
+    <ClInclude Include="..\cpu\fpu\softfloatx80.h" />
+    <ClInclude Include="..\cpu\fpu\status_w.h" />
+    <ClInclude Include="..\cpu\fpu\tag_w.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+UNHANDLED EXCEPTIONS FROM PROCESS 2452:
+=====================
+17.08.2021 21:05:29
+System.IO.IOException: Канал нарушен.
+   в System.IO.Pipes.PipeStream.CheckWriteOperations()
+   в System.IO.Pipes.PipeStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   в Microsoft.Build.BackEnd.NodeEndpointOutOfProcBase.RunReadLoop(Stream localReadPipe, Stream localWritePipe, ConcurrentQueue`1 localPacketQueue, AutoResetEvent localPacketAvailable, AutoResetEvent localTerminatePacketPump)
+===================

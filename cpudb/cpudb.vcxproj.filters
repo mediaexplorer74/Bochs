@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpudb.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\cpu\cpudb\amd\amd_k6_2_chomper.cc" />
+    <ClCompile Include="..\cpu\cpudb\amd\athlon64_clawhammer.cc" />
+    <ClCompile Include="..\cpu\cpudb\amd\athlon64_venice.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\atom_n270.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\broadwell_ult.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\core_duo_t2400_yonah.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\core2_penryn_t9600.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\corei5_arrandale_m520.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\corei5_lynnfield_750.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\corei7_haswell_4770.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\corei7_ivy_bridge_3770K.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\corei7_sandy_bridge_2600K.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\corei7_skylake-x.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\p2_klamath.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\p3_katmai.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\p4_prescott_celeron_336.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\p4_willamette.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\pentium.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\pentium_mmx.cc" />
+    <ClCompile Include="..\cpu\cpudb\amd\phenomx3_8650_toliman.cc" />
+    <ClCompile Include="..\cpu\cpudb\amd\ryzen.cc" />
+    <ClCompile Include="..\cpu\cpudb\amd\trinity_apu.cc" />
+    <ClCompile Include="..\cpu\cpudb\amd\turion64_tyler.cc" />
+    <ClCompile Include="..\cpu\cpudb\amd\zambezi.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cpudb.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\cpu\cpudb\amd\amd_k6_2_chomper.h" />
+    <ClInclude Include="..\cpu\cpudb\amd\athlon64_clawhammer.h" />
+    <ClInclude Include="..\cpu\cpudb\amd\athlon64_venice.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\atom_n270.h" />
+    <ClInclude Include="..\bochs.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\broadwell_ult.h" />
+    <ClInclude Include="..\config.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\core_duo_t2400_yonah.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\core2_penryn_t9600.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\corei5_arrandale_m520.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\corei5_lynnfield_750.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\corei7_haswell_4770.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\corei7_ivy_bridge_3770K.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\corei7_sandy_bridge_2600K.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\corei7_skylake-x.h" />
+    <ClInclude Include="..\cpu\cpu.h" />
+    <ClInclude Include="..\cpu\cpuid.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\p2_klamath.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\p3_katmai.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\p4_prescott_celeron_336.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\p4_willamette.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\pentium.h" />
+    <ClInclude Include="..\cpu\cpudb\intel\pentium_mmx.h" />
+    <ClInclude Include="..\cpu\cpudb\amd\phenomx3_8650_toliman.h" />
+    <ClInclude Include="..\cpu\cpudb\amd\ryzen.h" />
+    <ClInclude Include="..\cpu\cpudb\amd\trinity_apu.h" />
+    <ClInclude Include="..\cpu\cpudb\amd\turion64_tyler.h" />
+    <ClInclude Include="..\cpu\cpudb\amd\zambezi.h" />
+  </ItemGroup>
+</Project>
