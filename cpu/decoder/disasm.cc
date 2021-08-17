@@ -4,7 +4,7 @@
 
 #include "pch.h"
 
-#include "../bochs_old/bochs.h"
+#include "../bochs/bochs.h"
 #ifndef BX_STANDALONE_DECODER
 #include "../cpu.h"
 #endif

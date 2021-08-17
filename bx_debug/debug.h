@@ -22,8 +22,8 @@
 #define BX_DEBUG_H
 
 // if including from C parser, need basic types etc
-#include "../bochs_old/config.h"
-#include "../bochs_old/osdep.h"
+#include "../bochs/config.h"
+#include "../bochs/osdep.h"
 
 #define BX_DBG_NO_HANDLE 1000
 

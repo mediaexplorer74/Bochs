@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include "pch.h"
-#include "../bochs_old/bochs.h"
+#include "../bochs/bochs.h"
 #include "debug.h"
 
 #if BX_DEBUGGER

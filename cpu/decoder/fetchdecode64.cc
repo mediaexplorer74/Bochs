@@ -4,7 +4,7 @@
 
 #include "pch.h"
 
-#include "../bochs_old/bochs.h"
+#include "../bochs/bochs.h"
 
 #include "instr.h"
 #include "decoder.h"

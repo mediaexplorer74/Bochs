@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////
 
-#include "bochs_old/bochs.h"
+#include "bochs/bochs.h"
 #include "cpu.h"
 #include "amd_k6_2_chomper.h"
 

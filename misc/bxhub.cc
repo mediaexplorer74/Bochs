@@ -16,7 +16,7 @@
 #endif
 
 #include "pch.h"
-#include "../bochs_old/config.h"
+#include "../bochs/config.h"
 
 extern "C" {
 #ifdef WIN32
@@ -47,7 +47,7 @@ typedef int SOCKET;
 
 #include "pch.h"
 #include "../misc/bxcompat.h"
-#include "../bochs_old/osdep.h"
+#include "../bochs/osdep.h"
 #include "../iodev/network/netmod.h"
 #include "../iodev/network/netutil.h"
 

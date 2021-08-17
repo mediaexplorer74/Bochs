@@ -13,7 +13,7 @@
 #define BXIMAGE
 #endif
 
-#include "../bochs_old/config.h"
+#include "../bochs/config.h"
 #include "../misc/bxcompat.h"
 
 #if defined(WIN32) && !defined(__CYGWIN__)
@@ -22,7 +22,7 @@
 #endif
 #include <ctype.h>
 
-#include "../bochs_old/osdep.h"
+#include "../bochs/osdep.h"
 #include "bswap.h"
 
 #include "../iodev/hdimage/hdimage.h"

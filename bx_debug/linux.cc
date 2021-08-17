@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 #include "pch.h"
-#include "../bochs_old/bochs.h"
+#include "../bochs/bochs.h"
 #include "../cpu/cpu.h"
 
 #if BX_DEBUGGER

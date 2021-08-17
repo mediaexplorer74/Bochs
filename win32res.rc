@@ -1,6 +1,6 @@
 #define ISOLATION_AWARE_ENABLED
 #include <windows.h>
-#include "bochs_old/config.h"
+#include "bochs/config.h"
 #include "gui/win32res.h"
 
 ICON_BOCHS ICON build/win32/nsis/bochs.ico

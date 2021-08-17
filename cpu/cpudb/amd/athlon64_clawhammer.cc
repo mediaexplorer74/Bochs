@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////
 
-#include "bochs_old/bochs.h"
+#include "bochs/bochs.h"
 #include "cpu.h"
 #include "athlon64_clawhammer.h"
 

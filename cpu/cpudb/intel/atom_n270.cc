@@ -21,10 +21,10 @@
 //
 /////////////////////////////////////////////////////////////////////////
 
-#include "bochs_old/bochs.h"
+#include "bochs/bochs.h"
 #include "cpu.h"
 #include "gui/siminterface.h"
-#include "bochs_old/param_names.h"
+#include "bochs/param_names.h"
 #include "atom_n270.h"
 
 #define LOG_THIS cpu->

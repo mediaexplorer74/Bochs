@@ -21,10 +21,10 @@
 //
 /////////////////////////////////////////////////////////////////////////
 
-#include "bochs_old/bochs.h"
+#include "bochs/bochs.h"
 #include "cpu.h"
 #include "gui/siminterface.h"
-#include "bochs_old/param_names.h"
+#include "bochs/param_names.h"
 #include "phenomx3_8650_toliman.h"
 
 #define LOG_THIS cpu->
