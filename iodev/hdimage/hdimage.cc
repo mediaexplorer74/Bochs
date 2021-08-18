@@ -8,6 +8,8 @@
 #define BXIMAGE
 #endif
 
+// my +
+//#define __cplusplus_winrt
 
 #ifdef BXIMAGE
 #include "../../bochs/config.h"

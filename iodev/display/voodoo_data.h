@@ -101,196 +101,196 @@ enum
 */
 
 /* 0x000 */
-#define status      (0x000/4) /* R  P  */
-#define intrCtrl    (0x004/4) /* RW P   -- Voodoo2/Banshee only */
-#define vertexAx    (0x008/4) /*  W PF */
-#define vertexAy    (0x00c/4) /*  W PF */
-#define vertexBx    (0x010/4) /*  W PF */
-#define vertexBy    (0x014/4) /*  W PF */
-#define vertexCx    (0x018/4) /*  W PF */
-#define vertexCy    (0x01c/4) /*  W PF */
-#define startR      (0x020/4) /*  W PF */
-#define startG      (0x024/4) /*  W PF */
-#define startB      (0x028/4) /*  W PF */
-#define startZ      (0x02c/4) /*  W PF */
-#define startA      (0x030/4) /*  W PF */
-#define startS      (0x034/4) /*  W PF */
-#define startT      (0x038/4) /*  W PF */
-#define startW      (0x03c/4) /*  W PF */
+#define status      (0x000) /* R  P  */
+#define intrCtrl    (0x004) /* RW P   -- Voodoo2/Banshee only */
+#define vertexAx    (0x008) /*  W PF */
+#define vertexAy    (0x00c) /*  W PF */
+#define vertexBx    (0x010) /*  W PF */
+#define vertexBy    (0x014) /*  W PF */
+#define vertexCx    (0x018) /*  W PF */
+#define vertexCy    (0x01c) /*  W PF */
+#define startR      (0x020) /*  W PF */
+#define startG      (0x024) /*  W PF */
+#define startB      (0x028) /*  W PF */
+#define startZ      (0x02c) /*  W PF */
+#define startA      (0x030) /*  W PF */
+#define startS      (0x034) /*  W PF */
+#define startT      (0x038) /*  W PF */
+#define startW      (0x03c) /*  W PF */
 
 /* 0x040 */
-#define dRdX      (0x040/4) /*  W PF */
-#define dGdX      (0x044/4) /*  W PF */
-#define dBdX      (0x048/4) /*  W PF */
-#define dZdX      (0x04c/4) /*  W PF */
-#define dAdX      (0x050/4) /*  W PF */
-#define dSdX      (0x054/4) /*  W PF */
-#define dTdX      (0x058/4) /*  W PF */
-#define dWdX      (0x05c/4) /*  W PF */
-#define dRdY      (0x060/4) /*  W PF */
-#define dGdY      (0x064/4) /*  W PF */
-#define dBdY      (0x068/4) /*  W PF */
-#define dZdY      (0x06c/4) /*  W PF */
-#define dAdY      (0x070/4) /*  W PF */
-#define dSdY      (0x074/4) /*  W PF */
-#define dTdY      (0x078/4) /*  W PF */
-#define dWdY      (0x07c/4) /*  W PF */
+#define dRdX      (0x040) /*  W PF */
+#define dGdX      (0x044) /*  W PF */
+#define dBdX      (0x048) /*  W PF */
+#define dZdX      (0x04c) /*  W PF */
+#define dAdX      (0x050) /*  W PF */
+#define dSdX      (0x054) /*  W PF */
+#define dTdX      (0x058) /*  W PF */
+#define dWdX      (0x05c) /*  W PF */
+#define dRdY      (0x060) /*  W PF */
+#define dGdY      (0x064) /*  W PF */
+#define dBdY      (0x068) /*  W PF */
+#define dZdY      (0x06c) /*  W PF */
+#define dAdY      (0x070) /*  W PF */
+#define dSdY      (0x074) /*  W PF */
+#define dTdY      (0x078) /*  W PF */
+#define dWdY      (0x07c) /*  W PF */
 
 /* 0x080 */
-#define triangleCMD   (0x080/4) /*  W PF */
-#define fvertexAx   (0x088/4) /*  W PF */
-#define fvertexAy   (0x08c/4) /*  W PF */
-#define fvertexBx   (0x090/4) /*  W PF */
-#define fvertexBy   (0x094/4) /*  W PF */
-#define fvertexCx   (0x098/4) /*  W PF */
-#define fvertexCy   (0x09c/4) /*  W PF */
-#define fstartR     (0x0a0/4) /*  W PF */
-#define fstartG     (0x0a4/4) /*  W PF */
-#define fstartB     (0x0a8/4) /*  W PF */
-#define fstartZ     (0x0ac/4) /*  W PF */
-#define fstartA     (0x0b0/4) /*  W PF */
-#define fstartS     (0x0b4/4) /*  W PF */
-#define fstartT     (0x0b8/4) /*  W PF */
-#define fstartW     (0x0bc/4) /*  W PF */
+#define triangleCMD   (0x080) /*  W PF */
+#define fvertexAx   (0x088) /*  W PF */
+#define fvertexAy   (0x08c) /*  W PF */
+#define fvertexBx   (0x090) /*  W PF */
+#define fvertexBy   (0x094) /*  W PF */
+#define fvertexCx   (0x098) /*  W PF */
+#define fvertexCy   (0x09c) /*  W PF */
+#define fstartR     (0x0a0) /*  W PF */
+#define fstartG     (0x0a4) /*  W PF */
+#define fstartB     (0x0a8) /*  W PF */
+#define fstartZ     (0x0ac) /*  W PF */
+#define fstartA     (0x0b0) /*  W PF */
+#define fstartS     (0x0b4) /*  W PF */
+#define fstartT     (0x0b8) /*  W PF */
+#define fstartW     (0x0bc) /*  W PF */
 
 /* 0x0c0 */
-#define fdRdX     (0x0c0/4) /*  W PF */
-#define fdGdX     (0x0c4/4) /*  W PF */
-#define fdBdX     (0x0c8/4) /*  W PF */
-#define fdZdX     (0x0cc/4) /*  W PF */
-#define fdAdX     (0x0d0/4) /*  W PF */
-#define fdSdX     (0x0d4/4) /*  W PF */
-#define fdTdX     (0x0d8/4) /*  W PF */
-#define fdWdX     (0x0dc/4) /*  W PF */
-#define fdRdY     (0x0e0/4) /*  W PF */
-#define fdGdY     (0x0e4/4) /*  W PF */
-#define fdBdY     (0x0e8/4) /*  W PF */
-#define fdZdY     (0x0ec/4) /*  W PF */
-#define fdAdY     (0x0f0/4) /*  W PF */
-#define fdSdY     (0x0f4/4) /*  W PF */
-#define fdTdY     (0x0f8/4) /*  W PF */
-#define fdWdY     (0x0fc/4) /*  W PF */
+#define fdRdX     (0x0c0) /*  W PF */
+#define fdGdX     (0x0c4) /*  W PF */
+#define fdBdX     (0x0c8) /*  W PF */
+#define fdZdX     (0x0cc) /*  W PF */
+#define fdAdX     (0x0d0) /*  W PF */
+#define fdSdX     (0x0d4) /*  W PF */
+#define fdTdX     (0x0d8) /*  W PF */
+#define fdWdX     (0x0dc) /*  W PF */
+#define fdRdY     (0x0e0) /*  W PF */
+#define fdGdY     (0x0e4) /*  W PF */
+#define fdBdY     (0x0e8) /*  W PF */
+#define fdZdY     (0x0ec) /*  W PF */
+#define fdAdY     (0x0f0) /*  W PF */
+#define fdSdY     (0x0f4) /*  W PF */
+#define fdTdY     (0x0f8) /*  W PF */
+#define fdWdY     (0x0fc) /*  W PF */
 
 /* 0x100 */
-#define ftriangleCMD  (0x100/4) /*  W PF */
-#define fbzColorPath  (0x104/4) /* RW PF */
-#define fogMode     (0x108/4) /* RW PF */
-#define alphaMode   (0x10c/4) /* RW PF */
-#define fbzMode     (0x110/4) /* RW  F */
-#define lfbMode     (0x114/4) /* RW  F */
-#define clipLeftRight (0x118/4) /* RW  F */
-#define clipLowYHighY (0x11c/4) /* RW  F */
-#define nopCMD      (0x120/4) /*  W  F */
-#define fastfillCMD   (0x124/4) /*  W  F */
-#define swapbufferCMD (0x128/4) /*  W  F */
-#define fogColor    (0x12c/4) /*  W  F */
-#define zaColor     (0x130/4) /*  W  F */
-#define chromaKey   (0x134/4) /*  W  F */
-#define chromaRange   (0x138/4) /*  W  F  -- Voodoo2/Banshee only */
-#define userIntrCMD   (0x13c/4) /*  W  F  -- Voodoo2/Banshee only */
+#define ftriangleCMD  (0x100) /*  W PF */
+#define fbzColorPath  (0x104) /* RW PF */
+#define fogMode     (0x108) /* RW PF */
+#define alphaMode   (0x10c) /* RW PF */
+#define fbzMode     (0x110) /* RW  F */
+#define lfbMode     (0x114) /* RW  F */
+#define clipLeftRight (0x118) /* RW  F */
+#define clipLowYHighY (0x11c) /* RW  F */
+#define nopCMD      (0x120) /*  W  F */
+#define fastfillCMD   (0x124) /*  W  F */
+#define swapbufferCMD (0x128) /*  W  F */
+#define fogColor    (0x12c) /*  W  F */
+#define zaColor     (0x130) /*  W  F */
+#define chromaKey   (0x134) /*  W  F */
+#define chromaRange   (0x138) /*  W  F  -- Voodoo2/Banshee only */
+#define userIntrCMD   (0x13c) /*  W  F  -- Voodoo2/Banshee only */
 
 /* 0x140 */
-#define stipple     (0x140/4) /* RW  F */
-#define color0      (0x144/4) /* RW  F */
-#define color1      (0x148/4) /* RW  F */
-#define fbiPixelsIn   (0x14c/4) /* R     */
-#define fbiChromaFail (0x150/4) /* R     */
-#define fbiZfuncFail  (0x154/4) /* R     */
-#define fbiAfuncFail  (0x158/4) /* R     */
-#define fbiPixelsOut  (0x15c/4) /* R     */
-#define fogTable    (0x160/4) /*  W  F */
+#define stipple     (0x140) /* RW  F */
+#define color0      (0x144) /* RW  F */
+#define color1      (0x148) /* RW  F */
+#define fbiPixelsIn   (0x14c) /* R     */
+#define fbiChromaFail (0x150) /* R     */
+#define fbiZfuncFail  (0x154) /* R     */
+#define fbiAfuncFail  (0x158) /* R     */
+#define fbiPixelsOut  (0x15c) /* R     */
+#define fogTable    (0x160) /*  W  F */
 
 /* 0x1c0 */
-#define cmdFifoBaseAddr (0x1e0/4) /* RW     -- Voodoo2 only */
-#define cmdFifoBump   (0x1e4/4) /* RW     -- Voodoo2 only */
-#define cmdFifoRdPtr  (0x1e8/4) /* RW     -- Voodoo2 only */
-#define cmdFifoAMin   (0x1ec/4) /* RW     -- Voodoo2 only */
-#define colBufferAddr (0x1ec/4) /* RW     -- Banshee only */
-#define cmdFifoAMax   (0x1f0/4) /* RW     -- Voodoo2 only */
-#define colBufferStride (0x1f0/4) /* RW     -- Banshee only */
-#define cmdFifoDepth  (0x1f4/4) /* RW     -- Voodoo2 only */
-#define auxBufferAddr (0x1f4/4) /* RW     -- Banshee only */
-#define cmdFifoHoles  (0x1f8/4) /* RW     -- Voodoo2 only */
-#define auxBufferStride (0x1f8/4) /* RW     -- Banshee only */
+#define cmdFifoBaseAddr (0x1e0) /* RW     -- Voodoo2 only */
+#define cmdFifoBump   (0x1e4) /* RW     -- Voodoo2 only */
+#define cmdFifoRdPtr  (0x1e8) /* RW     -- Voodoo2 only */
+#define cmdFifoAMin   (0x1ec) /* RW     -- Voodoo2 only */
+#define colBufferAddr (0x1ec) /* RW     -- Banshee only */
+#define cmdFifoAMax   (0x1f0) /* RW     -- Voodoo2 only */
+#define colBufferStride (0x1f0) /* RW     -- Banshee only */
+#define cmdFifoDepth  (0x1f4) /* RW     -- Voodoo2 only */
+#define auxBufferAddr (0x1f4) /* RW     -- Banshee only */
+#define cmdFifoHoles  (0x1f8) /* RW     -- Voodoo2 only */
+#define auxBufferStride (0x1f8) /* RW     -- Banshee only */
 
 /* 0x200 */
-#define fbiInit4    (0x200/4) /* RW     -- Voodoo/Voodoo2 only */
-#define clipLeftRight1  (0x200/4) /* RW     -- Banshee only */
-#define vRetrace    (0x204/4) /* R      -- Voodoo/Voodoo2 only */
-#define clipTopBottom1  (0x204/4) /* RW     -- Banshee only */
-#define backPorch   (0x208/4) /* RW     -- Voodoo/Voodoo2 only */
-#define videoDimensions (0x20c/4) /* RW     -- Voodoo/Voodoo2 only */
-#define fbiInit0    (0x210/4) /* RW     -- Voodoo/Voodoo2 only */
-#define fbiInit1    (0x214/4) /* RW     -- Voodoo/Voodoo2 only */
-#define fbiInit2    (0x218/4) /* RW     -- Voodoo/Voodoo2 only */
-#define fbiInit3    (0x21c/4) /* RW     -- Voodoo/Voodoo2 only */
-#define hSync     (0x220/4) /*  W     -- Voodoo/Voodoo2 only */
-#define vSync     (0x224/4) /*  W     -- Voodoo/Voodoo2 only */
-#define clutData    (0x228/4) /*  W  F  -- Voodoo/Voodoo2 only */
-#define dacData     (0x22c/4) /*  W     -- Voodoo/Voodoo2 only */
-#define maxRgbDelta   (0x230/4) /*  W     -- Voodoo/Voodoo2 only */
-#define hBorder     (0x234/4) /*  W     -- Voodoo2 only */
-#define vBorder     (0x238/4) /*  W     -- Voodoo2 only */
-#define borderColor   (0x23c/4) /*  W     -- Voodoo2 only */
+#define fbiInit4    (0x200) /* RW     -- Voodoo/Voodoo2 only */
+#define clipLeftRight1  (0x200) /* RW     -- Banshee only */
+#define vRetrace    (0x204) /* R      -- Voodoo/Voodoo2 only */
+#define clipTopBottom1  (0x204) /* RW     -- Banshee only */
+#define backPorch   (0x208) /* RW     -- Voodoo/Voodoo2 only */
+#define videoDimensions (0x20c) /* RW     -- Voodoo/Voodoo2 only */
+#define fbiInit0    (0x210) /* RW     -- Voodoo/Voodoo2 only */
+#define fbiInit1    (0x214) /* RW     -- Voodoo/Voodoo2 only */
+#define fbiInit2    (0x218) /* RW     -- Voodoo/Voodoo2 only */
+#define fbiInit3    (0x21c) /* RW     -- Voodoo/Voodoo2 only */
+#define hSync     (0x220) /*  W     -- Voodoo/Voodoo2 only */
+#define vSync     (0x224) /*  W     -- Voodoo/Voodoo2 only */
+#define clutData    (0x228) /*  W  F  -- Voodoo/Voodoo2 only */
+#define dacData     (0x22c) /*  W     -- Voodoo/Voodoo2 only */
+#define maxRgbDelta   (0x230) /*  W     -- Voodoo/Voodoo2 only */
+#define hBorder     (0x234) /*  W     -- Voodoo2 only */
+#define vBorder     (0x238) /*  W     -- Voodoo2 only */
+#define borderColor   (0x23c) /*  W     -- Voodoo2 only */
 
 /* 0x240 */
-#define hvRetrace   (0x240/4) /* R      -- Voodoo2 only */
-#define fbiInit5    (0x244/4) /* RW     -- Voodoo2 only */
-#define fbiInit6    (0x248/4) /* RW     -- Voodoo2 only */
-#define fbiInit7    (0x24c/4) /* RW     -- Voodoo2 only */
-#define swapPending   (0x24c/4) /*  W     -- Banshee only */
-#define leftOverlayBuf  (0x250/4) /*  W     -- Banshee only */
-#define rightOverlayBuf (0x254/4) /*  W     -- Banshee only */
-#define fbiSwapHistory  (0x258/4) /* R      -- Voodoo2/Banshee only */
-#define fbiTrianglesOut (0x25c/4) /* R      -- Voodoo2/Banshee only */
-#define sSetupMode    (0x260/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sVx       (0x264/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sVy       (0x268/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sARGB     (0x26c/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sRed      (0x270/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sGreen      (0x274/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sBlue     (0x278/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sAlpha      (0x27c/4) /*  W PF  -- Voodoo2/Banshee only */
+#define hvRetrace   (0x240) /* R      -- Voodoo2 only */
+#define fbiInit5    (0x244) /* RW     -- Voodoo2 only */
+#define fbiInit6    (0x248) /* RW     -- Voodoo2 only */
+#define fbiInit7    (0x24c) /* RW     -- Voodoo2 only */
+#define swapPending   (0x24c) /*  W     -- Banshee only */
+#define leftOverlayBuf  (0x250) /*  W     -- Banshee only */
+#define rightOverlayBuf (0x254) /*  W     -- Banshee only */
+#define fbiSwapHistory  (0x258) /* R      -- Voodoo2/Banshee only */
+#define fbiTrianglesOut (0x25c) /* R      -- Voodoo2/Banshee only */
+#define sSetupMode    (0x260) /*  W PF  -- Voodoo2/Banshee only */
+#define sVx       (0x264) /*  W PF  -- Voodoo2/Banshee only */
+#define sVy       (0x268) /*  W PF  -- Voodoo2/Banshee only */
+#define sARGB     (0x26c) /*  W PF  -- Voodoo2/Banshee only */
+#define sRed      (0x270) /*  W PF  -- Voodoo2/Banshee only */
+#define sGreen      (0x274) /*  W PF  -- Voodoo2/Banshee only */
+#define sBlue     (0x278) /*  W PF  -- Voodoo2/Banshee only */
+#define sAlpha      (0x27c) /*  W PF  -- Voodoo2/Banshee only */
 
 /* 0x280 */
-#define sVz       (0x280/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sWb       (0x284/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sWtmu0      (0x288/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sS_W0     (0x28c/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sT_W0     (0x290/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sWtmu1      (0x294/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sS_Wtmu1    (0x298/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sT_Wtmu1    (0x29c/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sDrawTriCMD   (0x2a0/4) /*  W PF  -- Voodoo2/Banshee only */
-#define sBeginTriCMD  (0x2a4/4) /*  W PF  -- Voodoo2/Banshee only */
+#define sVz       (0x280) /*  W PF  -- Voodoo2/Banshee only */
+#define sWb       (0x284) /*  W PF  -- Voodoo2/Banshee only */
+#define sWtmu0      (0x288) /*  W PF  -- Voodoo2/Banshee only */
+#define sS_W0     (0x28c) /*  W PF  -- Voodoo2/Banshee only */
+#define sT_W0     (0x290) /*  W PF  -- Voodoo2/Banshee only */
+#define sWtmu1      (0x294) /*  W PF  -- Voodoo2/Banshee only */
+#define sS_Wtmu1    (0x298) /*  W PF  -- Voodoo2/Banshee only */
+#define sT_Wtmu1    (0x29c) /*  W PF  -- Voodoo2/Banshee only */
+#define sDrawTriCMD   (0x2a0) /*  W PF  -- Voodoo2/Banshee only */
+#define sBeginTriCMD  (0x2a4) /*  W PF  -- Voodoo2/Banshee only */
 
 /* 0x2c0 */
-#define bltSrcBaseAddr  (0x2c0/4) /* RW PF  -- Voodoo2 only */
-#define bltDstBaseAddr  (0x2c4/4) /* RW PF  -- Voodoo2 only */
-#define bltXYStrides  (0x2c8/4) /* RW PF  -- Voodoo2 only */
-#define bltSrcChromaRange (0x2cc/4) /* RW PF  -- Voodoo2 only */
-#define bltDstChromaRange (0x2d0/4) /* RW PF  -- Voodoo2 only */
-#define bltClipX    (0x2d4/4) /* RW PF  -- Voodoo2 only */
-#define bltClipY    (0x2d8/4) /* RW PF  -- Voodoo2 only */
-#define bltSrcXY    (0x2e0/4) /* RW PF  -- Voodoo2 only */
-#define bltDstXY    (0x2e4/4) /* RW PF  -- Voodoo2 only */
-#define bltSize     (0x2e8/4) /* RW PF  -- Voodoo2 only */
-#define bltRop      (0x2ec/4) /* RW PF  -- Voodoo2 only */
-#define bltColor    (0x2f0/4) /* RW PF  -- Voodoo2 only */
-#define bltCommand    (0x2f8/4) /* RW PF  -- Voodoo2 only */
-#define bltData     (0x2fc/4) /*  W PF  -- Voodoo2 only */
+#define bltSrcBaseAddr  (0x2c0) /* RW PF  -- Voodoo2 only */
+#define bltDstBaseAddr  (0x2c4) /* RW PF  -- Voodoo2 only */
+#define bltXYStrides  (0x2c8) /* RW PF  -- Voodoo2 only */
+#define bltSrcChromaRange (0x2cc) /* RW PF  -- Voodoo2 only */
+#define bltDstChromaRange (0x2d0) /* RW PF  -- Voodoo2 only */
+#define bltClipX    (0x2d4) /* RW PF  -- Voodoo2 only */
+#define bltClipY    (0x2d8) /* RW PF  -- Voodoo2 only */
+#define bltSrcXY    (0x2e0) /* RW PF  -- Voodoo2 only */
+#define bltDstXY    (0x2e4) /* RW PF  -- Voodoo2 only */
+#define bltSize     (0x2e8) /* RW PF  -- Voodoo2 only */
+#define bltRop      (0x2ec) /* RW PF  -- Voodoo2 only */
+#define bltColor    (0x2f0) /* RW PF  -- Voodoo2 only */
+#define bltCommand    (0x2f8) /* RW PF  -- Voodoo2 only */
+#define bltData     (0x2fc) /*  W PF  -- Voodoo2 only */
 
 /* 0x300 */
-#define textureMode   (0x300/4) /*  W PF */
-#define tLOD      (0x304/4) /*  W PF */
-#define tDetail     (0x308/4) /*  W PF */
-#define texBaseAddr   (0x30c/4) /*  W PF */
-#define texBaseAddr_1 (0x310/4) /*  W PF */
-#define texBaseAddr_2 (0x314/4) /*  W PF */
-#define texBaseAddr_3_8 (0x318/4) /*  W PF */
-#define trexInit0   (0x31c/4) /*  W  F  -- Voodoo/Voodoo2 only */
-#define trexInit1   (0x320/4) /*  W  F */
-#define nccTable    (0x324/4) /*  W  F */
+#define textureMode   (0x300) /*  W PF */
+#define tLOD      (0x304) /*  W PF */
+#define tDetail     (0x308) /*  W PF */
+#define texBaseAddr   (0x30c) /*  W PF */
+#define texBaseAddr_1 (0x310) /*  W PF */
+#define texBaseAddr_2 (0x314) /*  W PF */
+#define texBaseAddr_3_8 (0x318) /*  W PF */
+#define trexInit0   (0x31c) /*  W  F  -- Voodoo/Voodoo2 only */
+#define trexInit1   (0x320) /*  W  F */
+#define nccTable    (0x324) /*  W  F */
 
 
 
@@ -770,75 +770,75 @@ static const char *const banshee_reg_name[] =
  *************************************/
 
 /* 0x000 */
-#define io_status             (0x000/4) /*  */
-#define io_pciInit0           (0x004/4) /*  */
-#define io_sipMonitor         (0x008/4) /*  */
-#define io_lfbMemoryConfig    (0x00c/4) /*  */
-#define io_miscInit0          (0x010/4) /*  */
-#define io_miscInit1          (0x014/4) /*  */
-#define io_dramInit0          (0x018/4) /*  */
-#define io_dramInit1          (0x01c/4) /*  */
-#define io_agpInit            (0x020/4) /*  */
-#define io_tmuGbeInit         (0x024/4) /*  */
-#define io_vgaInit0           (0x028/4) /*  */
-#define io_vgaInit1           (0x02c/4) /*  */
-#define io_dramCommand        (0x030/4) /*  */
-#define io_dramData           (0x034/4) /*  */
-#define io_strapInfo          (0x038/4) /*  */
+#define io_status             (0x000) /*  */
+#define io_pciInit0           (0x004) /*  */
+#define io_sipMonitor         (0x008) /*  */
+#define io_lfbMemoryConfig    (0x00c) /*  */
+#define io_miscInit0          (0x010) /*  */
+#define io_miscInit1          (0x014) /*  */
+#define io_dramInit0          (0x018) /*  */
+#define io_dramInit1          (0x01c) /*  */
+#define io_agpInit            (0x020) /*  */
+#define io_tmuGbeInit         (0x024) /*  */
+#define io_vgaInit0           (0x028) /*  */
+#define io_vgaInit1           (0x02c) /*  */
+#define io_dramCommand        (0x030) /*  */
+#define io_dramData           (0x034) /*  */
+#define io_strapInfo          (0x038) /*  */
 
 /* 0x040 */
-#define io_pllCtrl0           (0x040/4) /*  */
-#define io_pllCtrl1           (0x044/4) /*  */
-#define io_pllCtrl2           (0x048/4) /*  */
-#define io_dacMode            (0x04c/4) /*  */
-#define io_dacAddr            (0x050/4) /*  */
-#define io_dacData            (0x054/4) /*  */
-#define io_rgbMaxDelta        (0x058/4) /*  */
-#define io_vidProcCfg         (0x05c/4) /*  */
-#define io_hwCurPatAddr       (0x060/4) /*  */
-#define io_hwCurLoc           (0x064/4) /*  */
-#define io_hwCurC0            (0x068/4) /*  */
-#define io_hwCurC1            (0x06c/4) /*  */
-#define io_vidInFormat        (0x070/4) /*  */
-#define io_vidInStatus        (0x074/4) /*  */
-#define io_vidSerialParallelPort    (0x078/4) /*  */
-#define io_vidInXDecimDeltas  (0x07c/4) /*  */
+#define io_pllCtrl0           (0x040) /*  */
+#define io_pllCtrl1           (0x044) /*  */
+#define io_pllCtrl2           (0x048) /*  */
+#define io_dacMode            (0x04c) /*  */
+#define io_dacAddr            (0x050) /*  */
+#define io_dacData            (0x054) /*  */
+#define io_rgbMaxDelta        (0x058) /*  */
+#define io_vidProcCfg         (0x05c) /*  */
+#define io_hwCurPatAddr       (0x060) /*  */
+#define io_hwCurLoc           (0x064) /*  */
+#define io_hwCurC0            (0x068) /*  */
+#define io_hwCurC1            (0x06c) /*  */
+#define io_vidInFormat        (0x070) /*  */
+#define io_vidInStatus        (0x074) /*  */
+#define io_vidSerialParallelPort    (0x078) /*  */
+#define io_vidInXDecimDeltas  (0x07c) /*  */
 
 /* 0x080 */
-#define io_vidInDecimInitErrs (0x080/4) /*  */
-#define io_vidInYDecimDeltas  (0x084/4) /*  */
-#define io_vidPixelBufThold   (0x088/4) /*  */
-#define io_vidChromaMin       (0x08c/4) /*  */
-#define io_vidChromaMax       (0x090/4) /*  */
-#define io_vidCurrentLine     (0x094/4) /*  */
-#define io_vidScreenSize      (0x098/4) /*  */
-#define io_vidOverlayStartCoords (0x09c/4) /*  */
-#define io_vidOverlayEndScreenCoord (0x0a0/4) /*  */
-#define io_vidOverlayDudx     (0x0a4/4) /*  */
-#define io_vidOverlayDudxOffsetSrcWidth (0x0a8/4) /*  */
-#define io_vidOverlayDvdy     (0x0ac/4) /*  */
-#define io_vgab0              (0x0b0/4) /*  */
-#define io_vgab4              (0x0b4/4) /*  */
-#define io_vgab8              (0x0b8/4) /*  */
-#define io_vgabc              (0x0bc/4) /*  */
+#define io_vidInDecimInitErrs (0x080) /*  */
+#define io_vidInYDecimDeltas  (0x084) /*  */
+#define io_vidPixelBufThold   (0x088) /*  */
+#define io_vidChromaMin       (0x08c) /*  */
+#define io_vidChromaMax       (0x090) /*  */
+#define io_vidCurrentLine     (0x094) /*  */
+#define io_vidScreenSize      (0x098) /*  */
+#define io_vidOverlayStartCoords (0x09c) /*  */
+#define io_vidOverlayEndScreenCoord (0x0a0) /*  */
+#define io_vidOverlayDudx     (0x0a4) /*  */
+#define io_vidOverlayDudxOffsetSrcWidth (0x0a8) /*  */
+#define io_vidOverlayDvdy     (0x0ac) /*  */
+#define io_vgab0              (0x0b0) /*  */
+#define io_vgab4              (0x0b4) /*  */
+#define io_vgab8              (0x0b8) /*  */
+#define io_vgabc              (0x0bc) /*  */
 
 /* 0x0c0 */
-#define io_vgac0              (0x0c0/4) /*  */
-#define io_vgac4              (0x0c4/4) /*  */
-#define io_vgac8              (0x0c8/4) /*  */
-#define io_vgacc              (0x0cc/4) /*  */
-#define io_vgad0              (0x0d0/4) /*  */
-#define io_vgad4              (0x0d4/4) /*  */
-#define io_vgad8              (0x0d8/4) /*  */
-#define io_vgadc              (0x0dc/4) /*  */
-#define io_vidOverlayDvdyOffset (0x0e0/4) /*  */
-#define io_vidDesktopStartAddr (0x0e4/4) /*  */
-#define io_vidDesktopOverlayStride (0x0e8/4) /*  */
-#define io_vidInAddr0         (0x0ec/4) /*  */
-#define io_vidInAddr1         (0x0f0/4) /*  */
-#define io_vidInAddr2         (0x0f4/4) /*  */
-#define io_vidInStride        (0x0f8/4) /*  */
-#define io_vidCurrOverlayStartAddr (0x0fc/4) /*  */
+#define io_vgac0              (0x0c0) /*  */
+#define io_vgac4              (0x0c4) /*  */
+#define io_vgac8              (0x0c8) /*  */
+#define io_vgacc              (0x0cc) /*  */
+#define io_vgad0              (0x0d0) /*  */
+#define io_vgad4              (0x0d4) /*  */
+#define io_vgad8              (0x0d8) /*  */
+#define io_vgadc              (0x0dc) /*  */
+#define io_vidOverlayDvdyOffset (0x0e0) /*  */
+#define io_vidDesktopStartAddr (0x0e4) /*  */
+#define io_vidDesktopOverlayStride (0x0e8) /*  */
+#define io_vidInAddr0         (0x0ec) /*  */
+#define io_vidInAddr1         (0x0f0) /*  */
+#define io_vidInAddr2         (0x0f4) /*  */
+#define io_vidInStride        (0x0f8) /*  */
+#define io_vidCurrOverlayStartAddr (0x0fc) /*  */
 
 
 
@@ -884,44 +884,44 @@ static const char *const banshee_io_reg_name[] =
  *************************************/
 
 /* 0x000 */
-#define agpReqSize        (0x000/4) /*  */
-#define agpHostAddressLow   (0x004/4) /*  */
-#define agpHostAddressHigh    (0x008/4) /*  */
-#define agpGraphicsAddress    (0x00c/4) /*  */
-#define agpGraphicsStride   (0x010/4) /*  */
-#define agpMoveCMD        (0x014/4) /*  */
-#define cmdBaseAddr0      (0x020/4) /*  */
-#define cmdBaseSize0      (0x024/4) /*  */
-#define cmdBump0        (0x028/4) /*  */
-#define cmdRdPtrL0        (0x02c/4) /*  */
-#define cmdRdPtrH0        (0x030/4) /*  */
-#define cmdAMin0        (0x034/4) /*  */
-#define cmdAMax0        (0x03c/4) /*  */
+#define agpReqSize        (0x000) /*  */
+#define agpHostAddressLow   (0x004) /*  */
+#define agpHostAddressHigh    (0x008) /*  */
+#define agpGraphicsAddress    (0x00c) /*  */
+#define agpGraphicsStride   (0x010) /*  */
+#define agpMoveCMD        (0x014) /*  */
+#define cmdBaseAddr0      (0x020) /*  */
+#define cmdBaseSize0      (0x024) /*  */
+#define cmdBump0        (0x028) /*  */
+#define cmdRdPtrL0        (0x02c) /*  */
+#define cmdRdPtrH0        (0x030) /*  */
+#define cmdAMin0        (0x034) /*  */
+#define cmdAMax0        (0x03c) /*  */
 
 /* 0x040 */
-#define cmdStatus0        (0x040/4) /*  */
-#define cmdFifoDepth0     (0x044/4) /*  */
-#define cmdHoleCnt0       (0x048/4) /*  */
-#define cmdBaseAddr1      (0x050/4) /*  */
-#define cmdBaseSize1      (0x054/4) /*  */
-#define cmdBump1          (0x058/4) /*  */
-#define cmdRdPtrL1        (0x05c/4) /*  */
-#define cmdRdPtrH1        (0x060/4) /*  */
-#define cmdAMin1          (0x064/4) /*  */
-#define cmdAMax1          (0x06c/4) /*  */
-#define cmdStatus1        (0x070/4) /*  */
-#define cmdFifoDepth1     (0x074/4) /*  */
-#define cmdHoleCnt1       (0x078/4) /*  */
+#define cmdStatus0        (0x040) /*  */
+#define cmdFifoDepth0     (0x044) /*  */
+#define cmdHoleCnt0       (0x048) /*  */
+#define cmdBaseAddr1      (0x050) /*  */
+#define cmdBaseSize1      (0x054) /*  */
+#define cmdBump1          (0x058) /*  */
+#define cmdRdPtrL1        (0x05c) /*  */
+#define cmdRdPtrH1        (0x060) /*  */
+#define cmdAMin1          (0x064) /*  */
+#define cmdAMax1          (0x06c) /*  */
+#define cmdStatus1        (0x070) /*  */
+#define cmdFifoDepth1     (0x074) /*  */
+#define cmdHoleCnt1       (0x078) /*  */
 
 /* 0x080 */
-#define cmdFifoThresh     (0x080/4) /*  */
-#define cmdHoleInt        (0x084/4) /*  */
+#define cmdFifoThresh     (0x080) /*  */
+#define cmdHoleInt        (0x084) /*  */
 
 /* 0x100 */
-#define yuvBaseAddress      (0x100/4) /*  */
-#define yuvStride       (0x104/4) /*  */
-#define crc1          (0x120/4) /*  */
-#define crc2          (0x130/4) /*  */
+#define yuvBaseAddress      (0x100) /*  */
+#define yuvStride       (0x104) /*  */
+#define crc1          (0x120) /*  */
+#define crc2          (0x130) /*  */
 
 
 
@@ -973,37 +973,37 @@ static const char *const banshee_agp_reg_name[] =
  *************************************/
 
 /* 0x000 */
-#define blt_status         (0x000/4) /*  */
-#define blt_intrCtrl       (0x004/4) /*  */
-#define blt_clip0Min       (0x008/4) /*  */
-#define blt_clip0Max       (0x00c/4) /*  */
-#define blt_dstBaseAddr    (0x010/4) /*  */
-#define blt_dstFormat      (0x014/4) /*  */
-#define blt_srcColorkeyMin (0x018/4) /*  */
-#define blt_srcColorkeyMax (0x01c/4) /*  */
-#define blt_dstColorkeyMin (0x020/4) /*  */
-#define blt_dstColorkeyMax (0x024/4) /*  */
-#define blt_bresError0     (0x028/4) /*  */
-#define blt_bresError1     (0x02c/4) /*  */
-#define blt_rop            (0x030/4) /*  */
-#define blt_srcBaseAddr    (0x034/4) /*  */
-#define blt_commandExtra   (0x038/4) /*  */
-#define blt_lineStipple    (0x03c/4) /*  */
+#define blt_status         (0x000) /*  */
+#define blt_intrCtrl       (0x004) /*  */
+#define blt_clip0Min       (0x008) /*  */
+#define blt_clip0Max       (0x00c) /*  */
+#define blt_dstBaseAddr    (0x010) /*  */
+#define blt_dstFormat      (0x014) /*  */
+#define blt_srcColorkeyMin (0x018) /*  */
+#define blt_srcColorkeyMax (0x01c) /*  */
+#define blt_dstColorkeyMin (0x020) /*  */
+#define blt_dstColorkeyMax (0x024) /*  */
+#define blt_bresError0     (0x028) /*  */
+#define blt_bresError1     (0x02c) /*  */
+#define blt_rop            (0x030) /*  */
+#define blt_srcBaseAddr    (0x034) /*  */
+#define blt_commandExtra   (0x038) /*  */
+#define blt_lineStipple    (0x03c) /*  */
 
 /* 0x040 */
-#define blt_lineStyle      (0x040/4) /*  */
-#define blt_pattern0Alias  (0x044/4) /*  */
-#define blt_pattern1Alias  (0x048/4) /*  */
-#define blt_clip1Min       (0x04c/4) /*  */
-#define blt_clip1Max       (0x050/4) /*  */
-#define blt_srcFormat      (0x054/4) /*  */
-#define blt_srcSize        (0x058/4) /*  */
-#define blt_srcXY          (0x05c/4) /*  */
-#define blt_colorBack      (0x060/4) /*  */
-#define blt_colorFore      (0x064/4) /*  */
-#define blt_dstSize        (0x068/4) /*  */
-#define blt_dstXY          (0x06c/4) /*  */
-#define blt_command        (0x070/4) /*  */
+#define blt_lineStyle      (0x040) /*  */
+#define blt_pattern0Alias  (0x044) /*  */
+#define blt_pattern1Alias  (0x048) /*  */
+#define blt_clip1Min       (0x04c) /*  */
+#define blt_clip1Max       (0x050) /*  */
+#define blt_srcFormat      (0x054) /*  */
+#define blt_srcSize        (0x058) /*  */
+#define blt_srcXY          (0x05c) /*  */
+#define blt_colorBack      (0x060) /*  */
+#define blt_colorFore      (0x064) /*  */
+#define blt_dstSize        (0x068) /*  */
+#define blt_dstXY          (0x06c) /*  */
+#define blt_command        (0x070) /*  */
 
 
 

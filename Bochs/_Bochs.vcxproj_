@@ -177,12 +177,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\bochs_oldconfig.h" />
-    <ClInclude Include="..\bochs\bochs.h" />
-    <ClInclude Include="..\bochs\bxthread.h" />
-    <ClInclude Include="..\bochs\bxversion.h" />
-    <ClInclude Include="..\bochs\logio.h" />
-    <ClInclude Include="..\bochs\osdep.h" />
-    <ClInclude Include="..\bochs\pc_system.h" />
+    <ClInclude Include="..\bochs_old\bochs.h" />
+    <ClInclude Include="..\bochs_old\bxthread.h" />
+    <ClInclude Include="..\bochs_old\bxversion.h" />
+    <ClInclude Include="..\bochs_old\logio.h" />
+    <ClInclude Include="..\bochs_old\osdep.h" />
+    <ClInclude Include="..\bochs_old\pc_system.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -215,14 +215,14 @@
     <Image Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\bochs\bxthread.cc" />
-    <ClCompile Include="..\bochs\config.cc" />
-    <ClCompile Include="..\bochs\crc.cc" />
-    <ClCompile Include="..\bochs\logio.cc" />
-    <ClCompile Include="..\bochs\main.cc" />
-    <ClCompile Include="..\bochs\osdep.cc" />
-    <ClCompile Include="..\bochs\pc_system.cc" />
-    <ClCompile Include="..\bochs\plugin.cc" />
+    <ClCompile Include="..\bochs_old\bxthread.cc" />
+    <ClCompile Include="..\bochs_old\config.cc" />
+    <ClCompile Include="..\bochs_old\crc.cc" />
+    <ClCompile Include="..\bochs_old\logio.cc" />
+    <ClCompile Include="..\bochs_old\main.cc" />
+    <ClCompile Include="..\bochs_old\osdep.cc" />
+    <ClCompile Include="..\bochs_old\pc_system.cc" />
+    <ClCompile Include="..\bochs_old\plugin.cc" />
     <ClCompile Include="App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>

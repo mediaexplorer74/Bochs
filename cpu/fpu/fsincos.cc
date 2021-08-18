@@ -9,9 +9,9 @@ floating point emulation.
  *            Stanislav Shwartsman [sshwarts at sourceforge net]
  * ==========================================================================*/
 
-#define FLOAT128
-
 #include "pch.h"
+
+#define FLOAT128
 
 #define USE_estimateDiv128To64
 #include "softfloatx80.h"

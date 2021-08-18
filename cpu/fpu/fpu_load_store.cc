@@ -2,6 +2,8 @@
 // $Id: fpu_load_store.cc 13466 2018-02-16 07:57:32Z sshwarts $
 /////////////////////////////////////////////////////////////////////////
 
+#include "pch.h"
+
 #define NEED_CPU_REG_SHORTCUTS 1
 #include "../bochs/bochs.h"
 #include "../cpu/cpu.h"

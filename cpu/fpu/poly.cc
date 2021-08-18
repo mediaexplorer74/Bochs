@@ -9,9 +9,10 @@ floating point emulation.
  *            Stanislav Shwartsman [sshwarts at sourceforge net]
  * ==========================================================================*/
 
+#include "pch.h"
+
 #define FLOAT128
 
-#include "pch.h"
 
 #include <assert.h>
 #include "softfloat.h"

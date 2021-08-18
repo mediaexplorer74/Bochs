@@ -2,6 +2,7 @@
 // $Id: amd_k6_2_chomper.cc 13153 2017-03-26 20:12:14Z sshwarts $
 /////////////////////////////////////////////////////////////////////////
 
+#include "pch.h"
 
 #include "../bochs/bochs.h"
 #include "../cpu/cpu.h"

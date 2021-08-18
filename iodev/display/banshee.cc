@@ -30,12 +30,12 @@
 
 #if BX_SUPPORT_PCI && BX_SUPPORT_VOODOO
 
-#include "pci.h"
+#include "../pci.h"
 #include "vgacore.h"
 #include "ddc.h"
 #include "voodoo.h"
-#include "virt_timer.h"
-#include "bochs/bxthread.h"
+#include "../virt_timer.h"
+#include "../bochs/bxthread.h"
 #define BX_USE_TERNARY_ROP
 #include "bitblt.h"
 

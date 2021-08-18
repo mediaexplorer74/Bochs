@@ -11,6 +11,7 @@
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
 
+#pragma warning(disable : 4996)
 
 #include "pch.h"
 
@@ -475,7 +476,11 @@ int vmware4_image_t::create_image(const char *pathname, Bit64u size)
   }
   memset(buffer, 0, SECTOR_SIZE);
   cyl = (Bit64u)(size / 16 / 63 / 512.0);
+
+#pragma warning(disable : 4996)
   snprintf(desc_line, 256, "RW " FMT_LL "d SPARSE \"%s\"", size / SECTOR_SIZE, pathname);
+
+#pragma warning(disable : 4996)
   sprintf((char*)buffer, desc_template, (Bit32u)time(NULL), desc_line, cyl);
   offset = dtoh64(header.description_offset_sectors) * SECTOR_SIZE;
   if (bx_write_image(fd, offset, buffer, SECTOR_SIZE) != SECTOR_SIZE) {
