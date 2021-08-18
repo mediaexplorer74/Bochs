@@ -4,6 +4,9 @@
 
 
 #include "bxthread.h"
+#include "../iodev/display/voodoo_data.h"
+#include <winnt.h>
+#include "../gui/siminterface.h"
 #ifndef BX_LOGIO_H
 #define BX_LOGIO_H
 
@@ -117,19 +120,20 @@ public:
          case '%':
              if (*(s + 1)) s++;
              else break;
-             switch (*s) {
+             switch (*s) 
+             {
              case 'd':
 #pragma warning(suppress : 4996)
-                 sprintf(tmpstr, "%s", prefix == NULL ? "" : prefix);
+                 sprintf(tmpstr, "%s", "");// prefix == NULL ? "" : prefix);
                  break;
              case 't':
 #pragma warning(suppress : 4996)
-                 sprintf(tmpstr, FMT_TICK, bx_pc_system.time_ticks());
+                 sprintf(tmpstr, FMT_TICK, "");// bx_pc_system.time_ticks());
                  break;
              case 'i':
 #if BX_SUPPORT_SMP == 0
 #pragma warning(suppress : 4996)
-                 sprintf(tmpstr, "%08x", BX_CPU(0)->get_eip());
+                 sprintf(tmpstr, "%08x", "");// BX_CPU(0)->get_eip());
 #endif
                  break;
              case 'e':

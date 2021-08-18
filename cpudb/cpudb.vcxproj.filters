@@ -42,9 +42,7 @@
     <ClInclude Include="..\cpu\cpudb\amd\athlon64_clawhammer.h" />
     <ClInclude Include="..\cpu\cpudb\amd\athlon64_venice.h" />
     <ClInclude Include="..\cpu\cpudb\intel\atom_n270.h" />
-    <ClInclude Include="..\bochs.h" />
     <ClInclude Include="..\cpu\cpudb\intel\broadwell_ult.h" />
-    <ClInclude Include="..\config.h" />
     <ClInclude Include="..\cpu\cpudb\intel\core_duo_t2400_yonah.h" />
     <ClInclude Include="..\cpu\cpudb\intel\core2_penryn_t9600.h" />
     <ClInclude Include="..\cpu\cpudb\intel\corei5_arrandale_m520.h" />

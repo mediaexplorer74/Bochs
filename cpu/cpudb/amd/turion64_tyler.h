@@ -1,32 +1,14 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: turion64_tyler.h 13111 2017-03-13 19:44:14Z sshwarts $
 /////////////////////////////////////////////////////////////////////////
-//
-//   Copyright (c) 2011-2017 Stanislav Shwartsman
-//          Written by Stanislav Shwartsman [sshwarts at sourceforge net]
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA B 02110-1301 USA
-//
-/////////////////////////////////////////////////////////////////////////
+
 
 #ifndef BX_TURION64_TYLER_CPUID_DEFINITIONS_H
 #define BX_TURION64_TYLER_CPUID_DEFINITIONS_H
 
 #if BX_SUPPORT_X86_64
 
-#include "cpu/cpuid.h"
+#include "../cpu/cpuid.h"
 
 class turion64_tyler_t : public bx_cpuid_t {
 public:

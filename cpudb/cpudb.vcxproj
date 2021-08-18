@@ -188,8 +188,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\bochs.h" />
-    <ClInclude Include="..\config.h" />
     <ClInclude Include="..\cpu\cpu.h" />
     <ClInclude Include="..\cpu\cpudb\amd\amd_k6_2_chomper.h" />
     <ClInclude Include="..\cpu\cpudb\amd\athlon64_clawhammer.h" />
