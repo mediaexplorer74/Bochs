@@ -1,23 +1,6 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: keyboard.cc 14163 2021-02-26 20:37:49Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2002-2021  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-/////////////////////////////////////////////////////////////////////////
 
 // Now features proper implementation of keyboard opcodes 0xF4 to 0xF6
 // Silently ignores PS/2 keyboard extensions (0xF7 to 0xFD)
@@ -44,10 +27,13 @@
 // Define BX_PLUGGABLE in files that can be compiled into plugins.  For
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
+
 #define BX_PLUGGABLE
 
+#include "pch.h"
+
 #include "iodev.h"
-#include "gui/keymap.h"
+#include "../gui/keymap.h"
 #include <math.h>
 #include "keyboard.h"
 #include "scancodes.h"

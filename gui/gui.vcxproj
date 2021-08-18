@@ -219,8 +219,37 @@
     <ClInclude Include="gui.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
+    
+    <ClInclude Include="..\gui\enh_dbg.h" />
+    <ClInclude Include="..\gui\keymap.h" />
+    <ClInclude Include="..\gui\paramtree.h" />
+    <ClInclude Include="..\gui\rfb.h" />
+    <ClInclude Include="..\gui\rfbkeys.h" />
+    <ClInclude Include="..\gui\scrollwin.h" />
+    <ClInclude Include="..\gui\sdl.h" />
+    <ClInclude Include="..\gui\siminterface.h" />
+    <ClInclude Include="..\gui\wenhdbg_res.h" />
+    <ClInclude Include="..\gui\win32dialog.h" />
+    <ClInclude Include="..\gui\win32paramdlg.h" />
+    <ClInclude Include="..\gui\win32res.h" />
+    <ClInclude Include="..\iodev\iodev.h" />
   </ItemGroup>
+	
+ 
   <ItemGroup>
+	<ClCompile Include="..\gui\enh_dbg.cc" />
+    <ClCompile Include="..\gui\gui.cc" />
+    <ClCompile Include="..\gui\keymap.cc" />
+    <ClCompile Include="..\gui\nogui.cc" />
+    <ClCompile Include="..\gui\paramtree.cc" />
+    <ClCompile Include="..\gui\rfb.cc" />
+    <ClCompile Include="..\gui\scrollwin.cc" />
+    <ClCompile Include="..\gui\siminterface.cc" />
+    <ClCompile Include="..\gui\textconfig.cc" />
+    <ClCompile Include="..\gui\win32.cc" />
+    <ClCompile Include="..\gui\win32_enh_dbg_osdep.cc" />
+    <ClCompile Include="..\gui\win32config.cc" />
+    <ClCompile Include="..\gui\win32paramdlg.cc" />
     <ClCompile Include="gui.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

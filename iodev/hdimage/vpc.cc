@@ -9,15 +9,20 @@
 // Define BX_PLUGGABLE in files that can be compiled into plugins.  For
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
+
 #define BX_PLUGGABLE
 
 #include "pch.h"
 
+#ifndef BXIMAGE
+#define BXIMAGE
+#endif
+
 #ifdef BXIMAGE
-#include "bochs/config.h"
-#include "misc/bxcompat.h"
-#include "bochs/osdep.h"
-#include "misc/bswap.h"
+#include "../bochs/config.h"
+#include "../misc/bxcompat.h"
+#include "../bochs/osdep.h"
+#include "../misc/bswap.h"
 #else
 #include "../bochs/bochs.h"
 #include "../bochs/plugin.h"

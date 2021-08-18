@@ -283,9 +283,12 @@ typedef void (*deviceInitDev_t)(void);
 typedef void (*deviceReset_t)(unsigned);
 
 //my RnD
-//BOCHSAPI void pluginRegisterDeviceDevmodel(plugin_t *plugin, Bit16u type, bx_devmodel_c *dev, const char *name);
+BOCHSAPI void pluginRegisterDeviceDevmodel(plugin_t *plugin, Bit16u type, bx_devmodel_c *dev, const char *name);
+
 #define BX_REGISTER_DEVICE_DEVMODEL(a,b,c,d) pluginRegisterDeviceDevmodel(a,b,c,d)
+
 //BOCHSAPI void BX_REGISTER_DEVICE_DEVMODEL(plugin_t *plugin, Bit16u type, bx_devmodel_c *dev, const char *name);
+
 
 BOCHSAPI void pluginUnregisterDeviceDevmodel(const char *name, Bit16u type);
 BOCHSAPI bool pluginDevicePresent(const char *name);

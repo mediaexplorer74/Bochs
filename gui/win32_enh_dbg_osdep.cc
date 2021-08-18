@@ -10,8 +10,10 @@
 //
 //  Copyright (C) 2008-2021  The Bochs Project
 
-#include "bochs/bochs.h"
-#include "bx_debug/debug.h"
+#include "pch.h"
+
+#include "../bochs/bochs.h"
+#include "../bx_debug/debug.h"
 #include "siminterface.h"
 #include "win32dialog.h"
 #include "enh_dbg.h"

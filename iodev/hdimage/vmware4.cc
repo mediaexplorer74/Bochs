@@ -11,13 +11,15 @@
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
 
+
+#include "pch.h"
+
+#define BX_PLUGGABLE
+
 #ifndef BXIMAGE
 #define BXIMAGE
 #endif
 
-#define BX_PLUGGABLE
-
-#include "pch.h"
 
 #ifdef BXIMAGE
 #include "../bochs/config.h"
@@ -55,7 +57,8 @@ PLUGIN_ENTRY_FOR_IMG_MODULE(vmware4)
 // Define the static class that registers the derived device image class,
 // and allocates one on request.
 //
-class bx_vmware4_locator_c : public hdimage_locator_c {
+class bx_vmware4_locator_c : public hdimage_locator_c 
+{
 public:
   bx_vmware4_locator_c(void) : hdimage_locator_c("vmware4") {}
 protected:

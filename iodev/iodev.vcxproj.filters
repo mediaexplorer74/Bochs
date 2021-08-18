@@ -54,7 +54,6 @@
     <ClInclude Include="..\iodev\hpet.h" />
     <ClInclude Include="..\iodev\ioapic.h" />
     <ClInclude Include="..\iodev\iodebug.h" />
-    <ClInclude Include="..\iodev\iodev.h" />
     <ClInclude Include="..\iodev\keyboard.h" />
     <ClInclude Include="..\iodev\parallel.h" />
     <ClInclude Include="..\iodev\pci.h" />
@@ -70,5 +69,8 @@
     <ClInclude Include="..\iodev\speaker.h" />
     <ClInclude Include="..\iodev\unmapped.h" />
     <ClInclude Include="..\iodev\virt_timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

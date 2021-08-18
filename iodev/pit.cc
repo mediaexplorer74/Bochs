@@ -1,27 +1,14 @@
 ///////////////////////////////////////////////////////////////////////
 // $Id: pit.cc 14163 2021-02-26 20:37:49Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2001-2021  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 
 // Define BX_PLUGGABLE in files that can be compiled into plugins.  For
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
+
 #define BX_PLUGGABLE
+
+#include "pch.h"
 
 #include "iodev.h"
 #include "pit.h"
@@ -35,13 +22,18 @@ bx_pit_c *thePit = NULL;
 
 PLUGIN_ENTRY_FOR_MODULE(pit)
 {
-  if (mode == PLUGIN_INIT) {
+  if (mode == PLUGIN_INIT) 
+  {
     thePit = new bx_pit_c();
     bx_devices.pluginPitDevice = thePit;
     BX_REGISTER_DEVICE_DEVMODEL(plugin, type, thePit, BX_PLUGIN_PIT);
-  } else if (mode == PLUGIN_FINI) {
+  } 
+  else if (mode == PLUGIN_FINI) 
+  {
     delete thePit;
-  } else if (mode == PLUGIN_PROBE) {
+  } 
+  else if (mode == PLUGIN_PROBE) 
+  {
     return (int)PLUGTYPE_CORE;
   }
   return 0; // Success

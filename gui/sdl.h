@@ -1,23 +1,7 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: sdl.h 13021 2017-01-01 19:37:26Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2002-2017  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-/////////////////////////////////////////////////////////////////////////
+
 
 #ifndef BX_SDL_H
 #define BX_SDL_H
@@ -28,6 +12,9 @@
 #define BX_HEADERBAR_BG_RED	0xD0
 #define BX_HEADERBAR_BG_GREEN	0xD0
 #define BX_HEADERBAR_BG_BLUE	0xD0
+
+// my +
+#include "../bochs/config.h"
 
 static const Bit8u sdl_font8x16[256][16] = {
   {   0,   0,   0,   0,   0,   0,   0,   0,    // 0

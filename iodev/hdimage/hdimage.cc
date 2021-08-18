@@ -8,12 +8,9 @@
 #define BXIMAGE
 #endif
 
-//temp
-#include "../../bochs/logio.cc"
-#include "../../bochs/config.h"
 
 #ifdef BXIMAGE
-//#include "../bochs/config.h"
+#include "../../bochs/config.h"
 #include "../../misc/bxcompat.h"
 #include "../../bochs/osdep.h"
 #include "../../misc/bswap.h"
@@ -31,6 +28,7 @@
 #endif
 
 #include "hdimage.h"
+#include "../../bochs/logio.cc" // ?
 
 #if BX_HAVE_SYS_MMAN_H
 #include <sys/mman.h>
@@ -283,7 +281,7 @@ bool hdimage_locator_c::detect_image_mode(int fd, Bit64u disk_size,
 
 // helper functions
 
-//#ifdef BXIMAGE
+#ifdef BXIMAGE
 int bx_create_image_file(const char *filename)
 {
 #pragma warning(suppress : 4996)
@@ -295,7 +293,7 @@ int bx_create_image_file(const char *filename)
                 );
   return fd;
 }
-//#endif
+#endif
 
 int bx_read_image(int fd, Bit64s offset, void *buf, int count)
 {

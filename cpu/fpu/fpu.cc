@@ -1,33 +1,15 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: fpu.cc 14086 2021-01-30 08:35:35Z sshwarts $
 /////////////////////////////////////////////////////////////////////////
-//
-//   Copyright (c) 2003-2018 Stanislav Shwartsman
-//          Written by Stanislav Shwartsman [sshwarts at sourceforge net]
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-//
-/////////////////////////////////////////////////////////////////////////
 
+#include "pch.h"
 
 #define NEED_CPU_REG_SHORTCUTS 1
-#include "bochs/bochs.h"
-#include "cpu/cpu.h"
+#include "../bochs/bochs.h"
+#include "../cpu/cpu.h"
 #define LOG_THIS BX_CPU_THIS_PTR
 
-#include "iodev/iodev.h"
+#include "../iodev/iodev.h"
 
 #define CHECK_PENDING_EXCEPTIONS 1
 

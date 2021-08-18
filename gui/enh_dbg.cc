@@ -10,18 +10,20 @@
 //
 //  Copyright (C) 2008-2021  The Bochs Project
 
-#include "bochs/config.h"
+#include "pch.h"
+
+#include "../bochs/config.h"
 
 #if BX_DEBUGGER && BX_DEBUGGER_GUI
 
 #include <math.h>
 
-#include "bochs/bochs.h"
+#include "../bochs/bochs.h"
 #include "siminterface.h"
-#include "bx_debug/debug.h"
-#include "memory/memory-bochs.h"
-#include "bochs/pc_system.h"
-#include "cpu/cpu.h"
+#include "../bx_debug/debug.h"
+#include "../memory/memory-bochs.h"
+#include "../bochs/pc_system.h"
+#include "../cpu/cpu.h"
 
 extern char* disasm(const Bit8u *opcode, bool is_32, bool is_64, char *disbufptr, bxInstruction_c *i, bx_address cs_base, bx_address rip);
 

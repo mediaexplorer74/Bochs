@@ -1,40 +1,26 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: gui.cc 14274 2021-06-07 11:30:08Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2002-2021  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 
+
+#include "pch.h"
 
 #include <signal.h>
-#include "iodev.h"
-#include "virt_timer.h"
+#include "../iodev/iodev.h"
+#include "../iodev/virt_timer.h"
 #include "keymap.h"
-#include "gui/bitmaps/floppya.h"
-#include "gui/bitmaps/floppyb.h"
-#include "gui/bitmaps/mouse.h"
-#include "gui/bitmaps/reset.h"
-#include "gui/bitmaps/power.h"
-#include "gui/bitmaps/snapshot.h"
-#include "gui/bitmaps/copy.h"
-#include "gui/bitmaps/paste.h"
-#include "gui/bitmaps/configbutton.h"
-#include "gui/bitmaps/cdromd.h"
-#include "gui/bitmaps/userbutton.h"
-#include "gui/bitmaps/saverestore.h"
+#include "../gui/bitmaps/floppya.h"
+#include "../gui/bitmaps/floppyb.h"
+#include "../gui/bitmaps/mouse.h"
+#include "../gui/bitmaps/reset.h"
+#include "../gui/bitmaps/power.h"
+#include "../gui/bitmaps/snapshot.h"
+#include "../gui/bitmaps/copy.h"
+#include "../gui/bitmaps/paste.h"
+#include "../gui/bitmaps/configbutton.h"
+#include "../gui/bitmaps/cdromd.h"
+#include "../gui/bitmaps/userbutton.h"
+#include "../gui/bitmaps/saverestore.h"
 
 #if BX_USE_GUI_CONSOLE
 #include "sdl.h"
