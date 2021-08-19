@@ -17,7 +17,6 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="..\misc\bxcompat.h" />
-    <ClInclude Include="..\config.h" />
     <ClInclude Include="..\iodev\network\netmod.h" />
     <ClInclude Include="..\iodev\network\netutil.h" />
     <ClInclude Include="..\osdep.h" />

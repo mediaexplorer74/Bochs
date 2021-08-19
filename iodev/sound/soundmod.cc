@@ -79,7 +79,9 @@ void bx_soundmod_ctl_c::list_modules(void)
       list[0] = 0;
       len = 0;
     }
+#pragma warning(suppress : 4996)
     strcat(list, " ");
+#pragma warning(suppress : 4996)
     strcat(list, sound_driver_names[i]);
     len = strlen(list);
     i++;

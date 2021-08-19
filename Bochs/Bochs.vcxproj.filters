@@ -14,9 +14,36 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="bxdisasm.cc" />
+    <ClCompile Include="bxthread.cc" />
+    <ClCompile Include="config.cc" />
+    <ClCompile Include="crc.cc" />
+    <ClCompile Include="gdbstub.cc" />
+    <ClCompile Include="logio.cc" />
+    <ClCompile Include="logio.cpp" />
+    <ClCompile Include="ltdl.c" />
+    <ClCompile Include="main.cc" />
+    <ClCompile Include="osdep.cc" />
+    <ClCompile Include="pc_system.cc" />
+    <ClCompile Include="plugin.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="bochs.h" />
+    <ClInclude Include="bxthread.h" />
+    <ClInclude Include="bxversion.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="cpudb.h" />
+    <ClInclude Include="extplugin.h" />
+    <ClInclude Include="logio.h" />
+    <ClInclude Include="ltdl-bochs.h" />
+    <ClInclude Include="ltdlconf.h" />
+    <ClInclude Include="osdep.h" />
+    <ClInclude Include="param_names.h" />
+    <ClInclude Include="pc_system.h" />
+    <ClInclude Include="plugin.h" />
+    <ClInclude Include="qemu-queue.h" />
+    <ClInclude Include="synchaapi.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
@@ -46,8 +73,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bochs_TemporaryKey.pfx" />
+    <None Include="aclocal.m4" />
+    <None Include="bxversion.h.in" />
+    <None Include="bxversion.rc.in" />
+    <None Include="config.guess" />
+    <None Include="config.status" />
+    <None Include="config.sub" />
+    <None Include="config.h.in" />
+    <None Include="configure" />
+    <None Include="configure.in" />
+    <None Include="install-sh" />
+    <None Include="ltdlconf.h.in" />
+    <None Include="ltmain.sh" />
+    <None Include="Makefile" />
+    <None Include="Makefile.in" />
+    <None Include="msrs.def" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config.log" />
   </ItemGroup>
 </Project>

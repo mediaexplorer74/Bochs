@@ -152,7 +152,10 @@ PLUGIN_ENTRY_FOR_MODULE(sb16)
 {
   if (mode == PLUGIN_INIT) {
     theSB16Device = new bx_sb16_c();
-    BX_REGISTER_DEVICE_DEVMODEL(plugin, type, theSB16Device, BX_PLUGIN_SB16);
+
+    //TODO
+    //BX_REGISTER_DEVICE_DEVMODEL(plugin, type, theSB16Device, BX_PLUGIN_SB16);
+    
     // add new configuration parameter for the config interface
     sb16_init_options();
     // register add-on option for bochsrc and command line
@@ -454,7 +457,10 @@ void bx_sb16_c::register_state(void)
   new bx_shadow_num_c(mpu, "current_timer", &MPU.current_timer);
   new bx_shadow_num_c(mpu, "last_delta_time", &MPU.last_delta_time);
   bx_list_c *patchtbl = new bx_list_c(mpu, "patchtable");
-  for (i=0; i<16; i++) {
+  
+  for (i=0; i<16; i++) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(name, "0x%02x", i);
     patch = new bx_list_c(patchtbl, name);
     new bx_shadow_num_c(patch, "banklsb", &MPU.banklsb[i]);
@@ -493,7 +499,10 @@ void bx_sb16_c::register_state(void)
   new bx_shadow_data_c(list, "csp_reg", BX_SB16_THIS csp_reg, 256, 1);
   bx_list_c *opl = new bx_list_c(list, "opl");
   new bx_shadow_num_c(opl, "timer_running", &OPL.timer_running);
-  for (i=0; i<2; i++) {
+
+  for (i=0; i<2; i++) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(name, "chip%d", i+1);
     chip = new bx_list_c(opl, name);
     new bx_shadow_num_c(chip, "index", &OPL.index[i]);
@@ -509,8 +518,12 @@ void bx_sb16_c::register_state(void)
   bx_list_c *emul = new bx_list_c(list, "emul");
   new bx_shadow_num_c(emul, "remaps", &EMUL.remaps);
   bx_list_c *remap = new bx_list_c(emul, "remaplist");
-  for (i=0; i<BX_SB16_MAX_REMAPS; i++) {
+
+  for (i=0; i<BX_SB16_MAX_REMAPS; i++) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(name, "0x%02x", i);
+
     ins_map = new bx_list_c(remap, name);
     new bx_shadow_num_c(ins_map, "oldbankmsb", &EMUL.remaplist[i].oldbankmsb);
     new bx_shadow_num_c(ins_map, "oldbanklsb", &EMUL.remaplist[i].oldbanklsb);
@@ -2870,12 +2883,15 @@ void bx_sb16_c::create_logfile(void)
   bx_list_c *base = (bx_list_c*) SIM->get_param(BXPN_SOUND_SB16);
   bx_param_string_c *logfile = SIM->get_param_string("log", base);
 
-  if (logfile->isempty()) {
+  if (logfile->isempty()) 
+  {
     SIM->get_param_num("loglevel", base)->set(0);
     return;
   }
 
-  if (SIM->get_param_num("loglevel", base)->get() > 0) {
+  if (SIM->get_param_num("loglevel", base)->get() > 0) 
+  {
+#pragma warning(suppress : 4996)
     LOGFILE = fopen(logfile->getptr(),"w"); // logfile for errors etc.
     if (LOGFILE == NULL) {
       BX_ERROR(("Error opening file %s. Logging disabled.", logfile->getptr()));
@@ -2978,6 +2994,7 @@ bool bx_sb16_buffer::puts(const char *data, ...)
 
   va_list ap;
   va_start(ap, data);
+#pragma warning(suppress : 4996)
   vsprintf(string, data, ap);
   va_end(ap);
 

@@ -5,9 +5,9 @@
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
 
-#define BX_PLUGGABLE
-
 #include "pch.h"
+
+#define BX_PLUGGABLE
 
 #include "../bochs/bochs.h"
 #include "../bochs/plugin.h"
@@ -15,6 +15,8 @@
 #include "soundlow.h"
 #include "soundmod.h"
 #include "soundwin.h"
+#include <mmeapi.h> // my +
+#include <mmsyscom.h> // my +
 
 #if BX_HAVE_SOUND_WIN && BX_SUPPORT_SOUNDLOW
 
@@ -53,7 +55,8 @@ Bit8u* newbuffer(unsigned blksize)
   Bit8u *ptr;
 
   ptr = &(DataPointer[offset]);
-  if ((offset + ALIGN(blksize)) > size) {
+  if ((offset + ALIGN(blksize)) > size) 
+  {
     return NULL;
   } else {
     offset += ALIGN(blksize);
@@ -96,7 +99,8 @@ int bx_soundlow_waveout_win_c::set_pcm_params(bx_pcm_param_t *param)
 
   BX_DEBUG(("set_pcm_params(): %u, %u, %u, %02x", param->samplerate, param->bits,
             param->channels, param->format));
-  if (WaveOutOpen != 0) {
+  if (WaveOutOpen != 0) 
+  {
     ret = waveOutReset(hWaveOut);
     ret = waveOutClose(hWaveOut);
     WaveOutOpen = 0;
@@ -116,9 +120,11 @@ int bx_soundlow_waveout_win_c::set_pcm_params(bx_pcm_param_t *param)
     waveformat.wf.nBlockAlign = bps;
     waveformat.wBitsPerSample = bits;
 
-    ret = waveOutOpen(&(hWaveOut), WaveDevice, (LPWAVEFORMATEX)&(waveformat.wf), 0, 0, CALLBACK_NULL);
+    //                                         LPWAVEFORMATEX
+    ret = waveOutOpen(&(hWaveOut), WaveDevice, (LPWAVEFORMAT)&(waveformat.wf), 0, 0, CALLBACK_NULL);
     if (ret != 0) {
       char errormsg[4*MAXERRORLENGTH+1];
+
       waveOutGetErrorTextA(ret, errormsg, 4*MAXERRORLENGTH+1);
       BX_DEBUG(("waveOutOpen: %s", errormsg));
       switch (tries) {
@@ -246,9 +252,13 @@ int bx_soundlow_wavein_win_c::recordnextpacket()
   WaveInHdr->dwUser = 0L;
   WaveInHdr->dwFlags = 0L;
   WaveInHdr->dwLoops = 0L;
+
   waveInPrepareHeader(hWaveIn, WaveInHdr, sizeof(WAVEHDR));
+
   result = waveInAddBuffer(hWaveIn, WaveInHdr, sizeof(WAVEHDR));
-  if (result) {
+
+  if (result) 
+  {
     BX_ERROR(("Couldn't add buffer for recording (error = %d)", result));
     return BX_SOUNDLOW_ERR;
   } else {
@@ -451,7 +461,8 @@ int bx_soundlow_midiout_win_c::closemidioutput()
 
 void bx_soundlow_midiout_win_c::checkmidiready()
 {
-  if ((MidiHeader->dwFlags & MHDR_DONE) != 0) {
+                            //MHDR_DONE
+  if ((MidiHeader->dwFlags & 0x00000001 ) != 0) {
     BX_DEBUG(("SYSEX message done, midi ready again"));
     midiOutUnprepareHeader(MidiOut, MidiHeader, sizeof(*MidiHeader));
     ismidiready = 1;

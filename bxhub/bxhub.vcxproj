@@ -188,7 +188,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\config.h" />
     <ClInclude Include="..\iodev\network\netmod.h" />
     <ClInclude Include="..\iodev\network\netutil.h" />
     <ClInclude Include="..\misc\bxcompat.h" />

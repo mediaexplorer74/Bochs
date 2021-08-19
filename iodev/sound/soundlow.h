@@ -20,7 +20,7 @@
 
 // Common code for sound lowlevel modules
 
-#include "bochs/bxthread.h"
+#include "../bochs/bxthread.h"
 
 #if BX_HAVE_LIBSAMPLERATE
 #include <samplerate.h>

@@ -18,9 +18,10 @@
 // platforms that require a special tag on exported symbols, BX_PLUGGABLE
 // is used to know when we are exporting symbols and when we are importing.
 
+#include "pch.h"
+
 #define BX_PLUGGABLE
 
-#include "pch.h"
 
 #ifndef BXIMAGE
 #define BXIMAGE

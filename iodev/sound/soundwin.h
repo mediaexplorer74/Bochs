@@ -1,27 +1,10 @@
 /////////////////////////////////////////////////////////////////////////
 // $Id: soundwin.h 14116 2021-01-31 15:44:39Z vruppert $
 /////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 2001-2021  The Bochs Project
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-/////////////////////////////////////////////////////////////////////////
 
 // This file (SOUNDWIN.H) written and donated by Josef Drexler
 
-#if BX_HAVE_SOUND_WIN
+//#if BX_HAVE_SOUND_WIN
 
 #include <mmsystem.h>
 
@@ -50,6 +33,10 @@ typedef struct midihdr_tag {
 
 typedef UINT HWAVEOUT;
 typedef HWAVEOUT *LPHWAVEOUT;
+
+// my
+typedef UINT HWAVEIN;
+typedef HWAVEIN* LPHWAVEIN;
 
 typedef struct wavehdr_tag {
     LPSTR lpData;
@@ -114,25 +101,26 @@ typedef struct pcmwaveformat_tag {
 
 #define MAXERRORLENGTH		128
 
-extern "C" {
-UINT STDCALL midiOutOpen(LPHMIDIOUT, UINT, DWORD, DWORD, DWORD);
-UINT STDCALL midiOutShortMsg(HMIDIOUT, DWORD);
-UINT STDCALL midiOutLongMsg(HMIDIOUT, LPMIDIHDR, UINT);
-UINT STDCALL midiOutPrepareHeader(HMIDIOUT, LPMIDIHDR, UINT);
-UINT STDCALL midiOutUnprepareHeader(HMIDIOUT, LPMIDIHDR, UINT);
-UINT STDCALL midiOutReset(HMIDIOUT);
-UINT STDCALL midiOutClose(HMIDIOUT);
+extern "C" 
+{
+UINT midiOutOpen(LPHMIDIOUT, UINT, DWORD, DWORD, DWORD);
+UINT midiOutShortMsg(HMIDIOUT, DWORD);
+UINT midiOutLongMsg(HMIDIOUT, LPMIDIHDR, UINT);
+UINT midiOutPrepareHeader(HMIDIOUT, LPMIDIHDR, UINT);
+UINT midiOutUnprepareHeader(HMIDIOUT, LPMIDIHDR, UINT);
+UINT midiOutReset(HMIDIOUT);
+UINT midiOutClose(HMIDIOUT);
 
-UINT STDCALL waveOutOpen(LPHWAVEOUT, UINT, LPWAVEFORMAT, DWORD, DWORD, DWORD);
-UINT STDCALL waveOutWrite(HWAVEOUT, LPWAVEHDR, UINT);
-UINT STDCALL waveOutPrepareHeader(HWAVEOUT, LPWAVEHDR, UINT);
-UINT STDCALL waveOutUnprepareHeader(HWAVEOUT, LPWAVEHDR, UINT);
-UINT STDCALL waveOutReset(HWAVEOUT);
-UINT STDCALL waveOutClose(HWAVEOUT);
+UINT waveOutOpen(LPHWAVEOUT, UINT, LPWAVEFORMAT, DWORD, DWORD, DWORD);
+UINT waveOutWrite(HWAVEOUT, LPWAVEHDR, UINT);
+UINT waveOutPrepareHeader(HWAVEOUT, LPWAVEHDR, UINT);
+UINT waveOutUnprepareHeader(HWAVEOUT, LPWAVEHDR, UINT);
+UINT waveOutReset(HWAVEOUT);
+UINT waveOutClose(HWAVEOUT);
 
-UINT STDCALL waveOutGetErrorTextA(UINT, LPSTR, UINT);
+UINT waveOutGetErrorTextA(UINT, LPSTR, UINT);
 
-BOOL STDCALL sndPlaySoundA(LPCSTR, UINT);
+BOOL sndPlaySoundA(LPCSTR, UINT);
 }
 #pragma pack(0)
 
@@ -233,4 +221,4 @@ public:
   virtual bx_soundlow_midiout_c* get_midiout();
 } bx_sound_windows;
 
-#endif  // BX_HAVE_SOUND_WIN
+//#endif  // BX_HAVE_SOUND_WIN

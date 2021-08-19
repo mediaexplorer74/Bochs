@@ -172,9 +172,13 @@ Bit32s es1370_options_save(FILE *fp)
 
 PLUGIN_ENTRY_FOR_MODULE(es1370)
 {
-  if (mode == PLUGIN_INIT) {
+  if (mode == PLUGIN_INIT) 
+  {
     theES1370Device = new bx_es1370_c();
-    BX_REGISTER_DEVICE_DEVMODEL(plugin, type, theES1370Device, BX_PLUGIN_ES1370);
+
+    //TODO
+    //BX_REGISTER_DEVICE_DEVMODEL(plugin, type, theES1370Device, BX_PLUGIN_ES1370);
+
     // add new configuration parameter for the config interface
     es1370_init_options();
     // register add-on option for bochsrc and command line
@@ -377,7 +381,9 @@ void bx_es1370_c::register_state(void)
   char pname[6];
 
   bx_list_c *list = new bx_list_c(SIM->get_bochs_root(), "es1370", "ES1370 State");
-  for (i = 0; i < 3; i++) {
+  for (i = 0; i < 3; i++) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(pname, "chan%d", i);
     bx_list_c *chan = new bx_list_c(list, pname, "");
     BXRS_HEX_PARAM_FIELD(chan, shift, BX_ES1370_THIS s.chan[i].shift);

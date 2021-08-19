@@ -1517,7 +1517,10 @@ void adlib_register_state(bx_list_c *parent)
   new bx_shadow_num_c(adlib, "vibtab_pos", &vibtab_pos);
   new bx_shadow_num_c(adlib, "tremtab_pos", &tremtab_pos);
   bx_list_c *ops = new bx_list_c(adlib, "op");
-  for (i = 0; i < MAXOPERATORS; i++) {
+
+  for (i = 0; i < MAXOPERATORS; i++) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(numstr, "%d", i);
     bx_list_c *opX = new bx_list_c(ops, numstr);
     new bx_shadow_num_c(opX, "cval", &op[i].cval);

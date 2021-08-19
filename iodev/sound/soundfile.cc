@@ -72,33 +72,49 @@ int bx_soundlow_waveout_file_c::openwaveoutput(const char *wavedev)
 
   if ((wavefile == NULL) && (len > 0)) {
     if (len > 4) {
-      if (wavedev[len-4] == '.') {
+      if (wavedev[len-4] == '.') 
+      {
+#pragma warning(suppress : 4996)
         strcpy(ext, wavedev+len-3);
-        if (!stricmp(ext, "voc")) {
+        if (!stricmp(ext, "voc")) 
+        {
           type = BX_SOUNDFILE_VOC;
-        } else if (!stricmp(ext, "wav")) {
+        } 
+        else if (!stricmp(ext, "wav")) 
+        {
           type = BX_SOUNDFILE_WAV;
         }
       }
     }
+#pragma warning(suppress : 4996)
     wavefile = fopen(wavedev, "wb");
-    if (wavefile == NULL) {
+
+    if (wavefile == NULL) 
+    {
       BX_ERROR(("Failed to open WAVE output file %s.", wavedev));
-    } else if (type == BX_SOUNDFILE_VOC) {
+    } 
+    else if (type == BX_SOUNDFILE_VOC) 
+    {
       VOC_init_file();
-    } else if (type == BX_SOUNDFILE_WAV) {
+    } else if (type == BX_SOUNDFILE_WAV) 
+    {
       initwavfile();
     }
+
     set_pcm_params(&real_pcm_param);
-    if (!res_thread_start) {
+
+    if (!res_thread_start) 
+    {
       start_resampler_thread();
     }
-    if (!mix_thread_start) {
+    if (!mix_thread_start) 
+    {
       pcm_callback_id = register_wave_callback(this, pcm_callback);
       start_mixer_thread();
     }
     return BX_SOUNDLOW_OK;
-  } else {
+  } else 
+  {
     return BX_SOUNDLOW_ERR;
   }
 }
@@ -263,14 +279,19 @@ int bx_soundlow_midiout_file_c::openmidioutput(const char *mididev)
 
   if ((midifile == NULL) && (len > 0)) {
     if (len > 4) {
-      if (mididev[len-4] == '.') {
+      if (mididev[len-4] == '.') 
+      {
+#pragma warning(suppress : 4996)
         strcpy(ext, mididev+len-3);
+      
         if (!stricmp(ext, "mid")) {
           type = BX_SOUNDFILE_MID;
         }
       }
     }
+#pragma warning(suppress : 4996)
     midifile = fopen(mididev, "wb");
+
     if (midifile == NULL) {
       BX_ERROR(("Failed to open MIDI output file %s.", mididev));
       return BX_SOUNDLOW_ERR;

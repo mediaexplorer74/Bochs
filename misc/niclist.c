@@ -14,8 +14,11 @@
 
 #include <pch.h>
 
+//my+
+#include <WinBase.h>
+
 #ifndef WIN32
-//#error Niclist will only work on WIN32 platforms.
+#error Niclist will only work on WIN32 platforms.
 #endif
 
 #ifndef CDECL
@@ -85,8 +88,8 @@ int CDECL main(int argc, char **argv)
     PCHAR         testString;
     int           nDLLMajorVersion, nDLLMinorVersion;
 
-    // Attemp to load the WinpCap packet library
-    hPacket = LoadLibrary("PACKET.DLL");
+    // Attemp to load the WinpCap packet library (TODO)
+    hPacket = NULL; //LoadLibrary("PACKET.DLL");
     if (hPacket)
     {
         // Now look up the address
@@ -103,8 +106,8 @@ int CDECL main(int argc, char **argv)
     dllVersion = PacketGetVersion();
     nDLLMajorVersion = -1;
     nDLLMinorVersion = -1;
-    for (testString = strtok(dllVersion, ",. ");
-              testString != NULL; testString = strtok(NULL, ",. "))
+#pragma warning(suppress : 4996)
+    for (testString = strtok(dllVersion, ",. "); testString != NULL; testString = strtok(NULL, ",. "))
     {
         // If Single Character, Convert
         if (strlen( testString ) == 1)
@@ -122,7 +125,7 @@ int CDECL main(int argc, char **argv)
     }
 
     // Get out blob of adapter info
-    PacketGetAdapterNames(AdapterInfo, &AdapterLength);
+    PacketGetAdapterNames((PTSTR)AdapterInfo, &AdapterLength);
 
     if (nDLLMajorVersion < 3 || (nDLLMajorVersion == 3 && nDLLMinorVersion < 1))
     {
@@ -135,7 +138,7 @@ int CDECL main(int argc, char **argv)
         {
             // store pointer to name
             niNT[nAdapterCount].wstrName=wstrName;
-            wstrName += lstrlenW(wstrName) +1;
+            wstrName += strlen((LPSTR)wstrName) +1;
             nAdapterCount++;
         }
 
@@ -146,7 +149,7 @@ int CDECL main(int argc, char **argv)
         {
             // store pointer to description
             niNT[i].strDesc=strDesc;
-            strDesc += lstrlen(strDesc) +1;
+            strDesc += strlen(strDesc) +1;
 
             // ... and display adapter info
             printf("\n%d: %s\n",i+1,niNT[i].strDesc);
@@ -169,7 +172,7 @@ int CDECL main(int argc, char **argv)
         {
             // store pointer to name
             ni9X[nAdapterCount].strName=strName;
-            strName += lstrlen(strName) +1;
+            strName += strlen(strName) +1;
             nAdapterCount++;
         }
 
@@ -180,7 +183,7 @@ int CDECL main(int argc, char **argv)
         {
             // store pointer to description
             ni9X[i].strDesc=strDesc;
-            strDesc += lstrlen(strDesc) +1;
+            strDesc += strlen(strDesc) +1;
 
             // ... and display adapter info
             printf("\n%d: %s\n",i+1,ni9X[i].strDesc);

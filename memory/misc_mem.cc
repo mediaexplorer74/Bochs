@@ -200,8 +200,11 @@ void BX_MEM_C::allocate_block(Bit32u block)
     // Flush the block to be replaced
     bx_phy_address address = ((bx_phy_address)BX_MEM_THIS next_swapout_idx)*BX_MEM_BLOCK_LEN;
     // Create overflow file if it does not currently exist.
-    if (!BX_MEM_THIS overflow_file) {
+    if (!BX_MEM_THIS overflow_file) 
+    {
+#pragma warning(suppress : 4996)
       BX_MEM_THIS overflow_file = tmpfile64();
+
       if (!BX_MEM_THIS overflow_file)
         BX_PANIC(("Unable to allocate memory overflow file"));
     }
@@ -310,16 +313,22 @@ void BX_MEM_C::register_state()
   BXRS_DEC_PARAM_FIELD(list, used_blocks, BX_MEM_THIS used_blocks);
 
   bx_list_c *mapping = new bx_list_c(list, "mapping");
-  for (Bit32u blk=0; blk < num_blocks; blk++) {
+  for (Bit32u blk=0; blk < num_blocks; blk++) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(param_name, "blk%d", blk);
     bx_param_num_c *param = new bx_param_num_c(mapping, param_name, "", "", -2, BX_MAX_BIT32U, 0);
     param->set_base(BASE_DEC);
     param->set_sr_handlers(this, memory_param_save_handler, memory_param_restore_handler);
   }
   bx_list_c *memtype = new bx_list_c(list, "memtype");
-  for (int i = 0; i <= BX_MEM_AREA_F0000; i++) {
+  
+  for (int i = 0; i <= BX_MEM_AREA_F0000; i++) 
+  {
+#pragma warning(suppress : 4996)
     sprintf(param_name, "%d_r", i);
     new bx_shadow_bool_c(memtype, param_name, &BX_MEM_THIS memory_type[i][0]);
+#pragma warning(suppress : 4996)
     sprintf(param_name, "%d_w", i);
     new bx_shadow_bool_c(memtype, param_name, &BX_MEM_THIS memory_type[i][1]);
   }
@@ -381,7 +390,9 @@ void BX_MEM_C::load_ROM(const char *path, bx_phy_address romaddress, Bit8u type)
     }
     return;
   }
+
   // read in ROM BIOS image file
+#pragma warning(suppress : 4996)
   fd = open(path, O_RDONLY
 #ifdef O_BINARY
                 | O_BINARY
